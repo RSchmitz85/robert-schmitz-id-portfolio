@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Storyline slide — course menu">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8d4cd"/>
+      <stop offset="100%" stop-color="#b8b2a9"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#g)"/>
+  <rect x="80" y="70" width="800" height="460" fill="none" stroke="#5c564e" stroke-width="2" stroke-dasharray="8 6" opacity="0.45" rx="8"/>
+  <rect x="430" y="220" width="100" height="70" fill="none" stroke="#5c564e" stroke-width="2" opacity="0.5" rx="6"/>
+  <text x="480" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" fill="#5c564e" font-weight="500">Storyline slide — course menu</text>
+  <text x="480" y="365" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#9a9288">Replace from Desktop REM / Storyline exports</text>
+</svg>
