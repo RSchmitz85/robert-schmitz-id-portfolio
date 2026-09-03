@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Robert Schmitz — Instructional Designer, Curriculum Developer, and eLearning Designer. Learning experiences grounded in classroom practice, learning science, and assessment design.">
-  <title>Robert Schmitz | Instructional Designer &amp; Curriculum Developer</title>
+  <meta name="description" content="Robert Schmitz — Instructional Designer &amp; Curriculum Developer. REM Algebra 1 lesson architecture, reusable practice systems, teacher keys, and eLearning craft.">
+  <title>Robert Schmitz | Instructional Designer — REM Curriculum Systems</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
         <ul>
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="projects/storyline.html">Projects</a></li>
+          <li><a href="projects/curriculum-system.html">Projects</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a class="nav-cta" href="contact.html">Contact</a></li>
         </ul>
@@ -32,71 +32,287 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero__grid">
+    <!-- Hero: lesson architecture + real REM pages -->
+    <section class="hero hero--rem">
+      <div class="container hero__grid hero__grid--mosaic">
         <div>
-          <p class="eyebrow">Instructional Designer | Curriculum Developer | eLearning Designer</p>
-          <h1>Clear learning design for complex content</h1>
-          <p class="hero__tagline">I design learning experiences that help people understand difficult material, practice with purpose, and transfer what they learn—whether the setting is an LMS module, a curriculum system, or professional development.</p>
-          <p class="text-muted">An instructional designer and curriculum developer who combines deep classroom experience, learning science, assessment design, and modern development tools to create clear, practical, scalable learning experiences.</p>
+          <p class="eyebrow">Instructional Designer · Curriculum Developer · eLearning</p>
+          <h1>I build lesson <em>systems</em> — not worksheets.</h1>
+          <p class="hero__tagline">Real Engagement with Mathematics (REM) is my proof of craft: a six-phase Algebra&nbsp;1 lesson engine, reusable practice-asset systems with paired teacher keys, and a visual design language that stays coherent across an entire course.</p>
+          <ol class="phase-flow" aria-label="REM lesson architecture">
+            <li><span class="phase-chip">Activate</span></li>
+            <li><span class="phase-chip">Model</span></li>
+            <li><span class="phase-chip">Guide</span></li>
+            <li><span class="phase-chip">Apply</span></li>
+            <li><span class="phase-chip">Reflect</span></li>
+            <li><span class="phase-chip">Extend</span></li>
+          </ol>
           <div class="btn-row">
-            <a class="btn btn--primary" href="projects/storyline.html">View selected work</a>
-            <a class="btn btn--ghost" href="resume.html">Resume</a>
-            <a class="btn btn--ghost" href="contact.html">Contact</a>
+            <a class="btn btn--accent" href="projects/curriculum-system.html">See the curriculum case study</a>
+            <a class="btn btn--ghost-light" href="#lesson-videos">Watch lesson videos</a>
           </div>
+          <p class="text-muted" style="margin-top:1.25rem;">11+ years secondary math · ADDIE · GRR · UDL · Mayer · Storyline · Canvas · HTML/CSS</p>
         </div>
-        <aside class="hero__panel" aria-label="Practice focus areas">
-          <h2>What I bring to ID work</h2>
-          <ul>
-            <li><strong>Classroom-tested judgment</strong>11+ years teaching secondary math, including remediation and adult GED—translated into learner-centered design</li>
-            <li><strong>Learning science in practice</strong>ADDIE, Dick &amp; Carey, Gagné, ARCS, Mayer, UDL, TPACK, Quality Matters, Gradual Release</li>
-            <li><strong>Assessment &amp; alignment</strong>Standards mapping, formative design, and district-level assessment contribution</li>
-            <li><strong>Build-ready tools</strong>Storyline, Canvas, Schoology, HTML/CSS, and AI-assisted workflows under human review</li>
-          </ul>
-        </aside>
+        <div class="hero-art" role="group" aria-label="Real REM lesson artifacts">
+          <figure class="hero-art__item hero-art__item--wide">
+            <img src="assets/images/rem-punchline-teacher.png" width="1268" height="980" alt="Punchline Math worked answer key: every equation solved, checked, and decoded, with a completed ticket map" loading="eager">
+            <figcaption>Punchline Math — worked teacher key (every answer solved, checked, decoded)</figcaption>
+          </figure>
+          <figure class="hero-art__item">
+            <img src="assets/images/rem-cbn-bakery-student.png" width="825" height="1067" alt="Color By Number student page: a fully numbered line-art scene keyed to equation answers" loading="eager">
+            <figcaption>Color By Number — numbered student scene</figcaption>
+          </figure>
+          <figure class="hero-art__item">
+            <img src="assets/images/rem-cbn-bakery-teacher.png" width="825" height="1067" alt="The same Color By Number scene realistically colored on the teacher key" loading="eager">
+            <figcaption>Same scene — colored teacher key</figcaption>
+          </figure>
+          <figure class="hero-art__item">
+            <img src="assets/images/rem-scavenger-teacher.jpg" width="980" height="1268" alt="Scavenger Hunt teacher-annotated station cards with target equations and repair sequences" loading="lazy">
+            <figcaption>Scavenger Hunt — annotated station cards</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <section class="section section--muted" aria-labelledby="projects-heading">
+    <!-- Six-phase lesson engine -->
+    <section class="section" aria-labelledby="engine-heading">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Lesson architecture</p>
+            <h2 id="engine-heading">One engine, every lesson</h2>
+            <p class="text-muted">Teachers learn a single instructional rhythm; content authors fill the slots. Every REM lesson runs the same six phases, so quality scales without reinventing pedagogy per topic.</p>
+          </div>
+        </div>
+        <div class="phase-grid">
+          <div class="phase-card">
+            <h3>1 · Activate</h3>
+            <p>A hook with instructional purpose — story context, prior-knowledge trigger, or a puzzle that makes the day's math worth solving.</p>
+          </div>
+          <div class="phase-card">
+            <h3>2 · Model</h3>
+            <p>Worked examples that show thinking, not just steps — visible checks, inverse-operation reasoning, and representation choices.</p>
+          </div>
+          <div class="phase-card">
+            <h3>3 · Guide</h3>
+            <p>Structured practice with immediate self-verification: decoders, keyed regions, and arrival signals that confirm or redirect.</p>
+          </div>
+          <div class="phase-card">
+            <h3>4 · Apply</h3>
+            <p>Independent and collaborative work inside a repeatable interaction grammar — stations, partner loops, casebooks.</p>
+          </div>
+          <div class="phase-card">
+            <h3>5 · Reflect</h3>
+            <p>Built-in reflection prompts and error audits so learners consolidate the decision that mattered, not just the answer.</p>
+          </div>
+          <div class="phase-card">
+            <h3>6 · Extend</h3>
+            <p>Planned enrichment and transfer inside the same architecture — no "early finishers get busywork."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice asset systems -->
+    <section class="section section--muted" aria-labelledby="systems-heading">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Reusable instructional asset systems</p>
+            <h2 id="systems-heading">Four practice engines, one design language</h2>
+            <p class="text-muted">Each format encodes a learning interaction — self-checking, visual reinforcement, movement with accountability, misconception analysis. Same grammar, swapped mathematics.</p>
+          </div>
+        </div>
+        <div class="practice-grid rem-visual-grid">
+          <article class="practice-tile">
+            <div class="practice-tile__img">
+              <img src="assets/images/rem-punchline-decoder.png" width="1268" height="980" alt="Punchline Math student page: ten equations, decoder strip, ticket trail, and punchline delivery box" loading="lazy">
+            </div>
+            <h4>Punchline Math</h4>
+            <p>Solve → decode → reveal the punchline. Every answer maps to a decoder chunk and a numbered ticket, so students self-check while showing work. Ships with a fully worked teacher key.</p>
+          </article>
+          <article class="practice-tile">
+            <div class="practice-tile__img">
+              <img src="assets/images/rem-cbn-cablecar-teacher.png" width="825" height="1067" alt="Color By Number teacher key: cable car scene fully and realistically colored" loading="lazy">
+            </div>
+            <h4>Color By Number</h4>
+            <p>Twenty numbered regions keyed to answers — every crevice labeled, whole scene painted on the teacher key. Practice stays rigorous while the picture verifies the math.</p>
+          </article>
+          <article class="practice-tile">
+            <div class="practice-tile__img">
+              <img src="assets/images/rem-scavenger-station.png" width="980" height="1268" alt="Scavenger Hunt student launch page explaining the solve, signal, and move route loop" loading="lazy">
+            </div>
+            <h4>Scavenger Hunt</h4>
+            <p>Movement with accountability: solve at a station, follow your solution to the matching arrival signal, close the loop. Wrong answers dead-end — the route itself is the feedback.</p>
+          </article>
+          <article class="practice-tile">
+            <div class="practice-tile__img">
+              <img src="assets/images/rem-ead-student.png" width="960" height="600" alt="Error Analysis Detective student casebook page" loading="lazy">
+            </div>
+            <h4>Error Analysis Detective</h4>
+            <p>Mistakes as objects of study — students find the flawed step, correct it, and explain why. Diagnostic noticing built into a repeatable casebook template.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student page + teacher key pairing -->
+    <section class="section" aria-labelledby="pair-heading">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Design for the teacher, too</p>
+            <h2 id="pair-heading">Every student page ships with a worked key</h2>
+            <p class="text-muted">Not an answer list — a facilitation document. Each solution is worked, checked by substitution, and mapped to its decoder chunk, so a teacher can diagnose where a student's route went wrong.</p>
+          </div>
+        </div>
+        <div class="pair-grid">
+          <figure class="pair-fig">
+            <span class="pair-tag">Student page</span>
+            <img src="assets/images/rem-punchline-decoder.png" width="1268" height="980" alt="Punchline Math student page with equations, workspaces, decoder, and ticket trail" loading="lazy">
+            <figcaption><strong>Punchline Math — student.</strong> Ten one-step equations with structured workspaces, a decoder strip, and a ticket trail that assembles the punchline.</figcaption>
+          </figure>
+          <figure class="pair-fig pair-fig--teacher">
+            <span class="pair-tag">Teacher key</span>
+            <img src="assets/images/rem-punchline-teacher.png" width="1268" height="980" alt="Punchline Math teacher key with every answer worked, checked, and decoded" loading="lazy">
+            <figcaption><strong>Punchline Math — teacher.</strong> Every answer worked, checked, and decoded; completed ticket map and punchline included for at-a-glance verification.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lesson videos -->
+    <section class="section section--navy" id="lesson-videos" aria-labelledby="videos-heading">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Instruction in motion</p>
+            <h2 id="videos-heading">Lesson walkthrough videos</h2>
+            <p>Short-form modeling videos produced for the REM system — worked examples paced for a vertical screen, with the same visible-check habits the print materials teach.</p>
+          </div>
+        </div>
+        <div class="video-grid">
+          <figure class="video-frame">
+            <video controls playsinline preload="metadata" poster="assets/images/poster-rem-solve-linear-equation.jpg" src="assets/video/rem-solve-linear-equation.mp4"></video>
+            <figcaption><strong>Solve a Linear Equation</strong> Inverse operations with a visible check at every move.</figcaption>
+          </figure>
+          <figure class="video-frame">
+            <video controls playsinline preload="metadata" poster="assets/images/poster-rem-variables-both-sides.jpg" src="assets/video/rem-variables-both-sides.mp4"></video>
+            <figcaption><strong>Variables on Both Sides</strong> Collecting terms without losing the equality story.</figcaption>
+          </figure>
+          <figure class="video-frame">
+            <video controls playsinline preload="metadata" poster="assets/images/poster-rem-quadratic-by-factoring.jpg" src="assets/video/rem-quadratic-by-factoring.mp4"></video>
+            <figcaption><strong>Solve a Quadratic by Factoring</strong> Zero-product reasoning modeled step by step.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Walkthrough storyboard -->
+    <section class="section section--muted" aria-labelledby="walkthrough-heading">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">How a lesson flows</p>
+            <h2 id="walkthrough-heading">One lesson, frame by frame</h2>
+            <p class="text-muted">Solving one-step equations, walked through the REM architecture with the actual pages a class would use — from course map to assessment.</p>
+          </div>
+        </div>
+        <ol class="storyboard">
+          <li>
+            <img src="assets/images/rem-roadmap-detail.png" width="640" height="480" alt="REM Algebra 1 course roadmap" loading="lazy">
+            <p class="storyboard__caption"><strong>Situate</strong> The course roadmap places the lesson in its unit, benchmark, and product format.</p>
+          </li>
+          <li>
+            <img src="assets/images/rem-scavenger-station.png" width="640" height="480" alt="Scavenger Hunt student launch page" loading="lazy">
+            <p class="storyboard__caption"><strong>Activate</strong> A story-driven launch gives the math a job: every correct solution repairs a system.</p>
+          </li>
+          <li>
+            <img src="assets/images/storyline-diagram-rate.png" width="640" height="480" alt="Worked-example instructional diagram" loading="lazy">
+            <p class="storyboard__caption"><strong>Model</strong> Worked-example visuals make the relationship visible before practice begins.</p>
+          </li>
+          <li>
+            <img src="assets/images/rem-punchline-decoder.png" width="640" height="480" alt="Punchline Math student decoder page" loading="lazy">
+            <p class="storyboard__caption"><strong>Guide</strong> Self-checking practice: solve, decode the chunk, place the ticket — feedback without waiting.</p>
+          </li>
+          <li>
+            <img src="assets/images/rem-scavenger-teacher.jpg" width="640" height="480" alt="Scavenger Hunt annotated station cards" loading="lazy">
+            <p class="storyboard__caption"><strong>Apply</strong> Station cards send solutions to arrival signals; the closed loop is the accountability.</p>
+          </li>
+          <li>
+            <img src="assets/images/rem-cbn-cablecar-student.png" width="640" height="480" alt="Color By Number numbered student scene" loading="lazy">
+            <p class="storyboard__caption"><strong>Reinforce</strong> Answer-keyed regions turn correct work into a finished scene — rigor with visual verification.</p>
+          </li>
+          <li>
+            <img src="assets/images/rem-punchline-teacher.png" width="640" height="480" alt="Punchline Math worked teacher key" loading="lazy">
+            <p class="storyboard__caption"><strong>Verify</strong> The worked teacher key lets the teacher diagnose any route in seconds, not re-solve it.</p>
+          </li>
+          <li>
+            <img src="assets/images/rem-eoc-practice.png" width="640" height="480" alt="EOC Interaction Practice formative page" loading="lazy">
+            <p class="storyboard__caption"><strong>Check</strong> A formative engine with shared response structures carries evidence across lessons.</p>
+          </li>
+          <li>
+            <img src="assets/images/rem-assessment-student.png" width="640" height="480" alt="Performance task student edition" loading="lazy">
+            <p class="storyboard__caption"><strong>Assess</strong> Blueprint-aligned performance tasks close the loop from architecture to evidence.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Featured case studies -->
+    <section class="section" aria-labelledby="projects-heading">
       <div class="container">
         <div class="section-head">
           <div>
             <p class="eyebrow">Selected work</p>
-            <h2 id="projects-heading">Featured projects</h2>
-            <p class="text-muted">Case studies that show analysis, design decisions, and how teaching experience informs instructional design—not lesson plans for a school day.</p>
+            <h2 id="projects-heading">Case studies</h2>
+            <p class="text-muted">Analysis, design decisions, and artifacts — how REM lesson craft translates to instructional design work.</p>
           </div>
         </div>
-        <div class="card-grid">
-          <a class="card" href="projects/storyline.html">
+        <div class="card-grid card-grid--featured">
+          <a class="card card--visual card--star" href="projects/curriculum-system.html">
+            <div class="card__thumb">
+              <img src="assets/images/rem-sh-stations-skyrail.jpg" width="750" height="750" alt="" loading="lazy">
+            </div>
+            <span class="card__meta">Curriculum systems · REM</span>
+            <h3>Scalable Algebra 1 Architecture</h3>
+            <p>The six-phase lesson engine plus four reusable practice systems — Punchline Math, Color By Number, Scavenger Hunt, Error Analysis Detective — with paired teacher keys and a coherent visual design system.</p>
+            <span class="card__link">View curriculum case study →</span>
+          </a>
+          <a class="card card--visual" href="projects/storyline.html">
+            <div class="card__thumb">
+              <img src="assets/images/storyline-diagram-rate.png" width="640" height="400" alt="" loading="lazy">
+            </div>
             <span class="card__meta">eLearning · Storyline</span>
             <h3>Interactive Algebra 1 Module</h3>
-            <p>Built from Algebra 1 Storyline project work: scaffolds conceptual understanding with worked examples, checks for understanding, and clear feedback—structure without oversimplification.</p>
+            <p>Storyline interaction design: worked examples, formative checks, and teaching feedback — diagram sequences and parallel REM patterns shown.</p>
             <span class="card__link">View case study →</span>
           </a>
-          <a class="card" href="projects/curriculum-system.html">
-            <span class="card__meta">Curriculum systems</span>
-            <h3>Scalable Algebra 1 Architecture</h3>
-            <p>Real Engagement with Mathematics (REM) as curriculum architecture: Activate→Model→Guide→Apply→Reflect→Extend, plus reusable practice systems (Punchline, Color By Number, Scavenger Hunt, Error Analysis)—templates that scale, not one-off handouts.</p>
-            <span class="card__link">View case study →</span>
-          </a>
-          <a class="card" href="projects/assessment-design.html">
+          <a class="card card--visual" href="projects/assessment-design.html">
+            <div class="card__thumb">
+              <img src="assets/images/rem-assessment-student.png" width="640" height="400" alt="" loading="lazy">
+            </div>
             <span class="card__meta">Assessment &amp; alignment</span>
             <h3>Assessment Design &amp; Alignment</h3>
-            <p>Blueprints, item banks, DPMA-style district contribution, and formative design inside REM practice engines—evidence of learning, not busywork.</p>
+            <p>Blueprints, item banks, district assessment contribution, and formative design inside REM practice engines — evidence of learning, not busywork.</p>
             <span class="card__link">View case study →</span>
           </a>
-          <a class="card" href="projects/professional-development.html">
+          <a class="card card--visual" href="projects/professional-development.html">
+            <div class="card__thumb">
+              <img src="assets/images/rem-teacher-partner.png" width="640" height="400" alt="" loading="lazy">
+            </div>
             <span class="card__meta">Adult learning · PD</span>
             <h3>Professional Development Design</h3>
-            <p>Facilitated PD and mentor support framed as adult learning design: clear outcomes, active practice, and transfer into day-to-day instructional work.</p>
+            <p>Facilitated PD and mentor support framed as adult learning design: clear outcomes, active practice, and transfer into daily instructional work.</p>
             <span class="card__link">View case study →</span>
           </a>
         </div>
-        <p class="text-muted" style="margin-top:1.5rem;font-size:0.875rem;">Also available: <a href="projects/ai-workflow.html">AI-enhanced instructional design workflow</a> — using AI as a drafting partner under human judgment.</p>
+        <p class="text-muted" style="margin-top:1.5rem;font-size:0.875rem;">Also available: <a href="projects/ai-workflow.html">AI-enhanced instructional design workflow</a> — AI as a drafting partner under human judgment.</p>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="skills-heading">
+    <!-- Skills -->
+    <section class="section section--muted" aria-labelledby="skills-heading">
       <div class="container">
         <p class="eyebrow">Capabilities</p>
         <h2 id="skills-heading">Skills &amp; tools</h2>
@@ -110,7 +326,7 @@
               <li>ADDIE · Dick &amp; Carey · Gagné</li>
               <li>UDL · TPACK · Quality Matters</li>
               <li>Gradual Release of Responsibility</li>
-              <li>ARCS · Mayer’s multimedia principles</li>
+              <li>ARCS · Mayer's multimedia principles</li>
             </ul>
           </div>
           <div class="skill-block">
@@ -120,7 +336,7 @@
               <li>Standards alignment</li>
               <li>Formative &amp; summative design</li>
               <li>Assessment blueprints</li>
-              <li>District assessment contribution (DPMA-style)</li>
+              <li>District assessment contribution</li>
               <li>Remediation &amp; intensive pathways</li>
             </ul>
           </div>
@@ -130,8 +346,8 @@
               <li>Articulate Storyline</li>
               <li>Canvas · Schoology</li>
               <li>HTML / CSS</li>
+              <li>Video &amp; short-form media production</li>
               <li>AI-assisted drafting &amp; review</li>
-              <li>Facilitation &amp; mentoring</li>
               <li>Professional development design</li>
             </ul>
           </div>
@@ -140,7 +356,7 @@
           <span class="tag">Secondary mathematics content expertise</span>
           <span class="tag">Adult GED / adult learning</span>
           <span class="tag">Lead teacher · mentor</span>
-          <span class="tag">Master’s 4.0</span>
+          <span class="tag">Master's 4.0</span>
           <span class="tag">UCF ID Professional Certificate</span>
           <span class="tag">Ed.D. in progress</span>
         </div>
@@ -151,7 +367,7 @@
       <div class="container">
         <div class="cta-band">
           <div>
-            <h2>Let’s talk about your next learning project</h2>
+            <h2>Let's talk about your next learning project</h2>
             <p>Open to instructional design, curriculum development, and eLearning roles in edtech, higher education, and corporate L&amp;D.</p>
           </div>
           <div class="btn-row" style="margin-top:0;">
@@ -172,7 +388,7 @@
         </div>
         <ul class="footer-nav">
           <li><a href="about.html">About</a></li>
-          <li><a href="projects/storyline.html">Projects</a></li>
+          <li><a href="projects/curriculum-system.html">Projects</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
