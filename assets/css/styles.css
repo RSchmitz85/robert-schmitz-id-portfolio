@@ -556,6 +556,9 @@ strong { font-weight: var(--fw-semibold); }
   background: var(--navy-950);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
 }
+.video-frame--wide video {
+  aspect-ratio: 16 / 9;
+}
 .video-frame figcaption {
   margin-top: var(--space-3);
   font-size: var(--fs-sm);
@@ -1070,6 +1073,29 @@ a.card:hover .card__link { color: var(--accent); }
 @media (max-width: 800px) {
   .about-intro { grid-template-columns: 1fr; }
   .about-aside { position: static; }
+}
+
+/* About page header portrait (owner headshot) */
+.about-header-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-8);
+  align-items: center;
+}
+.about-portrait {
+  display: block;
+  width: clamp(11rem, 20vw, 15.5rem);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  justify-self: end;
+}
+@media (max-width: 700px) {
+  .about-header-grid { grid-template-columns: 1fr; gap: var(--space-5); }
+  .about-portrait { justify-self: start; width: 11rem; }
 }
 
 /* Resume page */
@@ -1867,3 +1893,116 @@ a.card--visual:hover .card__thumb img { transform: scale(1.03); }
   font-size: var(--fs-lg);
 }
 .flow-diagram li:last-child::after { content: none; }
+
+/* ============================================================
+   Iteration 3 — case-study tabs, stat band, spacing utilities,
+   inline-style migration helpers
+   ============================================================ */
+
+/* Case-study tab bar (replaces borrowed footer-nav pills) */
+.case-tabs {
+  background: var(--bg-muted);
+  border-bottom: 1px solid var(--border);
+}
+.case-tabs ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  list-style: none;
+  margin: 0;
+  padding: var(--space-3) 0 0;
+}
+.case-tabs li { margin: 0; }
+.case-tabs a {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--stone-600);
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  position: relative;
+  top: 1px;
+  transition: color var(--transition), background var(--transition);
+}
+.case-tabs a:hover {
+  color: var(--navy-900);
+  background: rgba(255, 255, 255, 0.65);
+}
+.case-tabs a[aria-current="page"] {
+  background: var(--bg);
+  border-color: var(--border);
+  border-bottom: 1px solid var(--bg);
+  color: var(--navy-900);
+  font-weight: var(--fw-semibold);
+  box-shadow: inset 0 3px 0 var(--orange-600);
+}
+@media (max-width: 640px) {
+  .case-tabs ul { padding-top: var(--space-2); }
+  .case-tabs a { padding: 0.5rem 0.7rem; font-size: var(--fs-xs); }
+}
+
+/* Production-scale stat band (resume-sourced counts, not outcomes) */
+.stat-band {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+.stat {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--teal-600);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+}
+.stat strong {
+  display: block;
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--navy-900);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.01em;
+}
+.stat span {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  line-height: var(--lh-snug);
+}
+@media (max-width: 700px) {
+  .stat-band { grid-template-columns: 1fr; }
+}
+
+/* Spacing utilities (inline-style migration) */
+.u-mt-0 { margin-top: 0; }
+.u-mt-3 { margin-top: 0.75rem; }
+.u-mt-4 { margin-top: 1rem; }
+.u-mt-5 { margin-top: 1.25rem; }
+.u-mt-6 { margin-top: 1.5rem; }
+.u-mt-8 { margin-top: 2rem; }
+.u-mt-10 { margin-top: 2.5rem; }
+.u-mb-0 { margin-bottom: 0; }
+.u-mb-6 { margin-bottom: 1.5rem; }
+.u-mb-8 { margin-bottom: 2rem; }
+
+/* Compact storyboard strip (home lesson-spine fold) */
+.storyboard--compact img { aspect-ratio: 16 / 9; }
+
+/* Semantic helpers replacing repeated inline styles */
+.footer-tagline { margin: 0; font-size: var(--fs-sm); }
+.section-footnote { margin-top: 1.5rem; font-size: var(--fs-sm); }
+.subhead-sm { font-size: var(--fs-base); }
+.spec-list { font-size: var(--fs-sm); color: var(--stone-600); }
+.two-col--top { align-items: start; }
+.video-frame--solo { max-width: 20rem; }
+.about-aside a { color: var(--teal-100); }
+
+/* Storyline spec swatches (palette values are content, kept as classes) */
+.swatch--navy { background: #14295C; }
+.swatch--teal { background: #0D8A7D; }
+.swatch--violet { background: #9B4DCA; }
+.swatch--amber { background: #F0A500; }
+.swatch--cream { background: #FDFBF6; border-color: #c9c2b6; }

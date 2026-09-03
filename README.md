@@ -41,7 +41,7 @@ All paths are **relative** (GitHub Pages ready).
 |------------|--------------------------------|
 | Storyline Algebra 1 | `Desktop\Algebra 1 Storyline` (+ storyboards) |
 | Curriculum architecture | `Desktop\Real Engagement with Mathematics` — lesson engine Activate/Model/Guide/Apply/Reflect/Extend; Punchline Math; Color By Number; Scavenger Hunt; Error Analysis Detective as **reusable instructional asset systems** |
-| Assessment design | Item banks / DPMA-style work; standards alignment in REM engines & worksheets |
+| Assessment design | Item banks / district progress-monitoring assessment contribution; standards alignment in REM engines & worksheets |
 | PD / adult learning | Mentor, lead teacher, PD facilitation (process-based) |
 | AI workflow | Optional modern ID practice under human judgment |
 
@@ -97,4 +97,4 @@ HTML + CSS + light JS only. Google Fonts (Poppins). Navy + soft neutral + teal/o
 
 ## Facts policy
 
-Copy uses only stated professional facts (years teaching, courses, lead/mentor/PD, curriculum mapping, DPMA-style assessment contribution, Master’s 4.0, UCF ID certificate, Ed.D. in progress, models/tools listed). **No invented metrics, jobs, or outcome percentages.**
+Copy uses only stated professional facts from the owner-approved resume (years teaching, courses, lead/mentor/PD, curriculum mapping, district progress-monitoring assessment contribution, 10,000+ standards-aligned items, district-wide Canvas package adoption, M.Ed. Mathematics Education UCF 4.0, B.S. Social Studies Education USF, UCF ID certification, Ed.D. in progress at UCF, models/tools listed). **No invented metrics, jobs, or outcome percentages.**

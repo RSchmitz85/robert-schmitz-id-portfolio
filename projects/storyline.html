@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Case study: Interactive Algebra 1 eLearning module designed in Articulate Storyline by Robert Schmitz.">
   <title>Interactive Algebra 1 eLearning | Robert Schmitz</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Robert Schmitz — Instructional Designer">
+  <meta property="og:title" content="Interactive Algebra 1 eLearning Module | Robert Schmitz">
+  <meta property="og:description" content="Case study: a 16-slide Storyline 360 module on rearranging formulas — gated interactions, misconception-targeted feedback, and a written design spec.">
+  <meta property="og:url" content="https://rschmitz85.github.io/robert-schmitz-id-portfolio/projects/storyline.html">
+  <meta property="og:image" content="https://rschmitz85.github.io/robert-schmitz-id-portfolio/assets/images/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Robert Schmitz — Instructional Designer. Real lesson-system artifacts: a worked Punchline teacher key beside a Color By Number student and teacher pair.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -50,14 +63,16 @@
       </div>
     </header>
 
-      <nav class="container" aria-label="Project case studies" style="padding-top:1rem;padding-bottom:0;">
-        <ul class="footer-nav" style="gap:0.75rem 1.25rem;">
-          <li><a href="curriculum-system.html">Curriculum system</a></li>
-          <li><a href="storyline.html">Storyline</a></li>
-          <li><a href="assessment-design.html">Assessment</a></li>
-          <li><a href="professional-development.html">PD / adult learning</a></li>
-          <li><a href="ai-workflow.html">AI workflow</a></li>
-        </ul>
+      <nav class="case-tabs" aria-label="Project case studies">
+        <div class="container">
+          <ul>
+            <li><a href="curriculum-system.html">Curriculum system</a></li>
+            <li><a href="storyline.html" aria-current="page">Storyline</a></li>
+            <li><a href="assessment-design.html">Assessment</a></li>
+            <li><a href="professional-development.html">PD / adult learning</a></li>
+            <li><a href="ai-workflow.html">AI workflow</a></li>
+          </ul>
+        </div>
       </nav>
 
     <div class="container container--narrow">
@@ -173,26 +188,26 @@
           <li><span class="slide-map__tag">Results</span><strong>80% to pass</strong><span>Success and retry layers; Review Quiz on both paths.</span></li>
           <li><span class="slide-map__tag slide-map__tag--interact">Exit ticket</span><strong>C = 2πr for r</strong><span>Model answer locked until the learner types a response.</span></li>
         </ol>
-        <p style="margin-top:1.5rem;">Navigation is linear by default with optional review of prior screens, so learners who need to revisit a model can do so without hunting through menus.</p>
+        <p class="u-mt-6">Navigation is linear by default with optional review of prior screens, so learners who need to revisit a model can do so without hunting through menus.</p>
       </section>
 
       <section class="case-section" aria-labelledby="spec">
         <h2 id="spec">Visual &amp; interaction specification</h2>
         <p class="text-muted">The module ships with a written design spec so the Storyline build inherits its look instead of improvising it — the same design-system discipline used across the REM curriculum work.</p>
-        <div class="two-col" style="margin-top:1.5rem;">
+        <div class="two-col u-mt-6">
           <div>
-            <h3 style="font-size:1rem;">Palette (flat fills only — no neon, no gradients)</h3>
-            <ul class="swatch-row" style="margin-top:0.75rem;">
-              <li><span class="swatch" style="background:#14295C;"></span>Navy #14295C<br>text &amp; formulas</li>
-              <li><span class="swatch" style="background:#0D8A7D;"></span>Teal #0D8A7D<br>targets &amp; correct</li>
-              <li><span class="swatch" style="background:#9B4DCA;"></span>Violet #9B4DCA<br>moves &amp; affordances</li>
-              <li><span class="swatch" style="background:#F0A500;"></span>Amber #F0A500<br>"check it" boxes</li>
-              <li><span class="swatch" style="background:#FDFBF6;border-color:#c9c2b6;"></span>Cream #FDFBF6<br>background</li>
+            <h3 class="subhead-sm">Palette (flat fills only — no neon, no gradients)</h3>
+            <ul class="swatch-row u-mt-3">
+              <li><span class="swatch swatch--navy"></span>Navy #14295C<br>text &amp; formulas</li>
+              <li><span class="swatch swatch--teal"></span>Teal #0D8A7D<br>targets &amp; correct</li>
+              <li><span class="swatch swatch--violet"></span>Violet #9B4DCA<br>moves &amp; affordances</li>
+              <li><span class="swatch swatch--amber"></span>Amber #F0A500<br>"check it" boxes</li>
+              <li><span class="swatch swatch--cream"></span>Cream #FDFBF6<br>background</li>
             </ul>
           </div>
           <div>
-            <h3 style="font-size:1rem;">Typography &amp; layout rules</h3>
-            <ul style="font-size:0.875rem;color:var(--stone-600);">
+            <h3 class="subhead-sm">Typography &amp; layout rules</h3>
+            <ul class="spec-list">
               <li>48pt slide titles · 44pt display formulas · 30pt body — sized for projection and small screens, never below spec minimums</li>
               <li>Maximum five lines of text on any instruction slide; one idea per screen (Mayer segmenting)</li>
               <li>Restriction notes always 28pt teal — a consistent visual signal for "this move has a condition"</li>
@@ -218,7 +233,7 @@
             <p>The whole quantity <em>y − b</em> is divided by <em>m</em> · <em>m ≠ 0</em></p>
           </div>
         </div>
-        <p style="margin-top:2rem;">The same misconception returns as a quiz distractor — and its feedback names the error instead of restating the rule:</p>
+        <p class="u-mt-8">The same misconception returns as a quiz distractor — and its feedback names the error instead of restating the rule:</p>
         <div class="feedback-samples">
           <blockquote class="feedback-sample">
             <span class="feedback-sample__ctx">Q3 · learner picks x = y − b/m</span>
@@ -233,7 +248,7 @@
             <p>"You stopped one step early. After subtracting <em>2l</em> you still have <em>2w</em>, so divide both sides by 2."</p>
           </blockquote>
         </div>
-        <h3 style="margin-top:2.5rem;font-size:1rem;">Commitment gates (trigger design)</h3>
+        <h3 class="subhead-sm u-mt-10">Commitment gates (trigger design)</h3>
         <ul>
           <li><strong>Recap slide:</strong> Next button disabled until all four inverse-operation cards are revealed — no skimming past prerequisites.</li>
           <li><strong>Try-it slide:</strong> reveal bars unlock strictly in order (Step 1 → Step 2 → answer), so learners cannot jump to the answer.</li>
@@ -255,7 +270,7 @@
       <section class="case-section" aria-labelledby="artifacts">
         <h2 id="artifacts">Artifacts from the build</h2>
         <p class="text-muted"><strong>Honest note:</strong> published Storyline UI captures are pending; the artifacts below are the module's actual instructional assets and the parallel formative pattern from the classroom system. No mocked-up course screenshots appear on this page.</p>
-        <div class="artifact-grid" style="margin-top:1.5rem;">
+        <div class="artifact-grid u-mt-6">
           <figure class="artifact">
             <img src="../assets/images/storyline-diagram-area.png" width="960" height="600" alt="Labeled rectangle diagram relating area, length, and width — the instructional visual for worked example 1">
             <figcaption><strong>Worked example 1 visual (slide 5)</strong> — the labeled area model that anchors <em>A = lw → w = A/l</em>.</figcaption>
@@ -324,7 +339,7 @@
       <div class="footer-inner">
         <div>
           <div class="footer-brand">Robert Schmitz</div>
-          <p style="margin:0;font-size:0.875rem;">Instructional Designer | Curriculum Developer | eLearning Designer</p>
+          <p class="footer-tagline">Instructional Designer | Curriculum Developer | eLearning Designer</p>
         </div>
         <ul class="footer-nav">
           <li><a href="../about.html">About</a></li>
