@@ -23,7 +23,7 @@
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../about.html">About</a></li>
-          <li><a href="storyline.html" aria-current="page">Projects</a></li>
+          <li><a href="curriculum-system.html" aria-current="page">Projects</a></li>
           <li><a href="../resume.html">Resume</a></li>
           <li><a class="nav-cta" href="../contact.html">Contact</a></li>
         </ul>
@@ -36,24 +36,24 @@
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="../index.html">Home</a><span aria-hidden="true">/</span>
-          <a href="storyline.html">Projects</a><span aria-hidden="true">/</span>
+          <a href="curriculum-system.html">Projects</a><span aria-hidden="true">/</span>
           <span>Storyline Algebra 1</span>
         </nav>
-        <p class="eyebrow">eLearning · Articulate Storyline</p>
-        <h1>Interactive Algebra 1 eLearning Module</h1>
-        <p class="lead">A Storyline experience that turns a high-friction Algebra 1 concept into guided practice with worked examples, checks for understanding, and actionable feedback.</p>
+        <p class="eyebrow">eLearning · Articulate Storyline 360</p>
+        <h1>Interactive Algebra 1 Module: Rearranging Formulas</h1>
+        <p class="lead">A fully storyboarded Storyline 360 teaching module on literal equations — 16 slides of direct instruction, gated click-to-reveal interactions, a five-item graded quiz with misconception-targeted feedback, and a commit-first exit ticket.</p>
         <div class="case-meta">
           <span>Role: Instructional designer &amp; developer</span>
-          <span>Format: Interactive eLearning</span>
-          <span>Domain: Secondary mathematics</span>
+          <span>Build: 16 slides · 1280×720 · Modern player</span>
+          <span>Skill: Isolate a specified variable in a formula</span>
         </div>
       </div>
     </header>
 
       <nav class="container" aria-label="Project case studies" style="padding-top:1rem;padding-bottom:0;">
         <ul class="footer-nav" style="gap:0.75rem 1.25rem;">
-          <li><a href="storyline.html">Storyline</a></li>
           <li><a href="curriculum-system.html">Curriculum system</a></li>
+          <li><a href="storyline.html">Storyline</a></li>
           <li><a href="assessment-design.html">Assessment</a></li>
           <li><a href="professional-development.html">PD / adult learning</a></li>
           <li><a href="ai-workflow.html">AI workflow</a></li>
@@ -63,14 +63,14 @@
     <div class="container container--narrow">
       <section class="case-section" aria-labelledby="overview">
         <h2 id="overview">Overview</h2>
-        <p>Learners often stall when Algebra 1 shifts from procedures they can mimic to representations they must interpret—especially linear relationships presented across tables, graphs, and equations. This module was designed to reduce cognitive overload, make the “why” of each representation visible, and give learners structured chances to try, err, and revise.</p>
-        <p>The build is grounded in Robert’s Algebra 1 Storyline work (local project assets and storyboards) and is structured for Articulate Storyline delivery into Canvas or Schoology as SCORM or a web object, with consistent navigation and accessible interaction patterns.</p>
+        <p>This case study documents a specific, fully specified build: <strong>Algebra 1, Unit 1, Lesson 5 — Rearranging Formulas</strong> (literal equations). Learners already know how to solve for <em>x</em> when the answer is a number; this module teaches them to isolate any variable when the answer is <em>another formula</em> — the same inverse-operation moves, pointed at a letter instead of a value.</p>
+        <p>The module is designed slide-by-slide in a production storyboard: every screen, trigger, feedback string, restriction note, and narration line is written before development, so the Storyline build is assembly against a spec rather than improvisation in the tool. Delivery targets Canvas or Schoology as SCORM or a web object, with a Modern player, Prev/Next-only navigation, and no sidebar menu.</p>
       </section>
 
       <section class="case-section" aria-labelledby="challenge">
         <h2 id="challenge">Challenge</h2>
-        <p>Classroom observation and remediation work repeatedly showed the same pattern: students could sometimes compute a slope or plot points, yet struggled to explain what a rate of change meant, choose an appropriate representation, or recover after a mistake. Standalone worksheets and click-through slideshows did not provide the guided practice or timely feedback those learners needed.</p>
-        <p>The design problem was to create a self-paced module that still felt instructional—not a quiz in disguise—and that respected limited development time and LMS constraints.</p>
+        <p>Classroom and remediation experience shows exactly where literal equations break down: learners who can solve <code>3x + 5 = 20</code> freeze at <code>y = mx + b</code>, and the single most common wreck is a grouping error — dividing only one term (writing <em>x = y − b/m</em> instead of <em>x = (y − b)/m</em>). A second, quieter failure: nobody teaches when a rearrangement owes a restriction like <em>m ≠ 0</em>.</p>
+        <p>The design problem was a self-paced module that still felt instructional — not a quiz in disguise — where the known misconceptions are designed into the interactions and the feedback, not left for the teacher to catch later.</p>
       </section>
 
       <section class="case-section" aria-labelledby="audience">
@@ -109,19 +109,19 @@
         <ol class="process-steps">
           <li>
             <h3>Analyze</h3>
-            <p>Clarified the performance gap (representation fluency vs. isolated calculation), entry skills, and typical misconceptions drawn from teaching Algebra 1 and intensive courses.</p>
+            <p>Clarified the performance gap (rearranging any formula vs. solving one numeric equation), entry skills (inverse operations), and the two documented misconceptions — grouping errors and missing restrictions — drawn from teaching Algebra 1 and intensive courses.</p>
           </li>
           <li>
             <h3>Design</h3>
-            <p>Wrote measurable objectives, sequenced Gagné-style events (gain attention → present content → guided practice → independent practice → feedback), and sketched branched feedback for common errors.</p>
+            <p>Wrote the complete production storyboard: 16 slides sequenced as Gagné-style events, a four-move method ("Box the target. Undo in reverse order. Keep groups together. Check."), and per-choice feedback drafted for every quiz distractor before any development began.</p>
           </li>
           <li>
             <h3>Develop</h3>
-            <p>Built screens in Storyline with consistent chrome, keyboard-friendly controls, and worked-example → try-it cycles. Drafted feedback that names the error type, not only “try again.”</p>
+            <p>Specified screens for Storyline with a shared slide master (cream background, footer rule, brand mark), gated click-to-reveal states, and worked-example → try-it cycles. Feedback names the error type — "that only divides b" — not just "try again."</p>
           </li>
           <li>
             <h3>Evaluate (formative)</h3>
-            <p>Reviewed against multimedia principles (signaling, segmenting, coherence) and Quality Matters–aligned online design checks; revised wording and pacing based on walkthroughs.</p>
+            <p>Reviewed against multimedia principles (signaling, segmenting, coherence — max five lines of text per instructional slide, one idea per screen) and Quality Matters–aligned checks; revised wording and pacing in the storyboard before build.</p>
           </li>
         </ol>
       </section>
@@ -130,28 +130,116 @@
         <h2 id="decisions">Design decisions</h2>
         <ul class="decision-list">
           <li>
-            <strong>Worked examples before problem sets</strong>
-            <span>Follows evidence on worked-example effect for novices; fades support as confidence grows (gradual release).</span>
+            <strong>Three worked examples in rising structural difficulty</strong>
+            <span><em>A = lw</em> (one move) → <em>d = rt</em> (same move, new context, building transfer) → <em>y = mx + b</em> (two moves in reverse order, where the grouping misconception lives). Worked-example effect for novices; support fades into a try-it.</span>
           </li>
           <li>
-            <strong>One idea per screen, clear signaling</strong>
-            <span>Applies Mayer’s segmenting and signaling principles to keep visual attention on the representation that matters.</span>
+            <strong>The misconception gets its own screen real estate</strong>
+            <span>The final build of the <em>y = mx + b</em> example shows a struck-through "NOT THIS: x = y − b/m" strip beside the correct form. The most common error is taught, not merely penalized.</span>
           </li>
           <li>
-            <strong>Feedback that teaches</strong>
-            <span>Incorrect responses trigger brief corrective explanation tied to the misconception, then a chance to retry—supporting formative assessment, not mere scoring.</span>
+            <strong>Gated interactions force commitment before reveal</strong>
+            <span>Reveal bars unlock in order; the Next button stays disabled until all cards are flipped; the exit-ticket model answer is locked until the learner has typed a response. No passive click-through.</span>
           </li>
           <li>
-            <strong>Motivation via relevance and confidence</strong>
-            <span>ARCS-informed framing: why the skill matters in later algebra, plus early wins before higher-complexity items.</span>
+            <strong>Per-choice feedback tied to the specific error</strong>
+            <span>Each quiz distractor is a named misconception with its own feedback string — "Close — but that only divides b. The entire quantity y − b must be divided by m." Formative assessment, not mere scoring.</span>
+          </li>
+          <li>
+            <strong>Restrictions as a first-class habit</strong>
+            <span>Every division by a variable earns an on-screen restriction chip (<em>l ≠ 0</em>, <em>r ≠ 0</em>, <em>m ≠ 0</em>) with a plain-language why — and "restrictions count" is an explicit quiz rule.</span>
           </li>
         </ul>
       </section>
 
       <section class="case-section" aria-labelledby="solution">
-        <h2 id="solution">Solution</h2>
-        <p>The module opens with a short orientation and objective screen, then moves through short instructional segments that juxtapose table, graph, and equation views of the same relationship. Learners complete guided interactions (match representations, predict a next value, interpret a slope in context) before a short independent practice set with teaching feedback.</p>
-        <p>Navigation is linear by default with optional review of prior screens, so learners who need to revisit a model can do so without hunting through a maze of menus.</p>
+        <h2 id="solution">Solution — the 16-slide architecture</h2>
+        <p>Every slide has one instructional job. Instruction climbs three worked examples of rising structural difficulty, commitment is forced before every reveal, and the graded quiz mirrors the exact formulas the instruction modeled — plus one transfer item.</p>
+        <ol class="slide-map" aria-label="Slide-by-slide module map">
+          <li><span class="slide-map__tag">Static</span><strong>Title + goal</strong><span>Wordmark, goal band: "isolate any variable — and say when it's allowed."</span></li>
+          <li><span class="slide-map__tag">Static</span><strong>Big idea</strong><span><em>A = lw</em> ⟷ <em>w = A/l</em>: same fact, pointed at a different letter.</span></li>
+          <li><span class="slide-map__tag slide-map__tag--interact">Interactive</span><strong>Inverse ops recap</strong><span>Four click-to-reveal cards; Next stays disabled until all four flip.</span></li>
+          <li><span class="slide-map__tag">Build</span><strong>The method</strong><span>Four moves: box the target · undo in reverse · keep groups together · check.</span></li>
+          <li><span class="slide-map__tag">Worked ex. 1</span><strong>A = lw → w</strong><span>Area diagram; one move; restriction <em>l ≠ 0</em> earned on screen.</span></li>
+          <li><span class="slide-map__tag">Worked ex. 2</span><strong>d = rt → t</strong><span>Rate–time diagram; identical structure — near transfer by design.</span></li>
+          <li><span class="slide-map__tag">Worked ex. 3</span><strong>y = mx + b → x</strong><span>Reverse order + grouping; "NOT THIS" misconception strip on final build.</span></li>
+          <li><span class="slide-map__tag slide-map__tag--interact">Interactive</span><strong>Try it: P = 2l + 2w</strong><span>Work on paper first; reveal bars unlock strictly in order.</span></li>
+          <li><span class="slide-map__tag">Static</span><strong>Quiz intro</strong><span>Rules up front: one attempt, instant feedback, restrictions count.</span></li>
+          <li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q1</span><strong>A = lw for w</strong><span>Direct check of worked example 1.</span></li>
+          <li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q2</span><strong>d = rt for t</strong><span>Order matters: <em>d/r</em>, not <em>r/d</em>.</span></li>
+          <li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q3</span><strong>y = mx + b for x</strong><span>Grouping-error distractor gets its own targeted feedback string.</span></li>
+          <li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q4</span><strong>P = 2l + 2w for w</strong><span>Per-choice feedback names each specific mistake.</span></li>
+          <li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q5</span><strong>V = ⅓Bh for h</strong><span>Transfer item: clear the fraction first, then divide.</span></li>
+          <li><span class="slide-map__tag">Results</span><strong>80% to pass</strong><span>Success and retry layers; Review Quiz on both paths.</span></li>
+          <li><span class="slide-map__tag slide-map__tag--interact">Exit ticket</span><strong>C = 2πr for r</strong><span>Model answer locked until the learner types a response.</span></li>
+        </ol>
+        <p style="margin-top:1.5rem;">Navigation is linear by default with optional review of prior screens, so learners who need to revisit a model can do so without hunting through menus.</p>
+      </section>
+
+      <section class="case-section" aria-labelledby="spec">
+        <h2 id="spec">Visual &amp; interaction specification</h2>
+        <p class="text-muted">The module ships with a written design spec so the Storyline build inherits its look instead of improvising it — the same design-system discipline used across the REM curriculum work.</p>
+        <div class="two-col" style="margin-top:1.5rem;">
+          <div>
+            <h3 style="font-size:1rem;">Palette (flat fills only — no neon, no gradients)</h3>
+            <ul class="swatch-row" style="margin-top:0.75rem;">
+              <li><span class="swatch" style="background:#14295C;"></span>Navy #14295C<br>text &amp; formulas</li>
+              <li><span class="swatch" style="background:#0D8A7D;"></span>Teal #0D8A7D<br>targets &amp; correct</li>
+              <li><span class="swatch" style="background:#9B4DCA;"></span>Violet #9B4DCA<br>moves &amp; affordances</li>
+              <li><span class="swatch" style="background:#F0A500;"></span>Amber #F0A500<br>"check it" boxes</li>
+              <li><span class="swatch" style="background:#FDFBF6;border-color:#c9c2b6;"></span>Cream #FDFBF6<br>background</li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="font-size:1rem;">Typography &amp; layout rules</h3>
+            <ul style="font-size:0.875rem;color:var(--stone-600);">
+              <li>48pt slide titles · 44pt display formulas · 30pt body — sized for projection and small screens, never below spec minimums</li>
+              <li>Maximum five lines of text on any instruction slide; one idea per screen (Mayer segmenting)</li>
+              <li>Restriction notes always 28pt teal — a consistent visual signal for "this move has a condition"</li>
+              <li>Shared slide master: footer rule, lesson tag, and brand mark on every slide including quiz slides</li>
+              <li>Color is semantic: teal = target/correct, violet = the move to make, amber = verify</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="feedback-design">
+        <h2 id="feedback-design">Feedback that teaches — designed before development</h2>
+        <p>The highest-value screen in the module is the one that confronts the predictable error. On the <em>y = mx + b</em> worked example, the final build places the correct form beside a struck-through wrong form:</p>
+        <div class="not-this" role="img" aria-label="Reproduction of the module's misconception strip: the incorrect form x equals y minus b over m is struck through, next to the correct form x equals the quantity y minus b, divided by m">
+          <div class="not-this__wrong">
+            <span class="not-this__label">Not this</span>
+            <span class="not-this__math"><s>x = y − b/m</s></span>
+            <p>That only divides <em>b</em>. Keep <em>y − b</em> together.</p>
+          </div>
+          <div class="not-this__right">
+            <span class="not-this__label">This</span>
+            <span class="not-this__math">x = (y − b) / m</span>
+            <p>The whole quantity <em>y − b</em> is divided by <em>m</em> · <em>m ≠ 0</em></p>
+          </div>
+        </div>
+        <p style="margin-top:2rem;">The same misconception returns as a quiz distractor — and its feedback names the error instead of restating the rule:</p>
+        <div class="feedback-samples">
+          <blockquote class="feedback-sample">
+            <span class="feedback-sample__ctx">Q3 · learner picks x = y − b/m</span>
+            <p>"Close — but that only divides <em>b</em> by <em>m</em>. The entire quantity <em>y − b</em> must be divided by <em>m</em>: x = (y − b) / m."</p>
+          </blockquote>
+          <blockquote class="feedback-sample">
+            <span class="feedback-sample__ctx">Q4 · learner picks w = P/2 − 2l</span>
+            <p>"You divided <em>P</em> by 2 but not <em>2l</em>. Both terms get divided: w = (P − 2l) / 2 = P/2 − l."</p>
+          </blockquote>
+          <blockquote class="feedback-sample">
+            <span class="feedback-sample__ctx">Q4 · learner stops early at w = P − 2l</span>
+            <p>"You stopped one step early. After subtracting <em>2l</em> you still have <em>2w</em>, so divide both sides by 2."</p>
+          </blockquote>
+        </div>
+        <h3 style="margin-top:2.5rem;font-size:1rem;">Commitment gates (trigger design)</h3>
+        <ul>
+          <li><strong>Recap slide:</strong> Next button disabled until all four inverse-operation cards are revealed — no skimming past prerequisites.</li>
+          <li><strong>Try-it slide:</strong> reveal bars unlock strictly in order (Step 1 → Step 2 → answer), so learners cannot jump to the answer.</li>
+          <li><strong>Exit ticket:</strong> the "Show the model answer" button stays disabled until the response field is non-blank — commit first, then compare.</li>
+          <li><strong>Quiz:</strong> one attempt per item, 10 points each, 80% pass with review and retry paths on the results slide.</li>
+        </ul>
       </section>
 
       <section class="case-section" aria-labelledby="tools">
@@ -165,55 +253,24 @@
       </section>
 
       <section class="case-section" aria-labelledby="artifacts">
-        <h2 id="artifacts">Screenshots / artifacts</h2>
-        <p class="text-muted"><strong>Honest note:</strong> full Storyline course UI captures are still pending. Below: instructional diagrams from the Algebra 1 Storyline rearrange-formulas module, plus a REM formative page that parallels the worked-example / check pattern used in the eLearning build.</p>
+        <h2 id="artifacts">Artifacts from the build</h2>
+        <p class="text-muted"><strong>Honest note:</strong> published Storyline UI captures are pending; the artifacts below are the module's actual instructional assets and the parallel formative pattern from the classroom system. No mocked-up course screenshots appear on this page.</p>
         <div class="artifact-grid" style="margin-top:1.5rem;">
           <figure class="artifact">
-            <img src="../assets/images/storyline-diagram-rate.png" width="960" height="600" alt="Instructional diagram relating rate, time, and distance for formula rearrangement">
-            <figcaption><strong>Worked-example visual</strong> — rate–time–distance diagram used in Storyline content development for rearranging formulas.</figcaption>
+            <img src="../assets/images/storyline-diagram-area.png" width="960" height="600" alt="Labeled rectangle diagram relating area, length, and width — the instructional visual for worked example 1">
+            <figcaption><strong>Worked example 1 visual (slide 5)</strong> — the labeled area model that anchors <em>A = lw → w = A/l</em>.</figcaption>
           </figure>
           <figure class="artifact">
-            <img src="../assets/images/storyline-diagram-area.png" width="960" height="600" alt="Instructional diagram for rectangle area formula rearrangement">
-            <figcaption><strong>Concept diagram</strong> — area model supporting formula isolation and transfer.</figcaption>
+            <img src="../assets/images/storyline-diagram-rate.png" width="960" height="600" alt="Labeled diagram relating rate, time, and distance — the instructional visual for worked example 2">
+            <figcaption><strong>Worked example 2 visual (slide 6)</strong> — the rate–time–distance model reusing the same diagram grammar for near transfer.</figcaption>
           </figure>
           <figure class="artifact">
-            <img src="../assets/images/rem-eoc-practice.png" width="960" height="600" alt="REM practice page showing formative evidence trail parallel to Storyline checks">
-            <figcaption><strong>Parallel formative pattern</strong> — classroom practice engine with evidence and verification steps that mirror Storyline formative checks.</figcaption>
+            <img src="../assets/images/rem-eoc-practice.png" width="960" height="600" alt="REM practice page showing a formative evidence trail parallel to the module's checks">
+            <figcaption><strong>Parallel formative pattern</strong> — the classroom practice engine whose visible-check habit the module's amber "check it" boxes reproduce on screen.</figcaption>
           </figure>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="storyboard">
-        <h2 id="storyboard">Storyboard frame sequence</h2>
-        <p class="text-muted">Ordered frames that stand in for a click-through until Storyline UI screenshots arrive: model → transfer diagram → REM formative parallel → student practice page.</p>
-        <div class="walkthrough-frames" style="margin-top:1.5rem;">
-          <figure class="walkthrough-frame">
-            <span class="walkthrough-frame__num" aria-hidden="true">1</span>
-            <div class="walkthrough-frame__media">
-              <img src="../assets/images/storyline-diagram-rate.png" width="640" height="400" alt="Rate diagram storyboard frame" loading="lazy">
-            </div>
-            <figcaption><strong>Frame 1 — Present content</strong> Rate–time–distance model for formula rearrangement.</figcaption>
-          </figure>
-          <figure class="walkthrough-frame">
-            <span class="walkthrough-frame__num" aria-hidden="true">2</span>
-            <div class="walkthrough-frame__media">
-              <img src="../assets/images/storyline-diagram-area.png" width="640" height="400" alt="Area diagram storyboard frame" loading="lazy">
-            </div>
-            <figcaption><strong>Frame 2 — Guided transfer</strong> Area model supporting isolation of a different variable.</figcaption>
-          </figure>
-          <figure class="walkthrough-frame">
-            <span class="walkthrough-frame__num" aria-hidden="true">3</span>
-            <div class="walkthrough-frame__media">
-              <img src="../assets/images/rem-eoc-practice.png" width="640" height="400" alt="EOC practice parallel formative frame" loading="lazy">
-            </div>
-            <figcaption><strong>Frame 3 — Formative check</strong> REM EOC practice page paralleling Storyline checks for understanding.</figcaption>
-          </figure>
-          <figure class="walkthrough-frame">
-            <span class="walkthrough-frame__num" aria-hidden="true">4</span>
-            <div class="walkthrough-frame__media">
-              <img src="../assets/images/rem-quiz-student.png" width="640" height="400" alt="REM quiz student page as independent practice frame" loading="lazy">
-            </div>
-            <figcaption><strong>Frame 4 — Independent practice pattern</strong> REM quiz/student formative page standing in for Storyline try-it screens (UI captures pending).</figcaption>
+          <figure class="artifact">
+            <img src="../assets/images/rem-quiz-student.png" width="960" height="600" alt="REM formative quiz student page with structured response space">
+            <figcaption><strong>Parallel independent practice</strong> — the print formative page whose item structure the graded quiz mirrors online.</figcaption>
           </figure>
         </div>
       </section>
@@ -271,7 +328,7 @@
         </div>
         <ul class="footer-nav">
           <li><a href="../about.html">About</a></li>
-          <li><a href="storyline.html">Projects</a></li>
+          <li><a href="curriculum-system.html">Projects</a></li>
           <li><a href="../resume.html">Resume</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </ul>

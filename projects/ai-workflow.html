@@ -23,7 +23,7 @@
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../about.html">About</a></li>
-          <li><a href="storyline.html" aria-current="page">Projects</a></li>
+          <li><a href="curriculum-system.html" aria-current="page">Projects</a></li>
           <li><a href="../resume.html">Resume</a></li>
           <li><a class="nav-cta" href="../contact.html">Contact</a></li>
         </ul>
@@ -36,7 +36,7 @@
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="../index.html">Home</a><span aria-hidden="true">/</span>
-          <a href="storyline.html">Projects</a><span aria-hidden="true">/</span>
+          <a href="curriculum-system.html">Projects</a><span aria-hidden="true">/</span>
           <span>AI-enhanced ID workflow</span>
         </nav>
         <p class="eyebrow">Optional · Modern ID practice</p>
@@ -52,8 +52,8 @@
 
       <nav class="container" aria-label="Project case studies" style="padding-top:1rem;padding-bottom:0;">
         <ul class="footer-nav" style="gap:0.75rem 1.25rem;">
-          <li><a href="storyline.html">Storyline</a></li>
           <li><a href="curriculum-system.html">Curriculum system</a></li>
+          <li><a href="storyline.html">Storyline</a></li>
           <li><a href="assessment-design.html">Assessment</a></li>
           <li><a href="professional-development.html">PD / adult learning</a></li>
           <li><a href="ai-workflow.html">AI workflow</a></li>
@@ -158,20 +158,55 @@
       </section>
 
       <section class="case-section" aria-labelledby="artifacts">
-        <h2 id="artifacts">Screenshots / artifacts</h2>
-        <div class="artifact-grid" style="margin-top:1.5rem;">
-          <figure class="artifact">
-            <img class="placeholder-fig" src="../assets/images/placeholders/ai-workflow.svg" width="960" height="600" alt="Placeholder diagram of AI-assisted instructional design workflow">
-            <figcaption><strong>Workflow diagram</strong> — Brief → draft → critique → revise → produce.</figcaption>
-          </figure>
-          <figure class="artifact">
-            <img class="placeholder-fig" src="../assets/images/placeholders/ai-prompt.svg" width="960" height="600" alt="Placeholder for human-in-the-loop review gate checklist">
-            <figcaption><strong>Review gate</strong> — human critique checklist before learner-facing use.</figcaption>
-          </figure>
-          <figure class="artifact">
-            <img class="placeholder-fig" src="../assets/images/placeholders/ai-output.svg" width="960" height="600" alt="Placeholder comparing AI draft to designer-revised output">
-            <figcaption><strong>Draft-to-revision comparison</strong> — example of AI draft improved by designer judgment.</figcaption>
-          </figure>
+        <h2 id="artifacts">The workflow, documented</h2>
+        <p class="text-muted">The process artifacts below are authored for this case study — they document the actual working loop rather than standing in for screenshots.</p>
+        <ol class="flow-diagram" aria-label="AI-assisted instructional design workflow">
+          <li>
+            <div class="flow-step"><strong>Brief</strong><span>Objective, audience, constraints, forbidden shortcuts</span></div>
+          </li>
+          <li>
+            <div class="flow-step"><strong>AI draft</strong><span>Outlines, alternate explanations, distractor candidates</span></div>
+          </li>
+          <li class="flow-gate">
+            <div class="flow-step"><strong>Critique gate</strong><span>Human review — nothing passes on plausibility alone</span></div>
+          </li>
+          <li>
+            <div class="flow-step"><strong>Revise</strong><span>Designer rewrites; weak output is discarded, not patched</span></div>
+          </li>
+          <li class="flow-gate">
+            <div class="flow-step"><strong>SME / self check</strong><span>Math fidelity and alignment verified by content expertise</span></div>
+          </li>
+          <li>
+            <div class="flow-step"><strong>Produce</strong><span>Accepted language moves into Storyline, templates, items</span></div>
+          </li>
+        </ol>
+        <div class="artifact-columns">
+          <div class="doc-artifact">
+            <div class="doc-artifact__head">Critique gate checklist <span>applied before anything reaches a learner</span></div>
+            <div class="doc-artifact__body">
+              <ul class="check-rows">
+                <li>Mathematically correct — every worked step verified by hand<span>A plausible-sounding wrong explanation is the #1 failure mode</span></li>
+                <li>Aligned to the stated objective and standard<span>Clever but off-construct tasks are rejected</span></li>
+                <li>Cognitive demand preserved<span>No silent downgrade from reasoning to recall</span></li>
+                <li>Distractors map to real misconceptions<span>Not random wrong numbers</span></li>
+                <li>Tone, accessibility, and reading load designer-owned<span>AI never sets the voice of learner-facing text</span></li>
+                <li>No learner PII ever enters a prompt<span>Privacy is a hard gate, not a preference</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="doc-artifact">
+            <div class="doc-artifact__head">Where AI is allowed <span>and where it is not</span></div>
+            <div class="doc-artifact__body">
+              <ul class="check-rows">
+                <li>Allowed: first-pass outlines and structural drafts<span>Cheap to generate, cheap to discard</span></li>
+                <li>Allowed: alternate explanations of a concept I already verified<span>Useful for differentiation and re-teaching paths</span></li>
+                <li>Allowed: distractor brainstorming against a named misconception<span>Designer selects and rewrites the survivors</span></li>
+                <li>Human-only: learning objectives and assessment decisions<span>What gets measured is never delegated</span></li>
+                <li>Human-only: final feedback strings and worked examples<span>The teaching voice and the mathematics are authored</span></li>
+                <li>Human-only: anything a learner sees without review<span>By definition, nothing</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -227,7 +262,7 @@
         </div>
         <ul class="footer-nav">
           <li><a href="../about.html">About</a></li>
-          <li><a href="storyline.html">Projects</a></li>
+          <li><a href="curriculum-system.html">Projects</a></li>
           <li><a href="../resume.html">Resume</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </ul>
