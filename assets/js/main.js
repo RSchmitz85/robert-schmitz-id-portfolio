@@ -1,94 +1,77 @@
-/**
- * Robert Schmitz ID Portfolio — light JS
- * 1) Mobile nav toggle
- * 2) Artifact lightbox: click any lesson-page image to inspect it full size
- */
+/** Progressive enhancement for navigation and full-page artifact inspection. */
 (function () {
   "use strict";
-
-  /* ---------- Mobile nav ---------- */
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".site-nav");
   if (toggle && nav) {
-    var setOpen = function (open) {
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    var setOpen = function (open, restoreFocus) {
+      toggle.setAttribute("aria-expanded", String(open));
       nav.classList.toggle("is-open", open);
       toggle.textContent = open ? "Close" : "Menu";
+      if (restoreFocus) toggle.focus();
     };
     toggle.addEventListener("click", function () {
       setOpen(toggle.getAttribute("aria-expanded") !== "true");
     });
-    nav.querySelectorAll("a").forEach(function (link) {
-      link.addEventListener("click", function () { setOpen(false); });
+    nav.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setOpen(false);
     });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") setOpen(false);
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && nav.classList.contains("is-open")) setOpen(false, true);
     });
-    document.addEventListener("click", function (e) {
-      if (!nav.classList.contains("is-open")) return;
-      if (nav.contains(e.target) || toggle.contains(e.target)) return;
-      setOpen(false);
+    document.addEventListener("click", function (event) {
+      if (nav.classList.contains("is-open") && !nav.contains(event.target) && !toggle.contains(event.target)) setOpen(false);
     });
+    document.documentElement.classList.add("nav-ready");
   }
-
-  /* ---------- Artifact lightbox ---------- */
-  var zoomTargets = document.querySelectorAll(
-    ".hero-pair__item img, .pair-fig img, .artifact img, .cover-row img, " +
-    ".practice-tile__img img, .walkthrough-frame__media img"
-  );
-  if (!zoomTargets.length) return;
-
-  var box = document.createElement("div");
+  var targets = document.querySelectorAll("a.artifact-zoom");
+  if (!targets.length || typeof HTMLDialogElement === "undefined") return;
+  var box = document.createElement("dialog");
   box.className = "lightbox";
-  box.setAttribute("role", "dialog");
-  box.setAttribute("aria-modal", "true");
-  box.setAttribute("aria-label", "Enlarged artifact view");
-  box.innerHTML =
-    '<button type="button" class="lightbox__close">Close ✕</button>' +
-    '<img alt="">' +
+  box.setAttribute("aria-label", "Enlarged artifact");
+  box.innerHTML = '<div class="lightbox__toolbar">' +
+    '<a class="lightbox__original" target="_blank" rel="noopener noreferrer">Open full-size image (new tab)</a>' +
+    '<button type="button" class="lightbox__close" autofocus>Close ✕</button></div>' +
+    '<div class="lightbox__image-area"><img alt=""></div>' +
     '<p class="lightbox__caption"></p>';
   document.body.appendChild(box);
-
   var boxImg = box.querySelector("img");
-  var boxCap = box.querySelector(".lightbox__caption");
-  var closeBtn = box.querySelector(".lightbox__close");
-  var lastFocus = null;
-
-  function openBox(img) {
-    lastFocus = img;
-    boxImg.src = img.currentSrc || img.src;
-    boxImg.alt = img.alt || "";
-    boxCap.textContent = img.alt || "";
-    box.classList.add("is-open");
-    document.body.style.overflow = "hidden";
-    closeBtn.focus();
-  }
-  function closeBox() {
-    box.classList.remove("is-open");
-    boxImg.src = "";
-    document.body.style.overflow = "";
-    if (lastFocus) lastFocus.focus();
-  }
-
-  zoomTargets.forEach(function (img) {
-    img.classList.add("zoomable");
-    img.setAttribute("tabindex", "0");
-    img.setAttribute("role", "button");
-    img.setAttribute("aria-label", "Enlarge: " + (img.alt || "artifact image"));
-    img.addEventListener("click", function () { openBox(img); });
-    img.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        openBox(img);
-      }
+  var caption = box.querySelector(".lightbox__caption");
+  var original = box.querySelector(".lightbox__original");
+  var close = box.querySelector(".lightbox__close");
+  var lastFocus;
+  var previousOverflow;
+  targets.forEach(function (link) {
+    link.setAttribute("aria-haspopup", "dialog");
+    link.addEventListener("click", function (event) {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      var img = link.querySelector("img");
+      lastFocus = link;
+      boxImg.src = link.href;
+      boxImg.alt = img.alt;
+      caption.textContent = img.alt;
+      original.href = link.href;
+      previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      box.showModal();
+      close.focus();
     });
   });
-
-  closeBtn.addEventListener("click", closeBox);
-  box.addEventListener("click", function (e) {
-    if (e.target === box || e.target === boxCap) closeBox();
+  close.addEventListener("click", function () { box.close(); });
+  box.addEventListener("click", function (event) {
+    if (event.target === box || event.target.classList.contains("lightbox__image-area")) box.close();
   });
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && box.classList.contains("is-open")) closeBox();
+  box.addEventListener("keydown", function (event) {
+    if (event.key !== "Tab") return;
+    if (event.shiftKey && document.activeElement === original) {
+      event.preventDefault(); close.focus();
+    } else if (!event.shiftKey && document.activeElement === close) {
+      event.preventDefault(); original.focus();
+    }
+  });
+  box.addEventListener("close", function () {
+    document.body.style.overflow = previousOverflow;
+    if (lastFocus && lastFocus.isConnected) lastFocus.focus({ preventScroll: true });
   });
 })();

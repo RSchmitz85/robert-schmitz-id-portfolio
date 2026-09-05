@@ -1,498 +1,203 @@
 ﻿<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Case study: a 144-lesson Algebra 1 Guided Notes course designed assessment-first, the production engine behind it, and the practice systems around it — by Robert Schmitz (Real Engagement with Mathematics).">
-  <title>Scalable Algebra 1 Curriculum Architecture | Robert Schmitz</title>
-  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="../assets/images/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Robert Schmitz — Instructional Designer">
-  <meta property="og:title" content="Scalable Algebra 1 Curriculum Architecture | Robert Schmitz">
-  <meta property="og:description" content="Case study: a 144-lesson Guided Notes course with annotated teacher editions, a rules-driven production engine, and reusable practice systems on one course spine.">
-  <meta property="og:url" content="https://rschmitz85.github.io/robert-schmitz-id-portfolio/projects/curriculum-system.html">
-  <meta property="og:image" content="https://rschmitz85.github.io/robert-schmitz-id-portfolio/assets/images/og-card.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Robert Schmitz — Instructional Designer. Real lesson-system artifacts: a worked Punchline teacher key beside a Color By Number student and teacher pair.">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/styles.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Representative REM lesson materials show fading support, aligned practice, and annotated teacher editions within a 144-lesson course map." name="description"/>
+<title>Algebra 1 Curriculum Architecture | Robert Schmitz</title>
+<link href="../assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../assets/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="article" property="og:type"/>
+<meta content="Robert Schmitz — Instructional Designer" property="og:site_name"/>
+<meta content="Algebra 1 Curriculum Architecture | Robert Schmitz" property="og:title"/>
+<meta content="Representative REM lesson materials show fading support, aligned practice, and annotated teacher editions within a 144-lesson course map." property="og:description"/>
+<meta content="https://rschmitz85.github.io/robert-schmitz-id-portfolio/projects/curriculum-system.html" property="og:url"/>
+<meta content="https://rschmitz85.github.io/robert-schmitz-id-portfolio/assets/images/og-card.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Robert Schmitz — Instructional Designer. Real lesson-system artifacts: a worked Punchline teacher key beside a Color By Number student and teacher pair." property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/styles.css" rel="stylesheet"/>
+<link href="https://rschmitz85.github.io/robert-schmitz-id-portfolio/projects/curriculum-system.html" rel="canonical"/></head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="../index.html">
-        <span class="logo__name">Robert Schmitz</span>
-        <span class="logo__role">Instructional Designer</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="curriculum-system.html" aria-current="page">Projects</a></li>
-          <li><a href="../resume.html">Resume</a></li>
-          <li><a class="nav-cta" href="../contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <header class="page-header">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a><span aria-hidden="true">/</span>
-          <a href="curriculum-system.html">Projects</a><span aria-hidden="true">/</span>
-          <span>Curriculum architecture</span>
-        </nav>
-        <p class="eyebrow">Curriculum systems design</p>
-        <h1>Scalable Algebra 1 Curriculum Architecture</h1>
-        <p class="lead">A 144-lesson Guided Notes course — student reconstruction pages paired with annotated teacher editions — designed assessment-first, produced through a rules-driven engine, and surrounded by five reusable practice systems.</p>
-        <div class="case-meta">
-          <span>Role: Curriculum architect &amp; designer</span>
-          <span>Evidence: Real Engagement with Mathematics (REM)</span>
-          <span>Scale: 144 lessons · 10 units</span>
-        </div>
-      </div>
-    </header>
-
-    <nav class="case-tabs" aria-label="Project case studies">
-      <div class="container">
-        <ul>
-          <li><a href="curriculum-system.html" aria-current="page">Curriculum system</a></li>
-          <li><a href="storyline.html">Storyline</a></li>
-          <li><a href="assessment-design.html">Assessment</a></li>
-          <li><a href="professional-development.html">PD / adult learning</a></li>
-          <li><a href="ai-workflow.html">AI workflow</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container">
-      <section class="case-section" aria-labelledby="overview">
-        <h2 id="overview">Overview</h2>
-        <p>The core of this system is a <strong>Guided Notes course: 144 lessons across ten units</strong>. Every lesson ships twice — a student <em>reconstruction</em> page set the learner completes (predictions, vocabulary, every solve) and a teacher edition with each response already annotated in red.</p>
-        <p>One course spine governs everything — <strong>Conceptual → Visual → Procedural → Transfer</strong> — and each lesson runs the same six-phase rhythm, <strong>Activate → Model → Guide → Apply → Reflect → Extend</strong>. Around the core: five practice engines treated as instructional asset systems, all fed by a production engine that refuses to render a page until the lesson's metadata, models, and assets resolve.</p>
-      </section>
-
-      <section class="case-section two-col" aria-labelledby="challenge">
-        <div>
-          <h2 id="challenge">Challenge</h2>
-          <p>Algebra 1 programs accumulate disconnected one-off lessons, so teachers rebuild structure every week. The design problem: a <strong>scalable architecture</strong> — shared lesson phases, predictable asset types, and page systems that cut design friction without lowering mathematical rigor.</p>
-          <h2 class="u-mt-8" id="audience">Audience</h2>
-          <ul>
-            <li>Secondary Algebra 1 teachers running a coherent unit sequence</li>
-            <li>Intervention settings that need structure without diluted rigor</li>
-            <li>Curriculum leads who need templates that travel across topics</li>
-          </ul>
-        </div>
-        <div>
-          <h2 id="role">My role</h2>
-          <ul>
-            <li>Course architecture: B.E.S.T. benchmark-cluster crosswalk, unit big ideas, per-unit misconception registry</li>
-            <li>Guided Notes reconstruction template + annotated teacher edition</li>
-            <li>Activate→Extend lesson spine and the practice-system templates</li>
-            <li>Production pipeline spec: metadata → asset resolution → renderers → teacher-key mode → publication gate</li>
-            <li>Student pages, teacher editions, and cover systems as exemplars</li>
-          </ul>
-          <h2 class="u-mt-8" id="constraints">Constraints</h2>
-          <ul>
-            <li>Teachable in real class periods; print- and LMS-friendly</li>
-            <li>One professional visual system across every asset type</li>
-            <li>Templates must carry many topics without rewriting the pedagogy</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="artifacts">
-        <h2 id="artifacts">Artifacts — the instructional core first</h2>
-        <p class="text-muted">Shipped REM pages, organized the way the system is organized: the Guided Notes core, the course map, then each practice engine as a student page beside its worked teacher key. Click any page to enlarge.</p>
-
-        <h3 class="u-mt-6">Guided Notes — student reconstruction</h3>
-        <p class="text-muted u-mt-4">U1-L01, <em>Solving One-Step Equations</em>, exactly as shipped.</p>
-        <div class="pair-grid u-mt-4">
-          <figure class="pair-fig">
-            <span class="pair-tag">Student</span>
-            <img src="../assets/images/gn-u1-l01-student-1.png" width="612" height="792" alt="Guided Notes student page one: Activate band with a bike-repair hook, predict-before-solving prompt, and quick retrieval; Model band with the big idea, a four-step routine, balance-scale and algebra-tile worked examples, and vocabulary blanks" loading="lazy">
-            <figcaption><strong>Activate → Model.</strong> A hook with a <em>predict-before-solving</em> stake; Quick Retrieval marked "recall only — do not solve the hook"; then the big idea, a four-step routine, and worked examples on the unit's designated visual models.</figcaption>
-          </figure>
-          <figure class="pair-fig pair-fig--teacher">
-            <span class="pair-tag">Teacher</span>
-            <img src="../assets/images/gn-u1-l01-teacher-1.png" width="1020" height="1320" alt="The same Guided Notes page in the teacher edition, with the hook prediction, all three retrieval answers, and every vocabulary blank answered in red annotation" loading="lazy">
-            <figcaption><strong>Every blank answered.</strong> The teacher edition is the completed reconstruction — the facilitator sees what a finished page should say, not a number list.</figcaption>
-          </figure>
-        </div>
-        <div class="pair-grid u-mt-4">
-          <figure class="pair-fig">
-            <span class="pair-tag">Student</span>
-            <img src="../assets/images/gn-u1-l01-student-2.png" width="1020" height="1320" alt="Guided Notes guided-practice page with three fading tiers — first move shown beside visual models, brief cues, then bare problems — plus a write-the-equation context item and two solve-and-check readiness items" loading="lazy">
-            <figcaption><strong>Support fades on schedule.</strong> Three tiers — first move shown, brief cue, bare problem — then readiness items requiring a substitution check <em>in the original equation</em>, because checking the transformed one is a documented misconception.</figcaption>
-          </figure>
-          <figure class="pair-fig pair-fig--teacher">
-            <span class="pair-tag">Teacher</span>
-            <img src="../assets/images/gn-u1-l01-teacher-2.png" width="1020" height="1320" alt="Annotated teacher edition of the guided-practice page: all sixteen items solved in red with the named inverse operation and written substitution checks" loading="lazy">
-            <figcaption><strong>Worked, not listed.</strong> All sixteen items solved in red with the named operation and written check. A <em>Daily Core / Additional Practice</em> split caps the required set.</figcaption>
-          </figure>
-        </div>
-
-        <div class="artifact-grid artifact-grid--lead u-mt-8">
-          <figure class="artifact">
-            <img src="../assets/images/rem-roadmap-detail.png" width="960" height="600" alt="Algebra 1 lesson roadmap showing units, lessons, benchmarks, and product formats">
-            <figcaption><strong>Curriculum roadmap</strong> — units, lessons, benchmarks, lesson type, and which practice engine each lesson runs.</figcaption>
-          </figure>
-        </div>
-
-        <h3 class="u-mt-10">Punchline Math — self-checking practice</h3>
-        <div class="pair-grid u-mt-4">
-          <figure class="pair-fig">
-            <span class="pair-tag">Student</span>
-            <img src="../assets/images/rem-punchline-decoder.png" width="1268" height="980" alt="Punchline Math student page with ten equations, decoder strip, and punchline ticket trail" loading="lazy">
-            <figcaption><strong>Solve → decode → reveal.</strong> Each answer maps to a decoder chunk and a numbered ticket; the assembled punchline is the self-check.</figcaption>
-          </figure>
-          <figure class="pair-fig pair-fig--teacher">
-            <span class="pair-tag">Teacher</span>
-            <img src="../assets/images/rem-punchline-teacher.png" width="1268" height="980" alt="Punchline Math teacher key with every answer worked, checked by substitution, and decoded" loading="lazy">
-            <figcaption><strong>Worked, checked, decoded.</strong> Every solution shown with its substitution check and decoder mapping — a diagnosis tool.</figcaption>
-          </figure>
-        </div>
-
-        <h3 class="u-mt-10">Color By Number — visual self-verification</h3>
-        <div class="pair-grid u-mt-4">
-          <figure class="pair-fig">
-            <span class="pair-tag">Student</span>
-            <img src="../assets/images/rem-cbn-bakery-student.png" width="825" height="1067" alt="Color By Number numbered line-art scene keyed to equation answers" loading="lazy">
-            <figcaption><strong>Numbered scene.</strong> Twenty regions keyed to a ten-color answer key — two problems per color, every crevice numbered.</figcaption>
-          </figure>
-          <figure class="pair-fig pair-fig--teacher">
-            <span class="pair-tag">Teacher</span>
-            <img src="../assets/images/rem-cbn-bakery-teacher.png" width="825" height="1067" alt="The same Color By Number scene realistically colored on the teacher key" loading="lazy">
-            <figcaption><strong>Realistically colored key.</strong> The teacher sees what a correct page looks like at a glance.</figcaption>
-          </figure>
-        </div>
-
-        <h3 class="u-mt-10">Scavenger Hunt — movement with accountability</h3>
-        <div class="pair-grid u-mt-4">
-          <figure class="pair-fig">
-            <span class="pair-tag">Student</span>
-            <img src="../assets/images/rem-scavenger-station.png" width="980" height="1268" alt="Scavenger Hunt student launch page explaining the solve, signal, move route loop" loading="lazy">
-            <figcaption><strong>The route loop.</strong> Solve at a station, follow the solution to its arrival signal, continue until the loop closes. Wrong answers dead-end — the route is the feedback.</figcaption>
-          </figure>
-          <figure class="pair-fig pair-fig--teacher">
-            <span class="pair-tag">Teacher</span>
-            <img src="../assets/images/rem-scavenger-teacher.jpg" width="980" height="1268" alt="Teacher-annotated Scavenger Hunt station cards with target equations and repair sequences" loading="lazy">
-            <figcaption><strong>Annotated station cards.</strong> Target equations, repair sequences, arrival signals — the logistics design that makes movement instructional.</figcaption>
-          </figure>
-        </div>
-        <div class="artifact-grid u-mt-5">
-          <figure class="artifact">
-            <img src="../assets/images/rem-sh-stations-skyrail.jpg" width="750" height="750" alt="Contact sheet of eight story-driven Scavenger Hunt station cards" loading="lazy">
-            <figcaption><strong>Station system</strong> — 30 stations, one card grammar: mission brief, target equation, repair sequence, arrival signal.</figcaption>
-          </figure>
-          <figure class="artifact">
-            <img src="../assets/images/rem-scavenger-student.png" width="960" height="600" alt="Scavenger Hunt route instruction page for a functions lesson showing the same interaction grammar" loading="lazy">
-            <figcaption><strong>Same grammar, new mathematics</strong> — the identical route structure carrying a functions lesson.</figcaption>
-          </figure>
-        </div>
-
-        <h3 class="u-mt-10">Rally Coach — coached partner practice</h3>
-        <p class="text-muted u-mt-4">Partner practice where the coach advances the reasoning <em>without taking the pencil</em> — 12 rounds per pair on Calculate Slope, roles switching every card.</p>
-        <div class="pair-grid u-mt-4">
-          <figure class="pair-fig">
-            <span class="pair-tag">Student</span>
-            <img src="../assets/images/rem-rally-slope-student-p2.png" width="1224" height="1584" alt="Rally Coach rehearsal page with a coach lens checklist, a scripted solver-coach-verify exchange, and a role loop that switches jobs each card" loading="lazy">
-            <figcaption><strong>Coaching is designed, not hoped for.</strong> A coach lens, a rehearsed solver–coach–verify exchange, and a role loop — the coach questions the reasoning instead of doing the work.</figcaption>
-          </figure>
-          <figure class="pair-fig pair-fig--teacher">
-            <span class="pair-tag">Teacher</span>
-            <img src="../assets/images/rem-rally-slope-teacher-p1.png" width="1224" height="1584" alt="Rally Coach teacher support page with learning target, setup, suggested pacing, look-fors while pairs work, targeted misconceptions, and differentiation" loading="lazy">
-            <figcaption><strong>A facilitation page, not an answer list.</strong> Learning target, pacing, look-fors while pairs work, the misconceptions each round targets, differentiation moves.</figcaption>
-          </figure>
-        </div>
-
-        <h3 class="u-mt-10">More engines, same architecture</h3>
-        <div class="artifact-grid u-mt-4">
-          <figure class="artifact">
-            <img src="../assets/images/rem-teacher-partner.png" width="960" height="600" alt="Annotated teacher page for Partner AB collaborative practice with answers">
-            <figcaption><strong>Partner AB — teacher key</strong> — annotated facilitation copy paired to the student page.</figcaption>
-          </figure>
-          <figure class="artifact">
-            <img src="../assets/images/rem-ead-teacher.png" width="960" height="600" alt="Error Analysis Detective annotated teacher key">
-            <figcaption><strong>Error Analysis Detective — teacher key</strong> — annotated error audits paired to the student casebook.</figcaption>
-          </figure>
-          <figure class="artifact">
-            <img src="../assets/images/rem-eoc-practice.png" width="960" height="600" alt="REM EOC Interaction Practice student page with six response structures">
-            <figcaption><strong>EOC Interaction Practice</strong> — reusable formative engine with shared response structures.</figcaption>
-          </figure>
-          <figure class="artifact">
-            <img src="../assets/images/rem-cbn-student.png" width="960" height="600" alt="Color By Number production spread showing numbered student scene beside colored teacher scene">
-            <figcaption><strong>CBN production spread</strong> — student/teacher scene pair as designed in the pipeline.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="methodology">
-        <h2 id="methodology">Methodology — design order first, then an engine that enforces it</h2>
-        <p>The order is Dick &amp; Carey's: analyze the standard and the learner, write the measurable objective, design the assessment that proves it, then build the instruction. Concretely: a lesson's reconstruction blanks, readiness checks, and annotated teacher edition are specified <em>before</em> its hook and worked examples are authored.</p>
-        <p>The analysis layer is written down, not tribal knowledge. The architecture document crosswalks every unit to Florida B.E.S.T. clusters but organizes the course by big ideas; each unit carries a "why this unit exists" rationale, a misconception registry (<em>move-and-change-sign</em>, "equals means the answer comes next," checking the transformed equation), a visual-model fade plan, and cumulative mastery checks instead of one-and-done unit tests. Slope is developed from covariation before any formula is named.</p>
-        <ol class="flow-diagram" aria-label="REM Engine production pipeline">
-          <li><div class="flow-step"><strong>Lesson request</strong><span>Course, unit, lesson → one canonical ID</span></div></li>
-          <li><div class="flow-step"><strong>Metadata</strong><span>Standards, objective, template family</span></div></li>
-          <li><div class="flow-step"><strong>Scenes &amp; graphs</strong><span>Concept models resolved from the primary concept</span></div></li>
-          <li><div class="flow-step"><strong>Assets</strong><span>Alias → priority → manifest, before any rendering</span></div></li>
-          <li><div class="flow-step"><strong>Renderers</strong><span>Guided Notes + practice pages</span></div></li>
-          <li><div class="flow-step"><strong>Teacher-key mode</strong><span>Same source — keys never re-authored</span></div></li>
-          <li class="flow-gate"><div class="flow-step"><strong>Publication gate</strong><span>Fail-closed validation before release</span></div></li>
-        </ol>
-        <p class="u-mt-6">Three production rules do the heavy lifting: every required asset must resolve (a missing model is a blocking failure); the teacher edition is a renderer <em>mode</em>, so keys can never drift from student pages; and the gate is fail-closed — any failed check stops the run with a structured error report.</p>
-
-        <h3 class="u-mt-10">ADDIE, mapped to the actual system</h3>
-        <ul class="decision-list u-mt-4">
-          <li>
-            <strong>Analyze</strong>
-            <span>B.E.S.T. benchmark-cluster crosswalk, per-unit misconception registry, "why this unit exists" rationale — grounded in 11+ years of watching where learners break.</span>
-          </li>
-          <li>
-            <strong>Design</strong>
-            <span>The course spine, unit architecture, template-family map, visual-model fade plans, and the Activate→Extend lesson spine.</span>
-          </li>
-          <li>
-            <strong>Develop</strong>
-            <span>Engine renderers — Guided Notes, practice, teacher-key mode — over a versioned SVG/PNG asset library.</span>
-          </li>
-          <li>
-            <strong>Implement</strong>
-            <span>Print and LMS delivery; Canvas/QTI packaging; a district course package run by instructors who did not build it.</span>
-          </li>
-          <li>
-            <strong>Evaluate</strong>
-            <span>The fail-closed publication gate before release; state, district, and formative results after — driving revision of the materials themselves.</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="case-section" aria-labelledby="visual-system">
-        <h2 id="visual-system">Visual design system</h2>
-        <p class="text-muted">Each asset family carries a branded cover system — consistent title hierarchy, format promise, REM mark. Underneath: structural SVG masters generating a multi-resolution PNG library across the concept-model families (algebra tiles, balance scale, number line, coordinate plane, function machine, area model, equation mat), governed by a locked design-language spec.</p>
-        <div class="cover-row u-mt-6">
-          <figure>
-            <img src="../assets/images/rem-punchline-cover-aroc.jpg" width="1200" height="1200" alt="Punchline Math cover: Average Rate of Change from a Graph, with worked graph and format promise" loading="lazy">
-            <figcaption><strong>Punchline Math</strong> — theater motif, worked math on the board, five-puzzles format promise.</figcaption>
-          </figure>
-          <figure>
-            <img src="../assets/images/rem-cbn-cover-one-step-owner-web.jpg" width="1200" height="1200" alt="Color By Number cover: Solve One-Step Equations, with the real numbered bakery and lemonade-stand worksheets as easel canvases" loading="lazy">
-            <figcaption><strong>Color By Number</strong> — the side canvases are the actual numbered student pages shown above, not invented art.</figcaption>
-          </figure>
-          <figure>
-            <img src="../assets/images/rem-rally-cover-vertical-transformations-web.jpg" width="1200" height="1200" alt="Rally Coach cover: Vertical Transformations partner activity, two rally-suited characters at a graph board showing g(x) = f(x) + 2" loading="lazy">
-            <figcaption><strong>Rally Coach</strong> — format promise up front; the cover graph itself teaches g(x) = f(x) + 2.</figcaption>
-          </figure>
-        </div>
-
-        <h3 class="u-mt-10">Character system — kept in its lane</h3>
-        
-        <h3 class="u-mt-10">Listing packaging evidence</h3>
-        <p class="text-muted">Marketplace listing system for one Scavenger Hunt lesson (Outcome Signal Court): cover plus three sales thumbs. Same design language as the product engines above — shown here as packaging / listing evidence, not as a storefront.</p>
-        <div class="cover-row u-mt-6">
-          <figure>
-            <img src="../assets/images/rem-sh-listing-outcome-signal-court-cover.jpg" width="1200" height="1200" alt="Scavenger Hunt listing cover: Outcome Signal Court, left Scribble with station cards and skill framing" loading="lazy">
-            <figcaption><strong>Cover</strong> — Outcome Signal Court listing cover (U04-L06).</figcaption>
-          </figure>
-          <figure>
-            <img src="../assets/images/rem-sh-listing-outcome-signal-court-thumb1.jpg" width="1200" height="900" alt="Scavenger Hunt listing thumbnail 1" loading="lazy">
-            <figcaption><strong>Thumb 1</strong> — listing sales image.</figcaption>
-          </figure>
-          <figure>
-            <img src="../assets/images/rem-sh-listing-outcome-signal-court-thumb2.jpg" width="1200" height="900" alt="Scavenger Hunt listing thumbnail 2" loading="lazy">
-            <figcaption><strong>Thumb 2</strong> — listing sales image.</figcaption>
-          </figure>
-          <figure>
-            <img src="../assets/images/rem-sh-listing-outcome-signal-court-thumb3.jpg" width="1200" height="900" alt="Scavenger Hunt listing thumbnail 3" loading="lazy">
-            <figcaption><strong>Thumb 3</strong> — unique creative sales image.</figcaption>
-          </figure>
-        </div>
-        <p class="text-muted u-mt-4">One mascot drawn to a fixed model sheet, costumed per engine. Deliberately quarantined to covers and scene art — on worksheets the mathematics always outranks the character.</p>
-        <div class="cover-row u-mt-6">
-          <figure>
-            <img src="../assets/images/scribble-artist-clipboard-web.jpg" width="512" height="640" alt="REM mascot in artist beret and paint-splattered smock holding a numbered color-by-number clipboard" loading="lazy">
-            <figcaption><strong>Artist pose</strong> — fronts Color By Number; the clipboard shows the real numbered-region format.</figcaption>
-          </figure>
-          <figure>
-            <img src="../assets/images/scribble-detective-inspect-paper-web.jpg" width="512" height="640" alt="REM mascot in deerstalker cap and cape inspecting a student paper through a magnifying glass" loading="lazy">
-            <figcaption><strong>Detective pose</strong> — fronts Error Analysis Detective: inspecting work is the activity itself.</figcaption>
-          </figure>
-          <figure>
-            <img src="../assets/images/scribble-detective-sequence-cards-web.jpg" width="581" height="640" alt="REM mascot in a tweed vest pointing at three cards connected by yarn, evidence-board style" loading="lazy">
-            <figcaption><strong>Sequencing pose</strong> — the evidence-chain variant for step-ordering casework.</figcaption>
-          </figure>
-        </div>
-
-        <h3 class="u-mt-10">Explaining an engine to its facilitator</h3>
-        <p class="text-muted u-mt-4">Each engine ships with a sub-60-second trailer — shown here as communication design: compressing a classroom routine, its feedback logic, and the teacher's print set into a minute a busy facilitator will actually watch.</p>
-        <div class="two-col two-col--top u-mt-6">
-          <figure class="video-frame video-frame--wide">
-            <video controls playsinline preload="metadata" poster="../assets/images/poster-rem-punchline-onestep-trailer.jpg" src="../assets/video/rem-punchline-onestep-trailer-web.mp4"></video>
-            <figcaption><strong>Punchline Math in under a minute</strong> Solve → decode → reveal, why errors surface immediately, and the print set behind it.</figcaption>
-          </figure>
-          <figure class="video-frame video-frame--wide">
-            <video controls playsinline preload="metadata" poster="../assets/images/poster-rem-rally-coach-trailer.jpg" src="../assets/video/rem-owner-preview-3-web.mp4"></video>
-            <figcaption><strong>Rally Coach in under a minute</strong> "Partner work should not have a passenger" — driver/coach roles, built-in coaching language, the print set.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="lesson-walkthrough">
-        <h2 id="lesson-walkthrough">Lesson flow in motion</h2>
-        <p class="text-muted">Short-form modeling media plus how assets sequence across a lesson. The full practice-system walkthrough lives on the <a href="../index.html#lesson-videos">home page</a>.</p>
-        <div class="two-col two-col--top u-mt-6">
-          <figure class="video-frame video-frame--solo">
-            <video controls playsinline preload="metadata" poster="../assets/images/poster-rem-solve-linear-equation.jpg" src="../assets/video/rem-solve-linear-equation.mp4"></video>
-            <figcaption><strong>Solve a Linear Equation</strong> The Model phase as produced media — a visible check at every move.</figcaption>
-          </figure>
-          <div class="walkthrough-frames u-mb-0">
-            <figure class="walkthrough-frame">
-              <span class="walkthrough-frame__num" aria-hidden="true">1</span>
-              <div class="walkthrough-frame__media">
-                <img src="../assets/images/rem-roadmap-detail.png" width="640" height="400" alt="Curriculum roadmap overview" loading="lazy">
-              </div>
-              <figcaption><strong>Architecture</strong> Roadmap situates the lesson in unit and format.</figcaption>
-            </figure>
-            <figure class="walkthrough-frame">
-              <span class="walkthrough-frame__num" aria-hidden="true">2</span>
-              <div class="walkthrough-frame__media">
-                <img src="../assets/images/storyline-diagram-rate.png" width="640" height="400" alt="Instructional diagram for modeling" loading="lazy">
-              </div>
-              <figcaption><strong>Model</strong> Worked-example visual carries the concept forward.</figcaption>
-            </figure>
-            <figure class="walkthrough-frame">
-              <span class="walkthrough-frame__num" aria-hidden="true">3</span>
-              <div class="walkthrough-frame__media">
-                <img src="../assets/images/rem-eoc-practice.png" width="640" height="400" alt="EOC practice formative page" loading="lazy">
-              </div>
-              <figcaption><strong>Formative apply</strong> EOC Interaction Practice as a reusable check.</figcaption>
-            </figure>
-            <figure class="walkthrough-frame">
-              <span class="walkthrough-frame__num" aria-hidden="true">4</span>
-              <div class="walkthrough-frame__media">
-                <img src="../assets/images/rem-student-partner.png" width="640" height="400" alt="Partner AB student page" loading="lazy">
-              </div>
-              <figcaption><strong>Collaborative practice</strong> Partner AB with peer accountability.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="process">
-        <h2 id="process">Design process</h2>
-        <ol class="process-steps">
-          <li>
-            <h3>Analyze the standard and the learner</h3>
-            <p>Crosswalk the unit to its benchmark cluster; write down the misconceptions it must defeat.</p>
-          </li>
-          <li>
-            <h3>Fix the objective, then the evidence</h3>
-            <p>The reconstruction blanks, readiness items, and teacher edition are specified before any instruction is authored.</p>
-          </li>
-          <li>
-            <h3>Author instruction into the spine</h3>
-            <p>Hook with a prediction, model on the unit's visual representation, fade support tier by tier across the six phases.</p>
-          </li>
-          <li>
-            <h3>Systematize production</h3>
-            <p>Engine formats, cover systems, page layouts, key patterns — a new topic inherits production quality, not ad hoc formatting.</p>
-          </li>
-          <li>
-            <h3>Gate, measure, revise</h3>
-            <p>Fail-closed publication gate before release; assessment and classroom evidence after it, feeding revision.</p>
-          </li>
-        </ol>
-      </section>
-
-      <section class="case-section" aria-labelledby="decisions">
-        <h2 id="decisions">Design decisions</h2>
-        <ul class="decision-list">
-          <li>
-            <strong>Reconstruction over transcription</strong>
-            <span>Pages the student completes — predict, name the move, solve, check, define — not notes to copy. The teacher edition is the completed reconstruction, making the evidence design visible on every page.</span>
-          </li>
-          <li>
-            <strong>Phase-based architecture over topic silos</strong>
-            <span>Teachers learn one instructional rhythm; content authors fill the slots.</span>
-          </li>
-          <li>
-            <strong>Practice formats as systems, not one-offs</strong>
-            <span>Each engine encodes a learning interaction — self-checking, visual verification, movement with accountability, misconception analysis, structured peer coaching — reusable across standards.</span>
-          </li>
-          <li>
-            <strong>Extend as a first-class phase</strong>
-            <span>Designed enrichment inside the same architecture — early finishers never get busywork.</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="case-section" aria-labelledby="principles">
-        <h2 id="principles">Learning principles applied</h2>
-        <div class="principles">
-          <div class="principle">
-            <h3>Gagné's events + Gradual Release</h3>
-            <p>The hook gains attention, Quick Retrieval recalls prerequisites without touching the new idea, Model presents on the unit's representation, and Guide fades support in tiers until the learner performs alone.</p>
-          </div>
-          <div class="principle">
-            <h3>Mayer's multimedia principles</h3>
-            <p>One routine per sub-minute segment; page graphics are instructional models that carry the mathematics, not decoration.</p>
-          </div>
-          <div class="principle">
-            <h3>UDL-minded options</h3>
-            <p>Five engines offer varied means of engagement on the same objective; the Daily Core / Additional Practice split builds planned flexibility into every lesson.</p>
-          </div>
-          <div class="principle">
-            <h3>ARCS + Quality Matters as lenses</h3>
-            <p>Hooks open on concrete contexts with a prediction stake; QM serves as a review lens for online delivery — a standard of practice, not a claimed score.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="outcome">
-        <h2 id="outcome">Outcome &amp; reflection</h2>
-        <p>The architecture holds at scale: 144 lessons, every one a reconstruction set with an annotated teacher edition, produced through the same pipeline and gate. New topics inherit lesson phases, evidence patterns, and asset templates instead of starting blank.</p>
-        <p>The designer's question underneath: <em>what must stay constant so quality scales?</em> The answer was the evidence design and the spine — objectives and checks fixed before instruction, plus a pipeline that refuses to ship a lesson whose parts don't resolve.</p>
-        <p class="text-muted">Evidence for hiring review is the system design itself — not sales or download metrics.</p>
-      </section>
-
-      <nav class="case-section" aria-label="More projects">
-        <h2>More projects</h2>
-        <div class="btn-row">
-          <a class="btn btn--ghost" href="storyline.html">Storyline Algebra 1</a>
-          <a class="btn btn--ghost" href="assessment-design.html">Assessment design</a>
-          <a class="btn btn--primary" href="../contact.html">Contact</a>
-        </div>
-      </nav>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand">Robert Schmitz</div>
-          <p class="footer-tagline">Instructional Designer | Curriculum Developer | eLearning Designer</p>
-        </div>
-        <ul class="footer-nav">
-          <li><a href="../about.html">About</a></li>
-          <li><a href="curriculum-system.html">Projects</a></li>
-          <li><a href="../resume.html">Resume</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <p class="footer-copy">© 2026 Robert Schmitz. Built as a static site for GitHub Pages.</p>
-    </div>
-  </footer>
-  <script src="../assets/js/main.js"></script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="../index.html">
+<span class="logo__name">Robert Schmitz</span>
+<span class="logo__role">Instructional Designer</span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary" class="site-nav" id="site-nav">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../about.html">About</a></li>
+<li><a aria-current="true" href="../projects.html">Projects</a></li>
+<li><a href="../resume.html">Resume</a></li>
+<li><a class="nav-cta" href="../contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1"><header class="page-header"><div class="container">
+<nav aria-label="Breadcrumb" class="breadcrumb"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="../projects.html">Projects</a><span aria-hidden="true">/</span><span>Curriculum design</span></nav>
+<p class="eyebrow">Curriculum design</p><h1>Algebra 1 curriculum architecture</h1><p class="lead">A shared lesson structure connects worked examples, guided practice, independent checks, and teacher support.</p><p class="status-label">Available to inspect: representative REM student and teacher materials</p><dl class="evidence-summary"><div><dt>Context</dt><dd>Independent work for Real Engagement with Mathematics (REM).</dd></div><div><dt>Audience</dt><dd>Secondary Algebra 1 learners and the teachers facilitating their practice.</dd></div><div><dt>My contribution</dt><dd>Course structure, lesson and assessment design, student materials, and annotated teacher support.</dd></div><div><dt>Scope of evidence</dt><dd>A 144-lesson course map across ten units; the selections below show individual materials. Full-course release and review coverage are not established by these samples.</dd></div></dl></div></header><nav aria-label="Project case studies" class="case-tabs"><div class="container"><ul><li><a aria-current="page" href="curriculum-system.html">Curriculum</a></li><li><a href="storyline.html">Storyline specification</a></li><li><a href="assessment-design.html">Assessment</a></li><li><a href="professional-development.html">Workshop design</a></li><li><a href="ai-workflow.html">AI process</a></li></ul></div></nav><div class="container"><section aria-labelledby="artifacts" class="case-section"><h2 id="artifacts">Inspect the lesson design</h2><p>Unit 1, Lesson 1: solving one-step equations. Read the student task beside its matching teacher support. Each page opens at full resolution.</p><div class="pair-grid"><figure class="pair-fig"><a aria-label="Enlarge: Student guided practice with fading cues, equation-writing, and readiness checks" class="artifact-zoom" href="../assets/images/gn-u1-l01-student-2.png"><img alt="Student guided practice with fading cues, equation-writing, and readiness checks" decoding="async" height="1320" loading="lazy" src="../assets/images/gn-u1-l01-student-2.png" width="1020"/></a><figcaption><strong>Student page.</strong> Support moves from a first step and visual model to brief cues, then independent problems.</figcaption></figure><figure class="pair-fig"><a aria-label="Enlarge: Matching annotated teacher page with solutions and checks in red" class="artifact-zoom" href="../assets/images/gn-u1-l01-teacher-2.png"><img alt="Matching annotated teacher page with solutions and checks in red" decoding="async" height="1320" loading="lazy" src="../assets/images/gn-u1-l01-teacher-2.png" width="1020"/></a><figcaption><strong>Teacher edition.</strong> Worked steps and substitution checks make the intended reasoning visible.</figcaption></figure></div></section><section aria-labelledby="decisions" class="case-section"><h2 id="decisions">Three design decisions</h2><ul class="decision-list"><li><strong>Fade the support within the practice</strong><span>A first move lowers the entry barrier. Later items remove the cue so the learner has to select the operation. The readiness check asks for substitution into the original equation.</span></li><li><strong>Give the facilitator the reasoning</strong><span>The annotated edition shows both the answer and how to reach it. This helps a teacher distinguish a calculation error from an incorrect inverse operation.</span></li><li><strong>Keep a consistent lesson rhythm</strong><span>Activate → Model → Guide → Apply → Reflect → Extend gives different topics a recognizable structure. The content and representations still need lesson-specific review.</span></li></ul></section><section aria-labelledby="more-materials" class="case-section"><h2 id="more-materials">Explore the supporting materials</h2><details class="evidence-details"><summary>Opening lesson pages: Activate and Model</summary><div class="pair-grid"><figure class="pair-fig"><a aria-label="Enlarge: Student opening page with hook, retrieval, vocabulary, and worked models" class="artifact-zoom" href="../assets/images/gn-u1-l01-student-1.png"><img alt="Student opening page with hook, retrieval, vocabulary, and worked models" decoding="async" height="792" loading="lazy" src="../assets/images/gn-u1-l01-student-1.png" width="612"/></a><figcaption>Student reconstruction: connect prior knowledge to the new routine.</figcaption></figure><figure class="pair-fig"><a aria-label="Enlarge: Annotated opening page with responses in red" class="artifact-zoom" href="../assets/images/gn-u1-l01-teacher-1.png"><img alt="Annotated opening page with responses in red" decoding="async" height="1320" loading="lazy" src="../assets/images/gn-u1-l01-teacher-1.png" width="1020"/></a><figcaption>Teacher annotation makes the intended responses explicit.</figcaption></figure></div></details><details class="evidence-details"><summary>Practice formats: student materials and facilitator support</summary><p>Examples from different lessons show reusable activity formats. They are a selection of design work across the REM collection.</p><h3 class="u-mt-10">Punchline Math — self-checking practice</h3>
+<div class="pair-grid u-mt-4">
+<figure class="pair-fig">
+<span class="pair-tag">Student</span>
+<a aria-label="Enlarge: Punchline Math student page with ten equations, decoder strip, and punchline ticket trail" class="artifact-zoom" href="../assets/images/rem-punchline-decoder.png"><img alt="Punchline Math student page with ten equations, decoder strip, and punchline ticket trail" decoding="async" height="980" loading="lazy" src="../assets/images/rem-punchline-decoder.png" width="1268"/></a>
+<figcaption><strong>Solve → decode → reveal.</strong> Each answer maps to a decoder chunk and a numbered ticket; the assembled punchline is the self-check.</figcaption>
+</figure>
+<figure class="pair-fig pair-fig--teacher">
+<span class="pair-tag">Teacher</span>
+<a aria-label="Enlarge: Punchline Math teacher key with every answer worked, checked by substitution, and decoded" class="artifact-zoom" href="../assets/images/rem-punchline-teacher.png"><img alt="Punchline Math teacher key with every answer worked, checked by substitution, and decoded" decoding="async" height="980" loading="lazy" src="../assets/images/rem-punchline-teacher.png" width="1268"/></a>
+<figcaption><strong>Worked, checked, decoded.</strong> The worked solutions include substitution checks and decoder mappings to support diagnosis.</figcaption>
+</figure>
+</div>
+<h3 class="u-mt-10">Color By Number — visual self-verification</h3>
+<div class="pair-grid u-mt-4">
+<figure class="pair-fig">
+<span class="pair-tag">Student</span>
+<a aria-label="Enlarge: Color By Number numbered line-art scene keyed to equation answers" class="artifact-zoom" href="../assets/images/rem-cbn-bakery-student.png"><img alt="Color By Number numbered line-art scene keyed to equation answers" decoding="async" height="1100" loading="lazy" src="../assets/images/rem-cbn-bakery-student.png" width="626"/></a>
+<figcaption><strong>Numbered scene.</strong> Numbered regions connect the illustration to an equation-and-color key.</figcaption>
+</figure>
+<figure class="pair-fig pair-fig--teacher">
+<span class="pair-tag">Teacher</span>
+<a aria-label="Enlarge: The same Color By Number scene realistically colored on the teacher key" class="artifact-zoom" href="../assets/images/rem-cbn-bakery-teacher.png"><img alt="The same Color By Number scene realistically colored on the teacher key" decoding="async" height="1100" loading="lazy" src="../assets/images/rem-cbn-bakery-teacher.png" width="626"/></a>
+<figcaption><strong>Realistically colored key.</strong> The teacher sees what a correct page looks like at a glance.</figcaption>
+</figure>
+</div>
+<h3 class="u-mt-10">Scavenger Hunt — movement with accountability</h3>
+<div class="pair-grid u-mt-4">
+<figure class="pair-fig">
+<span class="pair-tag">Student</span>
+<a aria-label="Enlarge: Scavenger Hunt student launch page explaining the solve, signal, move route loop" class="artifact-zoom" href="../assets/images/rem-scavenger-station.png"><img alt="Scavenger Hunt student launch page explaining the solve, signal, move route loop" decoding="async" height="1268" loading="lazy" src="../assets/images/rem-scavenger-station.png" width="980"/></a>
+<figcaption><strong>The route loop.</strong> Solve at a station, match the solution to an arrival signal, and continue through the route. An unmatched answer prompts a check of the work.</figcaption>
+</figure>
+<figure class="pair-fig pair-fig--teacher">
+<span class="pair-tag">Teacher</span>
+<a aria-label="Enlarge: Teacher-annotated Scavenger Hunt station cards with target equations and repair sequences" class="artifact-zoom" href="../assets/images/rem-scavenger-teacher.jpg"><img alt="Teacher-annotated Scavenger Hunt station cards with target equations and repair sequences" decoding="async" height="1100" loading="lazy" src="../assets/images/rem-scavenger-teacher.jpg" width="850"/></a>
+<figcaption><strong>Annotated station cards.</strong> Target equations, repair sequences, arrival signals — the logistics design that makes movement instructional.</figcaption>
+</figure>
+</div>
+<div class="artifact-grid u-mt-5">
+<figure class="artifact">
+<a aria-label="Enlarge: Contact sheet of eight story-driven Scavenger Hunt station cards" class="artifact-zoom" href="../assets/images/rem-sh-stations-skyrail.jpg"><img alt="Contact sheet of eight story-driven Scavenger Hunt station cards" decoding="async" height="750" loading="lazy" src="../assets/images/rem-sh-stations-skyrail.jpg" width="750"/></a>
+<figcaption><strong>Station system</strong> — 30 stations, one card grammar: mission brief, target equation, repair sequence, arrival signal.</figcaption>
+</figure>
+<figure class="artifact">
+<a aria-label="Enlarge: Scavenger Hunt route instruction page for a functions lesson showing the same interaction grammar" class="artifact-zoom" href="../assets/images/rem-scavenger-student.png"><img alt="Scavenger Hunt route instruction page for a functions lesson showing the same interaction grammar" decoding="async" height="1540" loading="lazy" src="../assets/images/rem-scavenger-student.png" width="1190"/></a>
+<figcaption><strong>Same grammar, new mathematics</strong> — the identical route structure carrying a functions lesson.</figcaption>
+</figure>
+</div>
+<h3 class="u-mt-10">Rally Coach — coached partner practice</h3>
+<p class="text-muted u-mt-4">Partner practice where the coach advances the reasoning <em>without taking the pencil</em> — 12 rounds per pair on Calculate Slope, roles switching every card.</p>
+<div class="pair-grid u-mt-4">
+<figure class="pair-fig">
+<span class="pair-tag">Student</span>
+<a aria-label="Enlarge: Rally Coach rehearsal page with a coach lens checklist, a scripted solver-coach-verify exchange, and a role loop that switches jobs each card" class="artifact-zoom" href="../assets/images/rem-rally-slope-student-p2.png"><img alt="Rally Coach rehearsal page with a coach lens checklist, a scripted solver-coach-verify exchange, and a role loop that switches jobs each card" decoding="async" height="1584" loading="lazy" src="../assets/images/rem-rally-slope-student-p2.png" width="1224"/></a>
+<figcaption><strong>Prompts give the coach a clear role.</strong> A coach lens, a rehearsed solver–coach–verify exchange, and a role loop — the coach questions the reasoning instead of doing the work.</figcaption>
+</figure>
+<figure class="pair-fig pair-fig--teacher">
+<span class="pair-tag">Teacher</span>
+<a aria-label="Enlarge: Rally Coach teacher support page with learning target, setup, suggested pacing, look-fors while pairs work, targeted misconceptions, and differentiation" class="artifact-zoom" href="../assets/images/rem-rally-slope-teacher-p1.png"><img alt="Rally Coach teacher support page with learning target, setup, suggested pacing, look-fors while pairs work, targeted misconceptions, and differentiation" decoding="async" height="1584" loading="lazy" src="../assets/images/rem-rally-slope-teacher-p1.png" width="1224"/></a>
+<figcaption><strong>A guide for facilitating partner practice.</strong> Learning target, pacing, look-fors while pairs work, the misconceptions each round targets, differentiation moves.</figcaption>
+</figure>
+</div>
+<h3 class="u-mt-10">Additional practice and assessment samples</h3>
+<div class="artifact-grid u-mt-4">
+<figure class="artifact">
+<a aria-label="Enlarge: Annotated teacher page for Partner AB collaborative practice with answers" class="artifact-zoom" href="../assets/images/rem-teacher-partner.png"><img alt="Annotated teacher page for Partner AB collaborative practice with answers" decoding="async" height="1584" src="../assets/images/rem-teacher-partner.png" width="1224"/></a>
+<figcaption><strong>Partner AB — teacher key</strong> — annotated facilitation copy paired to the student page.</figcaption>
+</figure>
+<figure class="artifact">
+<a aria-label="Enlarge: Error Analysis Detective annotated teacher key" class="artifact-zoom" href="../assets/images/rem-ead-teacher.png"><img alt="Error Analysis Detective annotated teacher key" decoding="async" height="1430" src="../assets/images/rem-ead-teacher.png" width="1105"/></a>
+<figcaption><strong>Error Analysis Detective — teacher key</strong> — annotated error audits paired to the student casebook.</figcaption>
+</figure>
+<figure class="artifact">
+<a aria-label="Enlarge: REM EOC Interaction Practice student page with six response structures" class="artifact-zoom" href="../assets/images/rem-eoc-practice.png"><img alt="REM EOC Interaction Practice student page with six response structures" decoding="async" height="1650" src="../assets/images/rem-eoc-practice.png" width="1275"/></a>
+<figcaption><strong>EOC Interaction Practice</strong> — reusable formative engine with shared response structures.</figcaption>
+</figure>
+<figure class="artifact">
+<a aria-label="Enlarge: Color By Number production spread showing numbered student scene beside colored teacher scene" class="artifact-zoom" href="../assets/images/rem-cbn-student.png"><img alt="Color By Number production spread showing numbered student scene beside colored teacher scene" decoding="async" height="1100" src="../assets/images/rem-cbn-student.png" width="1590"/></a>
+<figcaption><strong>CBN production spread</strong> — student/teacher scene pair as designed in the pipeline.</figcaption>
+</figure>
+</div>
+</details><details class="evidence-details"><summary>Visual identity and product communication samples</summary>
+<p class="text-muted">These cover samples use a consistent title hierarchy, activity description, and REM branding to help a teacher identify the lesson and practice format.</p>
+<div class="cover-row u-mt-6">
+<figure>
+<a aria-label="Enlarge: Punchline Math cover: Average Rate of Change from a Graph, with worked graph and format promise" class="artifact-zoom" href="../assets/images/rem-punchline-cover-aroc.jpg"><img alt="Punchline Math cover: Average Rate of Change from a Graph, with worked graph and format promise" decoding="async" height="1200" loading="lazy" src="../assets/images/rem-punchline-cover-aroc.jpg" width="1200"/></a>
+<figcaption><strong>Punchline Math</strong> — theater motif, worked math on the board, five-puzzles format promise.</figcaption>
+</figure>
+<figure>
+<a aria-label="Enlarge: Color By Number cover: Solve One-Step Equations, with the real numbered bakery and lemonade-stand worksheets as easel canvases" class="artifact-zoom" href="../assets/images/rem-cbn-cover-one-step-owner-web.jpg"><img alt="Color By Number cover: Solve One-Step Equations, with the real numbered bakery and lemonade-stand worksheets as easel canvases" decoding="async" height="1200" loading="lazy" src="../assets/images/rem-cbn-cover-one-step-owner-web.jpg" width="1200"/></a>
+<figcaption><strong>Color By Number</strong> — the side canvases feature the numbered student pages shown above.</figcaption>
+</figure>
+<figure>
+<a aria-label="Enlarge: Rally Coach cover: Vertical Transformations partner activity, two rally-suited characters at a graph board showing g(x) = f(x) + 2" class="artifact-zoom" href="../assets/images/rem-rally-cover-vertical-transformations-web.jpg"><img alt="Rally Coach cover: Vertical Transformations partner activity, two rally-suited characters at a graph board showing g(x) = f(x) + 2" decoding="async" height="1200" loading="lazy" src="../assets/images/rem-rally-cover-vertical-transformations-web.jpg" width="1200"/></a>
+<figcaption><strong>Rally Coach</strong> — format promise up front; the cover graph itself teaches g(x) = f(x) + 2.</figcaption>
+</figure>
+</div>
+<h3 class="u-mt-10">Character design for activity covers</h3>
+<h3 class="u-mt-10">Listing packaging evidence</h3>
+<p class="text-muted">Cover and three marketing thumbnails for one Scavenger Hunt lesson, Outcome Signal Court (U04-L06). These samples show the product communication prepared around the instructional materials.</p>
+<div class="cover-row u-mt-6">
+<figure>
+<a aria-label="Enlarge: Scavenger Hunt listing cover: Outcome Signal Court, left Scribble with station cards and skill framing" class="artifact-zoom" href="../assets/images/rem-sh-listing-outcome-signal-court-cover.jpg"><img alt="Scavenger Hunt listing cover: Outcome Signal Court, left Scribble with station cards and skill framing" decoding="async" height="1500" loading="lazy" src="../assets/images/rem-sh-listing-outcome-signal-court-cover.jpg" width="1500"/></a>
+<figcaption><strong>Cover</strong> — Outcome Signal Court listing cover (U04-L06).</figcaption>
+</figure>
+<figure>
+<a aria-label="Enlarge: Scavenger Hunt listing thumbnail 1" class="artifact-zoom" href="../assets/images/rem-sh-listing-outcome-signal-court-thumb1.jpg"><img alt="Scavenger Hunt listing thumbnail 1" decoding="async" height="750" loading="lazy" src="../assets/images/rem-sh-listing-outcome-signal-court-thumb1.jpg" width="750"/></a>
+<figcaption><strong>Thumb 1</strong> — listing sales image.</figcaption>
+</figure>
+<figure>
+<a aria-label="Enlarge: Scavenger Hunt listing thumbnail 2" class="artifact-zoom" href="../assets/images/rem-sh-listing-outcome-signal-court-thumb2.jpg"><img alt="Scavenger Hunt listing thumbnail 2" decoding="async" height="750" loading="lazy" src="../assets/images/rem-sh-listing-outcome-signal-court-thumb2.jpg" width="750"/></a>
+<figcaption><strong>Thumb 2</strong> — listing sales image.</figcaption>
+</figure>
+<figure>
+<a aria-label="Enlarge: Scavenger Hunt listing thumbnail 3" class="artifact-zoom" href="../assets/images/rem-sh-listing-outcome-signal-court-thumb3.jpg"><img alt="Scavenger Hunt listing thumbnail 3" decoding="async" height="750" loading="lazy" src="../assets/images/rem-sh-listing-outcome-signal-court-thumb3.jpg" width="750"/></a>
+<figcaption><strong>Thumb 3</strong> — unique creative sales image.</figcaption>
+</figure>
+</div>
+<p class="text-muted u-mt-4">The recurring mascot takes on roles that reflect each activity: artist, detective, or guide. These samples show how the character connects the activity theme to the cover.</p>
+<div class="cover-row u-mt-6">
+<figure>
+<a aria-label="Enlarge: REM mascot in artist beret and paint-splattered smock holding a numbered color-by-number clipboard" class="artifact-zoom" href="../assets/images/scribble-artist-clipboard-web.jpg"><img alt="REM mascot in artist beret and paint-splattered smock holding a numbered color-by-number clipboard" decoding="async" height="640" loading="lazy" src="../assets/images/scribble-artist-clipboard-web.jpg" width="512"/></a>
+<figcaption><strong>Artist pose</strong> — fronts Color By Number; the clipboard shows the real numbered-region format.</figcaption>
+</figure>
+<figure>
+<a aria-label="Enlarge: REM mascot in deerstalker cap and cape inspecting a student paper through a magnifying glass" class="artifact-zoom" href="../assets/images/scribble-detective-inspect-paper-web.jpg"><img alt="REM mascot in deerstalker cap and cape inspecting a student paper through a magnifying glass" decoding="async" height="640" loading="lazy" src="../assets/images/scribble-detective-inspect-paper-web.jpg" width="512"/></a>
+<figcaption><strong>Detective pose</strong> — fronts Error Analysis Detective: inspecting work is the activity itself.</figcaption>
+</figure>
+<figure>
+<a aria-label="Enlarge: REM mascot in a tweed vest pointing at three cards connected by yarn, evidence-board style" class="artifact-zoom" href="../assets/images/scribble-detective-sequence-cards-web.jpg"><img alt="REM mascot in a tweed vest pointing at three cards connected by yarn, evidence-board style" decoding="async" height="640" loading="lazy" src="../assets/images/scribble-detective-sequence-cards-web.jpg" width="581"/></a>
+<figcaption><strong>Sequencing pose</strong> — the evidence-chain variant for step-ordering casework.</figcaption>
+</figure>
+</div>
+</details></section><section aria-labelledby="scope" class="case-section"><h2 id="scope">Course structure and evidence</h2><div class="two-col"><figure class="artifact"><a aria-label="Enlarge: Course roadmap with lesson entries, standards, and activity types" class="artifact-zoom" href="../assets/images/rem-roadmap-detail.png"><img alt="Course roadmap with lesson entries, standards, and activity types" decoding="async" height="867" loading="lazy" src="../assets/images/rem-roadmap-detail.png" width="1400"/></a><figcaption><strong>Planning artifact.</strong> The roadmap describes intended course coverage; a roadmap entry is separate from a completed, reviewed lesson.</figcaption></figure><div><h3>What this work demonstrates</h3><p>The selected pages show how I connect practice, feedback, and facilitator support. They provide direct evidence of design choices and material production.</p><h3>What remains to evaluate</h3><p>A learner study would examine where prompts are still needed, how accurately students explain their checks, and whether teachers can use the materials without additional clarification. Learner gains and district adoption are not measured here.</p><h3>Production approach</h3><p>Shared lesson metadata and templates help keep materials consistent. Student and teacher versions still require content and visual review before release.</p></div></div></section><section aria-labelledby="media" class="case-section"><h2 id="media">The practice routines in motion</h2><p>Short walkthroughs explain the learner routine and the corresponding teacher materials.</p><div class="video-gallery"><article class="video-sample"><video aria-labelledby="video-title-0" controls="" playsinline="" poster="../assets/images/poster-rem-cbn-one-step-walkthrough.jpg" preload="none" src="../assets/video/rem-color-by-number-one-step-web.mp4"><track default="" kind="captions" label="English captions" src="../assets/captions/rem-color-by-number-one-step-web.vtt" srclang="en"/><p><a href="../assets/video/rem-color-by-number-one-step-web.mp4">Download this video</a>.</p></video><h3 id="video-title-0">Color by Number: solve, match, color</h3><p>A promotional walkthrough of one-step equation practice and its matching teacher materials.</p><details class="evidence-details video-transcript"><summary>Read the transcript and visual description</summary><ol><li><strong>0:00–0:05</strong> — The REM logo introduces the activity.</li><li><strong>0:05–0:23</strong> — Students solve one-step equations, match each solution to a color, and fill the numbered illustration. The clip moves from an uncolored bakery scene to its completed picture.</li><li><strong>0:23–0:39</strong> — Student pages and teacher support appear together. A worked key shows inverse operations and checks; a second illustrated scene shows another version of the activity.</li><li><strong>0:39–0:56</strong> — Completed artwork and the activity cover close the walkthrough. The clip illustrates the product routine; it does not report learner outcomes.</li></ol></details></article><article class="video-sample"><video aria-labelledby="video-title-1" controls="" playsinline="" poster="../assets/images/poster-rem-punchline-onestep-trailer.jpg" preload="none" src="../assets/video/rem-punchline-onestep-trailer-web.mp4"><track default="" kind="captions" label="English captions" src="../assets/captions/rem-punchline-onestep-trailer-web.vtt" srclang="en"/><p><a href="../assets/video/rem-punchline-onestep-trailer-web.mp4">Download this video</a>.</p></video><h3 id="video-title-1">Punchline Math: solve, decode, reveal</h3><p>A promotional walkthrough of the student decoder and worked teacher key.</p><details class="evidence-details video-transcript"><summary>Read the transcript and visual description</summary><ol><li><strong>0:00–0:05</strong> — The REM logo introduces Punchline Math: Solve One-Step Equations.</li><li><strong>0:05–0:18</strong> — A student page shows one-step equations using addition, subtraction, multiplication, and division. Students solve, match answers to letters, and use the decoder to reveal a punchline.</li><li><strong>0:18–0:29</strong> — Five puzzle versions appear. The clip labels 20 problems per puzzle and 100 problems across the five versions. Each has a different mystery and punchline.</li><li><strong>0:29–0:43</strong> — Teacher pages show inverse operations, substitution checks, and the decoded response. The worked support is paired with the corresponding student task.</li><li><strong>0:43–0:59</strong> — The cover and a prompt to get the complete lesson close the clip. These are product materials, with no learner-performance results presented.</li></ol></details></article><article class="video-sample"><video aria-labelledby="video-title-2" controls="" playsinline="" poster="../assets/images/poster-rem-rally-coach-trailer.jpg" preload="none" src="../assets/video/rem-owner-preview-3-web.mp4"><track default="" kind="captions" label="English captions" src="../assets/captions/rem-owner-preview-3-web.vtt" srclang="en"/><p><a href="../assets/video/rem-owner-preview-3-web.mp4">Download this video</a>.</p></video><h3 id="video-title-2">Rally Coach: two roles, shared reasoning</h3><p>A promotional role demonstration for partner practice. The dashboard-style graphics illustrate the routine; they are not collected participation data.</p><details class="evidence-details video-transcript"><summary>Read the transcript and visual description</summary><ol><li><strong>0:00–0:10</strong> — The opening introduces partner practice with a role for each learner. A stylized participation graphic contrasts unstructured pairs with assigned roles; it is an illustration, not measured results.</li><li><strong>0:10–0:21</strong> — Two roles appear: the Driver writes and explains the work; the Coach predicts a move, asks for reasoning, and verifies the proof. The prompt is one pencil, two minds.</li><li><strong>0:21–0:33</strong> — The coaching guide models three prompts: name the next move before it is written; ask what keeps the equation balanced; substitute to check the result.</li><li><strong>0:33–0:41</strong> — A pit-stop graphic cues a role switch: new Driver, new Coach. Both students take turns doing and explaining the mathematics.</li><li><strong>0:41–0:52</strong> — A teacher page and a stylized monitoring display illustrate what the facilitator can look for. The activity cover closes the clip with the prompt to print, pair, and coach the math.</li></ol></details></article><article class="video-sample"><video aria-labelledby="video-title-3" controls="" playsinline="" poster="../assets/images/poster-rem-solve-linear-equation.jpg" preload="none" src="../assets/video/rem-solve-linear-equation.mp4"><track default="" kind="captions" label="English captions" src="../assets/captions/rem-solve-linear-equation.vtt" srclang="en"/><p><a href="../assets/video/rem-solve-linear-equation.mp4">Download this video</a>.</p></video><h3 id="video-title-3">Micro-lesson: solve and check a linear equation</h3><p>A narrated worked example with synchronized captions. The source clip ends during its closing promotional sentence.</p><details class="evidence-details video-transcript"><summary>Read the transcript and visual description</summary><ol><li><strong>0:00–0:02</strong> — The screen asks the learner to solve 4x + 5 = −19. Narration: “Can your students solve this?”</li><li><strong>0:02–0:08</strong> — Subtract 5 from both sides. The equation becomes 4x = −24.</li><li><strong>0:08–0:14</strong> — Divide both sides by 4. The solution is x = −6.</li><li><strong>0:14–0:21</strong> — Check by substitution: 4(−6) + 5 = −19. Since −24 + 5 = −19, both sides agree. Narration: “Check it. Four times negative six is negative twenty-four, plus five is negative nineteen. It works.”</li><li><strong>0:21–0:25</strong> — The REM logo appears. Closing narration begins: “Full Algebra 1 lessons and practice on…” and cuts off at the end of the source clip.</li></ol></details></article></div></section><nav aria-label="Next steps" class="case-section"><div class="btn-row"><a class="btn btn--ghost" href="../projects.html">All projects</a><a class="btn btn--primary" href="../contact.html">Discuss this work</a></div></nav></div></main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-inner">
+<div>
+<div class="footer-brand">Robert Schmitz</div>
+<p class="footer-tagline">Instructional Designer | Curriculum Developer | eLearning Designer</p>
+</div>
+<ul class="footer-nav">
+<li><a href="../about.html">About</a></li>
+<li><a href="../projects.html">Projects</a></li>
+<li><a href="../resume.html">Resume</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+</div>
+<p class="footer-copy">© 2026 Robert Schmitz.</p>
+</div>
+</footer>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

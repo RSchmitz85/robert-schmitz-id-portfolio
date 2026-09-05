@@ -1,356 +1,86 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Case study: Interactive Algebra 1 eLearning module designed in Articulate Storyline by Robert Schmitz.">
-  <title>Interactive Algebra 1 eLearning | Robert Schmitz</title>
-  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="../assets/images/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Robert Schmitz — Instructional Designer">
-  <meta property="og:title" content="Interactive Algebra 1 eLearning Module | Robert Schmitz">
-  <meta property="og:description" content="Case study: a 16-slide Storyline 360 module on rearranging formulas — gated interactions, misconception-targeted feedback, and a written design spec.">
-  <meta property="og:url" content="https://rschmitz85.github.io/robert-schmitz-id-portfolio/projects/storyline.html">
-  <meta property="og:image" content="https://rschmitz85.github.io/robert-schmitz-id-portfolio/assets/images/og-card.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Robert Schmitz — Instructional Designer. Real lesson-system artifacts: a worked Punchline teacher key beside a Color By Number student and teacher pair.">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/styles.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="A design-stage 16-slide Storyline specification with learner decisions, a five-item quiz plan, and feedback for common literal-equation errors." name="description"/>
+<title>Rearranging Formulas — Storyline Specification | Robert Schmitz</title>
+<link href="../assets/images/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../assets/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="article" property="og:type"/>
+<meta content="Robert Schmitz — Instructional Designer" property="og:site_name"/>
+<meta content="Rearranging Formulas — Storyline Specification | Robert Schmitz" property="og:title"/>
+<meta content="A design-stage 16-slide Storyline specification with learner decisions, a five-item quiz plan, and feedback for common literal-equation errors." property="og:description"/>
+<meta content="https://rschmitz85.github.io/robert-schmitz-id-portfolio/projects/storyline.html" property="og:url"/>
+<meta content="https://rschmitz85.github.io/robert-schmitz-id-portfolio/assets/images/og-card.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Robert Schmitz — Instructional Designer. Real lesson-system artifacts: a worked Punchline teacher key beside a Color By Number student and teacher pair." property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/styles.css" rel="stylesheet"/>
+<link href="https://rschmitz85.github.io/robert-schmitz-id-portfolio/projects/storyline.html" rel="canonical"/></head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="../index.html">
-        <span class="logo__name">Robert Schmitz</span>
-        <span class="logo__role">Instructional Designer</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="curriculum-system.html" aria-current="page">Projects</a></li>
-          <li><a href="../resume.html">Resume</a></li>
-          <li><a class="nav-cta" href="../contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <header class="page-header">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="../index.html">Home</a><span aria-hidden="true">/</span>
-          <a href="curriculum-system.html">Projects</a><span aria-hidden="true">/</span>
-          <span>Storyline Algebra 1</span>
-        </nav>
-        <p class="eyebrow">eLearning · Articulate Storyline 360</p>
-        <h1>Interactive Algebra 1 Module: Rearranging Formulas</h1>
-        <p class="lead">A fully storyboarded Storyline 360 teaching module on literal equations — 16 slides of direct instruction, gated click-to-reveal interactions, a five-item graded quiz with misconception-targeted feedback, and a commit-first exit ticket.</p>
-        <div class="case-meta">
-          <span>Role: Instructional designer &amp; developer</span>
-          <span>Build: 16 slides · 1280×720 · Modern player</span>
-          <span>Skill: Isolate a specified variable in a formula</span>
-        </div>
-      </div>
-    </header>
-
-      <nav class="case-tabs" aria-label="Project case studies">
-        <div class="container">
-          <ul>
-            <li><a href="curriculum-system.html">Curriculum system</a></li>
-            <li><a href="storyline.html" aria-current="page">Storyline</a></li>
-            <li><a href="assessment-design.html">Assessment</a></li>
-            <li><a href="professional-development.html">PD / adult learning</a></li>
-            <li><a href="ai-workflow.html">AI workflow</a></li>
-          </ul>
-        </div>
-      </nav>
-
-    <div class="container container--narrow">
-      <section class="case-section" aria-labelledby="overview">
-        <h2 id="overview">Overview</h2>
-        <p>This case study documents a specific, fully specified build: <strong>Algebra 1, Unit 1, Lesson 5 — Rearranging Formulas</strong> (literal equations). Learners already know how to solve for <em>x</em> when the answer is a number; this module teaches them to isolate any variable when the answer is <em>another formula</em> — the same inverse-operation moves, pointed at a letter instead of a value.</p>
-        <p>The module is designed slide-by-slide in a production storyboard: every screen, trigger, feedback string, restriction note, and narration line is written before development, so the Storyline build is assembly against a spec rather than improvisation in the tool. Delivery targets Canvas or Schoology as SCORM or a web object, with a Modern player, Prev/Next-only navigation, and no sidebar menu.</p>
-      </section>
-
-      <section class="case-section" aria-labelledby="challenge">
-        <h2 id="challenge">Challenge</h2>
-        <p>Classroom and remediation experience shows exactly where literal equations break down: learners who can solve <code>3x + 5 = 20</code> freeze at <code>y = mx + b</code>, and the single most common wreck is a grouping error — dividing only one term (writing <em>x = y − b/m</em> instead of <em>x = (y − b)/m</em>). A second, quieter failure: nobody teaches when a rearrangement owes a restriction like <em>m ≠ 0</em>.</p>
-        <p>The design problem was a self-paced module that still felt instructional — not a quiz in disguise — where the known misconceptions are designed into the interactions and the feedback, not left for the teacher to catch later.</p>
-      </section>
-
-      <section class="case-section" aria-labelledby="audience">
-        <h2 id="audience">Audience</h2>
-        <ul>
-          <li>Secondary Algebra 1 learners, including students in remedial or intensive supports</li>
-          <li>Learners who may have gaps in prior knowledge and benefit from explicit modeling</li>
-          <li>Teachers or facilitators assigning the module as pre-work, intervention, or review inside an LMS</li>
-        </ul>
-      </section>
-
-      <section class="case-section two-col" aria-labelledby="role">
-        <div>
-          <h2 id="role">My role</h2>
-          <ul>
-            <li>Needs framing from classroom and remediation experience</li>
-            <li>Learning objectives, outline, and interaction design</li>
-            <li>Storyboard and Storyline development</li>
-            <li>Feedback copy and formative check design</li>
-            <li>Accessibility and navigation conventions</li>
-          </ul>
-        </div>
-        <div>
-          <h2 id="constraints">Constraints</h2>
-          <ul>
-            <li>Must run inside common K–12 / higher-ed LMS environments</li>
-            <li>Limited media production budget (no custom video shoot required)</li>
-            <li>Readable on laptop; usable on tablet where possible</li>
-            <li>Content accuracy and standards alignment non-negotiable</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="process">
-        <h2 id="process">Design process</h2>
-        <ol class="process-steps">
-          <li>
-            <h3>Analyze</h3>
-            <p>Clarified the performance gap (rearranging any formula vs. solving one numeric equation), entry skills (inverse operations), and the two documented misconceptions — grouping errors and missing restrictions — drawn from teaching Algebra 1 and intensive courses.</p>
-          </li>
-          <li>
-            <h3>Design</h3>
-            <p>Wrote the complete production storyboard: 16 slides sequenced as Gagné-style events, a four-move method ("Box the target. Undo in reverse order. Keep groups together. Check."), and per-choice feedback drafted for every quiz distractor before any development began.</p>
-          </li>
-          <li>
-            <h3>Develop</h3>
-            <p>Specified screens for Storyline with a shared slide master (cream background, footer rule, brand mark), gated click-to-reveal states, and worked-example → try-it cycles. Feedback names the error type — "that only divides b" — not just "try again."</p>
-          </li>
-          <li>
-            <h3>Evaluate (formative)</h3>
-            <p>Reviewed against multimedia principles (signaling, segmenting, coherence — max five lines of text per instructional slide, one idea per screen) and Quality Matters–aligned checks; revised wording and pacing in the storyboard before build.</p>
-          </li>
-        </ol>
-      </section>
-
-      <section class="case-section" aria-labelledby="decisions">
-        <h2 id="decisions">Design decisions</h2>
-        <ul class="decision-list">
-          <li>
-            <strong>Three worked examples in rising structural difficulty</strong>
-            <span><em>A = lw</em> (one move) → <em>d = rt</em> (same move, new context, building transfer) → <em>y = mx + b</em> (two moves in reverse order, where the grouping misconception lives). Worked-example effect for novices; support fades into a try-it.</span>
-          </li>
-          <li>
-            <strong>The misconception gets its own screen real estate</strong>
-            <span>The final build of the <em>y = mx + b</em> example shows a struck-through "NOT THIS: x = y − b/m" strip beside the correct form. The most common error is taught, not merely penalized.</span>
-          </li>
-          <li>
-            <strong>Gated interactions force commitment before reveal</strong>
-            <span>Reveal bars unlock in order; the Next button stays disabled until all cards are flipped; the exit-ticket model answer is locked until the learner has typed a response. No passive click-through.</span>
-          </li>
-          <li>
-            <strong>Per-choice feedback tied to the specific error</strong>
-            <span>Each quiz distractor is a named misconception with its own feedback string — "Close — but that only divides b. The entire quantity y − b must be divided by m." Formative assessment, not mere scoring.</span>
-          </li>
-          <li>
-            <strong>Restrictions as a first-class habit</strong>
-            <span>Every division by a variable earns an on-screen restriction chip (<em>l ≠ 0</em>, <em>r ≠ 0</em>, <em>m ≠ 0</em>) with a plain-language why — and "restrictions count" is an explicit quiz rule.</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="case-section" aria-labelledby="solution">
-        <h2 id="solution">Solution — the 16-slide architecture</h2>
-        <p>Every slide has one instructional job. Instruction climbs three worked examples of rising structural difficulty, commitment is forced before every reveal, and the graded quiz mirrors the exact formulas the instruction modeled — plus one transfer item.</p>
-        <ol class="slide-map" aria-label="Slide-by-slide module map">
-          <li><span class="slide-map__tag">Static</span><strong>Title + goal</strong><span>Wordmark, goal band: "isolate any variable — and say when it's allowed."</span></li>
-          <li><span class="slide-map__tag">Static</span><strong>Big idea</strong><span><em>A = lw</em> ⟷ <em>w = A/l</em>: same fact, pointed at a different letter.</span></li>
-          <li><span class="slide-map__tag slide-map__tag--interact">Interactive</span><strong>Inverse ops recap</strong><span>Four click-to-reveal cards; Next stays disabled until all four flip.</span></li>
-          <li><span class="slide-map__tag">Build</span><strong>The method</strong><span>Four moves: box the target · undo in reverse · keep groups together · check.</span></li>
-          <li><span class="slide-map__tag">Worked ex. 1</span><strong>A = lw → w</strong><span>Area diagram; one move; restriction <em>l ≠ 0</em> earned on screen.</span></li>
-          <li><span class="slide-map__tag">Worked ex. 2</span><strong>d = rt → t</strong><span>Rate–time diagram; identical structure — near transfer by design.</span></li>
-          <li><span class="slide-map__tag">Worked ex. 3</span><strong>y = mx + b → x</strong><span>Reverse order + grouping; "NOT THIS" misconception strip on final build.</span></li>
-          <li><span class="slide-map__tag slide-map__tag--interact">Interactive</span><strong>Try it: P = 2l + 2w</strong><span>Work on paper first; reveal bars unlock strictly in order.</span></li>
-          <li><span class="slide-map__tag">Static</span><strong>Quiz intro</strong><span>Rules up front: one attempt, instant feedback, restrictions count.</span></li>
-          <li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q1</span><strong>A = lw for w</strong><span>Direct check of worked example 1.</span></li>
-          <li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q2</span><strong>d = rt for t</strong><span>Order matters: <em>d/r</em>, not <em>r/d</em>.</span></li>
-          <li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q3</span><strong>y = mx + b for x</strong><span>Grouping-error distractor gets its own targeted feedback string.</span></li>
-          <li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q4</span><strong>P = 2l + 2w for w</strong><span>Per-choice feedback names each specific mistake.</span></li>
-          <li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q5</span><strong>V = ⅓Bh for h</strong><span>Transfer item: clear the fraction first, then divide.</span></li>
-          <li><span class="slide-map__tag">Results</span><strong>80% to pass</strong><span>Success and retry layers; Review Quiz on both paths.</span></li>
-          <li><span class="slide-map__tag slide-map__tag--interact">Exit ticket</span><strong>C = 2πr for r</strong><span>Model answer locked until the learner types a response.</span></li>
-        </ol>
-        <p class="u-mt-6">Navigation is linear by default with optional review of prior screens, so learners who need to revisit a model can do so without hunting through menus.</p>
-      </section>
-
-      <section class="case-section" aria-labelledby="spec">
-        <h2 id="spec">Visual &amp; interaction specification</h2>
-        <p class="text-muted">The module ships with a written design spec so the Storyline build inherits its look instead of improvising it — the same design-system discipline used across the REM curriculum work.</p>
-        <div class="two-col u-mt-6">
-          <div>
-            <h3 class="subhead-sm">Palette (flat fills only — no neon, no gradients)</h3>
-            <ul class="swatch-row u-mt-3">
-              <li><span class="swatch swatch--navy"></span>Navy #14295C<br>text &amp; formulas</li>
-              <li><span class="swatch swatch--teal"></span>Teal #0D8A7D<br>targets &amp; correct</li>
-              <li><span class="swatch swatch--violet"></span>Violet #9B4DCA<br>moves &amp; affordances</li>
-              <li><span class="swatch swatch--amber"></span>Amber #F0A500<br>"check it" boxes</li>
-              <li><span class="swatch swatch--cream"></span>Cream #FDFBF6<br>background</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="subhead-sm">Typography &amp; layout rules</h3>
-            <ul class="spec-list">
-              <li>48pt slide titles · 44pt display formulas · 30pt body — sized for projection and small screens, never below spec minimums</li>
-              <li>Maximum five lines of text on any instruction slide; one idea per screen (Mayer segmenting)</li>
-              <li>Restriction notes always 28pt teal — a consistent visual signal for "this move has a condition"</li>
-              <li>Shared slide master: footer rule, lesson tag, and brand mark on every slide including quiz slides</li>
-              <li>Color is semantic: teal = target/correct, violet = the move to make, amber = verify</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="feedback-design">
-        <h2 id="feedback-design">Feedback that teaches — designed before development</h2>
-        <p>The highest-value screen in the module is the one that confronts the predictable error. On the <em>y = mx + b</em> worked example, the final build places the correct form beside a struck-through wrong form:</p>
-        <div class="not-this" role="img" aria-label="Reproduction of the module's misconception strip: the incorrect form x equals y minus b over m is struck through, next to the correct form x equals the quantity y minus b, divided by m">
-          <div class="not-this__wrong">
-            <span class="not-this__label">Not this</span>
-            <span class="not-this__math"><s>x = y − b/m</s></span>
-            <p>That only divides <em>b</em>. Keep <em>y − b</em> together.</p>
-          </div>
-          <div class="not-this__right">
-            <span class="not-this__label">This</span>
-            <span class="not-this__math">x = (y − b) / m</span>
-            <p>The whole quantity <em>y − b</em> is divided by <em>m</em> · <em>m ≠ 0</em></p>
-          </div>
-        </div>
-        <p class="u-mt-8">The same misconception returns as a quiz distractor — and its feedback names the error instead of restating the rule:</p>
-        <div class="feedback-samples">
-          <blockquote class="feedback-sample">
-            <span class="feedback-sample__ctx">Q3 · learner picks x = y − b/m</span>
-            <p>"Close — but that only divides <em>b</em> by <em>m</em>. The entire quantity <em>y − b</em> must be divided by <em>m</em>: x = (y − b) / m."</p>
-          </blockquote>
-          <blockquote class="feedback-sample">
-            <span class="feedback-sample__ctx">Q4 · learner picks w = P/2 − 2l</span>
-            <p>"You divided <em>P</em> by 2 but not <em>2l</em>. Both terms get divided: w = (P − 2l) / 2 = P/2 − l."</p>
-          </blockquote>
-          <blockquote class="feedback-sample">
-            <span class="feedback-sample__ctx">Q4 · learner stops early at w = P − 2l</span>
-            <p>"You stopped one step early. After subtracting <em>2l</em> you still have <em>2w</em>, so divide both sides by 2."</p>
-          </blockquote>
-        </div>
-        <h3 class="subhead-sm u-mt-10">Commitment gates (trigger design)</h3>
-        <ul>
-          <li><strong>Recap slide:</strong> Next button disabled until all four inverse-operation cards are revealed — no skimming past prerequisites.</li>
-          <li><strong>Try-it slide:</strong> reveal bars unlock strictly in order (Step 1 → Step 2 → answer), so learners cannot jump to the answer.</li>
-          <li><strong>Exit ticket:</strong> the "Show the model answer" button stays disabled until the response field is non-blank — commit first, then compare.</li>
-          <li><strong>Quiz:</strong> one attempt per item, 10 points each, 80% pass with review and retry paths on the results slide.</li>
-        </ul>
-      </section>
-
-      <section class="case-section" aria-labelledby="tools">
-        <h2 id="tools">Tools</h2>
-        <div class="tag-cloud">
-          <span class="tag">Articulate Storyline</span>
-          <span class="tag">Canvas / Schoology delivery</span>
-          <span class="tag">Standards-aligned Algebra 1 content</span>
-          <span class="tag tag--neutral">Accessibility checks</span>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="artifacts">
-        <h2 id="artifacts">Artifacts from the build</h2>
-        <p class="text-muted"><strong>Honest note:</strong> published Storyline UI captures are pending; the artifacts below are the module's actual instructional assets and the parallel formative pattern from the classroom system. No mocked-up course screenshots appear on this page.</p>
-        <div class="artifact-grid u-mt-6">
-          <figure class="artifact">
-            <img src="../assets/images/storyline-diagram-area.png" width="960" height="600" alt="Labeled rectangle diagram relating area, length, and width — the instructional visual for worked example 1">
-            <figcaption><strong>Worked example 1 visual (slide 5)</strong> — the labeled area model that anchors <em>A = lw → w = A/l</em>.</figcaption>
-          </figure>
-          <figure class="artifact">
-            <img src="../assets/images/storyline-diagram-rate.png" width="960" height="600" alt="Labeled diagram relating rate, time, and distance — the instructional visual for worked example 2">
-            <figcaption><strong>Worked example 2 visual (slide 6)</strong> — the rate–time–distance model reusing the same diagram grammar for near transfer.</figcaption>
-          </figure>
-          <figure class="artifact">
-            <img src="../assets/images/rem-eoc-practice.png" width="960" height="600" alt="REM practice page showing a formative evidence trail parallel to the module's checks">
-            <figcaption><strong>Parallel formative pattern</strong> — the classroom practice engine whose visible-check habit the module's amber "check it" boxes reproduce on screen.</figcaption>
-          </figure>
-          <figure class="artifact">
-            <img src="../assets/images/rem-quiz-student.png" width="960" height="600" alt="REM formative quiz student page with structured response space">
-            <figcaption><strong>Parallel independent practice</strong> — the print formative page whose item structure the graded quiz mirrors online.</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="principles">
-        <h2 id="principles">Learning principles applied</h2>
-        <div class="principles">
-          <div class="principle">
-            <h3>Gagné’s events of instruction</h3>
-            <p>Structured attention, presentation, guidance, practice, and feedback as deliberate module beats.</p>
-          </div>
-          <div class="principle">
-            <h3>Mayer’s multimedia principles</h3>
-            <p>Segmenting, signaling, and coherence to reduce extraneous load on math screens.</p>
-          </div>
-          <div class="principle">
-            <h3>Gradual Release (GRR)</h3>
-            <p>I do → we do → you do pacing inside interactive sequences.</p>
-          </div>
-          <div class="principle">
-            <h3>ARCS motivation</h3>
-            <p>Relevance and confidence built before higher-stakes independent items.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-section" aria-labelledby="outcome">
-        <h2 id="outcome">Outcome</h2>
-        <p>The module provides a reusable pattern for concept-focused Algebra 1 eLearning: clear objectives, representation-centered instruction, and feedback that supports learning. It is suitable as intervention, review, or flipped pre-work depending on the facilitator’s pacing plan.</p>
-        <p class="text-muted">No fabricated completion rates or score gains are claimed here. Impact should be measured in context once deployed with a real learner cohort.</p>
-      </section>
-
-      <section class="case-section" aria-labelledby="reflection">
-        <h2 id="reflection">Reflection</h2>
-        <p>Teaching intensive and remedial Algebra 1 made the cost of vague feedback obvious. In Storyline, that insight became a design rule: every incorrect path should leave the learner smarter about the mathematics, not only aware that they were wrong. Next iterations would add optional challenge paths for learners who demonstrate early mastery, without forcing everyone through the same density of scaffolding.</p>
-      </section>
-
-      <nav class="case-section" aria-label="More projects">
-        <h2>More projects</h2>
-        <div class="btn-row">
-          <a class="btn btn--ghost" href="curriculum-system.html">Curriculum architecture</a>
-          <a class="btn btn--ghost" href="assessment-design.html">Assessment design</a>
-          <a class="btn btn--primary" href="../contact.html">Contact</a>
-        </div>
-      </nav>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand">Robert Schmitz</div>
-          <p class="footer-tagline">Instructional Designer | Curriculum Developer | eLearning Designer</p>
-        </div>
-        <ul class="footer-nav">
-          <li><a href="../about.html">About</a></li>
-          <li><a href="curriculum-system.html">Projects</a></li>
-          <li><a href="../resume.html">Resume</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <p class="footer-copy">© 2026 Robert Schmitz. Built as a static site for GitHub Pages.</p>
-    </div>
-  </footer>
-  <script src="../assets/js/main.js"></script>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="../index.html">
+<span class="logo__name">Robert Schmitz</span>
+<span class="logo__role">Instructional Designer</span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary" class="site-nav" id="site-nav">
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../about.html">About</a></li>
+<li><a aria-current="true" href="../projects.html">Projects</a></li>
+<li><a href="../resume.html">Resume</a></li>
+<li><a class="nav-cta" href="../contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main" tabindex="-1"><header class="page-header"><div class="container">
+<nav aria-label="Breadcrumb" class="breadcrumb"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="../projects.html">Projects</a><span aria-hidden="true">/</span><span>eLearning design</span></nav>
+<p class="eyebrow">eLearning design</p><h1>Rearranging formulas: interaction specification</h1><p class="lead">A learner must isolate a variable, keep a multi-term expression grouped, and identify when division is allowed. The design makes those decisions visible through targeted feedback.</p><p class="status-label">Design stage · 16-slide storyboard and interaction specification</p><dl class="evidence-summary"><div><dt>Context</dt><dd>REM Algebra 1, Unit 1, Lesson 5. Derived from the accompanying print lesson.</dd></div><div><dt>Audience</dt><dd>Algebra 1 learners who can solve numeric equations and are beginning literal equations.</dd></div><div><dt>My contribution</dt><dd>Instructional sequence, screen and trigger specifications, quiz items, and feedback wording.</dd></div><div><dt>Available evidence</dt><dd>Storyboard excerpts and instructional diagrams. A playable Storyline build, published UI captures, and LMS test results are not yet included.</dd></div></dl></div></header><nav aria-label="Project case studies" class="case-tabs"><div class="container"><ul><li><a href="curriculum-system.html">Curriculum</a></li><li><a aria-current="page" href="storyline.html">Storyline specification</a></li><li><a href="assessment-design.html">Assessment</a></li><li><a href="professional-development.html">Workshop design</a></li><li><a href="ai-workflow.html">AI process</a></li></ul></div></nav><div class="container"><section aria-labelledby="interaction" class="case-section"><h2 id="interaction">A learner decision and its feedback</h2><p>The difficult step in <strong>y = mx + b</strong> is dividing the entire difference <strong>y − b</strong> by <strong>m</strong>. These are excerpts from the design specification.</p><div class="artifact-columns"><article class="doc-artifact"><div class="doc-artifact__head">Slide 07 · Worked example</div><div class="doc-artifact__body"><p class="math-line">y − b = mx</p><p class="math-line">x = (y − b) / m</p><p><strong>Restriction:</strong> m ≠ 0.</p><p>The numerator stays grouped while dividing both sides.</p></div></article><article class="doc-artifact"><div class="doc-artifact__head">Quiz feedback · Grouping error</div><div class="doc-artifact__body"><p><strong>Targeted error:</strong> x = y − b / m.</p><blockquote>Close — but that only divides b by m. The entire quantity y − b must be divided by m: x = (y − b) / m.</blockquote><p class="text-muted">Specified feedback directs attention to the operation that changed the expression.</p></div></article></div></section><section aria-labelledby="decisions" class="case-section"><h2 id="decisions">Why these interactions</h2><ul class="decision-list"><li><strong>Ask for a mathematical decision</strong><span>The quiz checks the rearranged formula and the required nonzero divisor. Completing a reveal sequence alone would only establish exposure to the explanation.</span></li><li><strong>Make feedback specific to the error</strong><span>Grouping, division, and inverse-operation errors receive different explanations. The message identifies the move to revisit.</span></li><li><strong>Separate the example from the performance check</strong><span>Worked examples introduce the routine; five quiz items require learners to apply it to another requested variable.</span></li></ul></section><section aria-labelledby="storyboard" class="case-section"><h2 id="storyboard">Inspect the storyboard</h2><p>The existing source storyboard specifies 16 screens, a five-item quiz, result and retry behavior, and a written exit ticket.</p><details class="evidence-details" open=""><summary>16-slide architecture</summary><ol aria-label="Slide-by-slide module map" class="slide-map">
+<li><span class="slide-map__tag">Static</span><strong>Title + goal</strong><span>Wordmark, goal band: "isolate any variable — and say when it's allowed."</span></li>
+<li><span class="slide-map__tag">Static</span><strong>Big idea</strong><span><em>A = lw</em> ⟷ <em>w = A/l</em>: same fact, pointed at a different letter.</span></li>
+<li><span class="slide-map__tag slide-map__tag--interact">Interactive</span><strong>Inverse ops recap</strong><span>Four click-to-reveal cards; Next stays disabled until all four flip.</span></li>
+<li><span class="slide-map__tag">Build</span><strong>The method</strong><span>Four moves: box the target · undo in reverse · keep groups together · check.</span></li>
+<li><span class="slide-map__tag">Worked ex. 1</span><strong>A = lw → w</strong><span>Area diagram; one move; restriction <em>l ≠ 0</em> earned on screen.</span></li>
+<li><span class="slide-map__tag">Worked ex. 2</span><strong>d = rt → t</strong><span>Rate–time diagram; identical structure — near transfer by design.</span></li>
+<li><span class="slide-map__tag">Worked ex. 3</span><strong>y = mx + b → x</strong><span>Reverse order + grouping; "NOT THIS" misconception strip on final build.</span></li>
+<li><span class="slide-map__tag slide-map__tag--interact">Interactive</span><strong>Try it: P = 2l + 2w</strong><span>Work on paper first; reveal bars unlock strictly in order.</span></li>
+<li><span class="slide-map__tag">Static</span><strong>Quiz intro</strong><span>Rules up front: one attempt, instant feedback, restrictions count.</span></li>
+<li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q1</span><strong>A = lw for w</strong><span>Direct check of worked example 1.</span></li>
+<li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q2</span><strong>d = rt for t</strong><span>Order matters: <em>d/r</em>, not <em>r/d</em>.</span></li>
+<li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q3</span><strong>y = mx + b for x</strong><span>Grouping-error distractor gets its own targeted feedback string.</span></li>
+<li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q4</span><strong>P = 2l + 2w for w</strong><span>Per-choice feedback names each specific mistake.</span></li>
+<li><span class="slide-map__tag slide-map__tag--quiz">Quiz Q5</span><strong>V = ⅓Bh for h</strong><span>Transfer item: clear the fraction first, then divide.</span></li>
+<li><span class="slide-map__tag">Results</span><strong>80% to pass</strong><span>Success and retry layers; Review Quiz on both paths.</span></li>
+<li><span class="slide-map__tag slide-map__tag--interact">Exit ticket</span><strong>C = 2πr for r</strong><span>Model answer locked until the learner types a response.</span></li>
+</ol></details><details class="evidence-details"><summary>Interaction and evaluation specifications</summary><ul class="decision-list"><li><strong>Reveal cards</strong><span>Four inverse-operation pairs have normal and revealed states. A planned navigation condition waits until all four have been visited.</span></li><li><strong>Assessment</strong><span>Five formula-rearranging questions; one attempt per item with immediate feedback. The result screen specifies an 80% threshold with review and retry.</span></li><li><strong>Exit ticket</strong><span>A written response explains how to isolate r in C = 2πr. The planned submit control checks for a nonblank response; this does not establish response correctness.</span></li><li><strong>Planned verification</strong><span>Build and test trigger conditions, feedback paths, retry/reset behavior, keyboard navigation, reading order, and zoom. Verify completion and score reporting separately in the target LMS.</span></li></ul></details></section><section aria-labelledby="diagrams" class="case-section"><h2 id="diagrams">Instructional assets</h2><p>These diagrams support the planned worked examples. They are source instructional graphics, not screenshots of a published player.</p><div class="artifact-grid"><figure class="artifact"><a aria-label="Enlarge: Rectangle area diagram relating area, length, and width" class="artifact-zoom" href="../assets/images/storyline-diagram-area.png"><img alt="Rectangle area diagram relating area, length, and width" decoding="async" height="900" loading="lazy" src="../assets/images/storyline-diagram-area.png" width="1200"/></a><figcaption>Area model for A = lw.</figcaption></figure><figure class="artifact"><a aria-label="Enlarge: Diagram showing how rate and time relate to distance" class="artifact-zoom" href="../assets/images/storyline-diagram-rate.png"><img alt="Diagram showing how rate and time relate to distance" decoding="async" height="900" loading="lazy" src="../assets/images/storyline-diagram-rate.png" width="1200"/></a><figcaption>Rate model for d = rt.</figcaption></figure></div></section><section aria-labelledby="status" class="case-section"><h2 id="status">Next development milestone</h2><p>Implement the specified lesson in Storyline, publish a playable sample, and document the interaction and accessibility checks. A learner pilot can then test whether the feedback helps learners repair the error on a new formula.</p></section><nav aria-label="Next steps" class="case-section"><div class="btn-row"><a class="btn btn--ghost" href="../projects.html">All projects</a><a class="btn btn--primary" href="../contact.html">Discuss this work</a></div></nav></div></main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-inner">
+<div>
+<div class="footer-brand">Robert Schmitz</div>
+<p class="footer-tagline">Instructional Designer | Curriculum Developer | eLearning Designer</p>
+</div>
+<ul class="footer-nav">
+<li><a href="../about.html">About</a></li>
+<li><a href="../projects.html">Projects</a></li>
+<li><a href="../resume.html">Resume</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+</div>
+<p class="footer-copy">© 2026 Robert Schmitz.</p>
+</div>
+</footer>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
