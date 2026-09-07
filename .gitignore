@@ -1,1 +1,16 @@
-assets/images/rem-samples/
+# Heavy uncompressed source media — web derivatives are the committed versions.
+# rem-color-by-number-one-step-web.mp4 etc. ARE committed; these masters are not.
+assets/video/rem-color-by-number-one-step.mp4
+assets/video/rem-punchline-onestep-trailer.mp4
+assets/video/rem-owner-preview-2.mp4
+assets/video/rem-owner-preview-3.mp4
+assets/images/rem-rally-cover-vertical-transformations.png
+# Scribble mascot masters (~2MB each) — the -web.jpg derivatives are committed.
+assets/images/scribble-detective-checkmark.png
+assets/images/scribble-detective-inspect-paper.png
+assets/images/scribble-detective-sequence-cards.png
+assets/images/scribble-detective-flashlight.png
+assets/images/scribble-detective-folders.png
+assets/images/scribble-artist-clipboard.png
+# Frame-extraction scratch from evidence work
+fable-redesign/frames/

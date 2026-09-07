@@ -1,100 +1,42 @@
 # Robert Schmitz — Instructional Design ePortfolio
 
-Static multi-page portfolio for **instructional design / curriculum development / eLearning** roles (edtech, higher ed, corporate L&D tone).
+Static portfolio for instructional design, curriculum development, and eLearning roles. The visual direction is editorial and professional; REM materials serve as evidence of learning design and production systems.
 
-**Live entry point:** [`index.html`](index.html)
+## Local working copy
 
-## Positioning
+This directory contains the site source but has no Git metadata. It is not a checkout that can be pushed directly. The pages contain GitHub Pages metadata; local completion does not establish the state of the published site.
 
-> An instructional designer and curriculum developer who combines deep classroom experience, learning science, assessment design, and modern development tools to create clear, practical, scalable learning experiences.
+Entry point: [index.html](index.html). All site navigation uses relative paths, including the case-study collection at [index.html#projects](index.html#projects).
 
-**Site title line:** Instructional Designer | Curriculum Developer | eLearning Designer
+## Site structure
 
-This is **not** a K–12 teacher aesthetic site and **not** a Teachers Pay Teachers shop page. Real Engagement with Mathematics (REM) materials are framed as **curriculum architecture, instructional asset systems, and eLearning development evidence**.
+- Home, About, Resume, Contact.
+- Five case studies under 'projects/': curriculum system, Storyline, assessment design, professional development, and AI workflow.
+- Shared visual system: 'assets/css/styles.css', using Inter and Space Grotesk with a navy, white, and orange palette.
+- Progressive enhancement: 'assets/js/main.js' handles mobile navigation and the native artifact dialog. Image links and navigation remain usable without JavaScript.
+- Artifact PNGs and video posters: 'assets/images/'. Videos: 'assets/video/'.
+- Downloadable resume: [resume/Robert-Schmitz-Resume.pdf](resume/Robert-Schmitz-Resume.pdf).
 
-## Architecture
+## Evidence and factual boundaries
 
-```
-/index.html
-/about.html
-/resume.html
-/contact.html
-/projects/
-  storyline.html              ← Algebra 1 Storyline eLearning
-  curriculum-system.html      ← REM Activate–Extend architecture + practice systems
-  assessment-design.html      ← Item banks, DPMA-style, REM formative engines
-  professional-development.html
-  ai-workflow.html
-/assets/css/styles.css
-/assets/js/main.js            ← mobile nav only
-/assets/images/placeholders/  ← labeled SVG stand-ins
-/resume/                      ← drop in PDF here
-README.md
-QUALITY_REVIEW.md
-```
+- Guided Notes student/teacher pages, practice-system artifacts, and Rally Coach / Partner AB pages are displayed as inspectable evidence. Retain complete source pages and descriptive captions.
+- U04-L06 packaging appears in the curriculum case study under Facilitator handoff. It demonstrates packaging decisions, not storefront status or measured learner outcomes.
+- The Storyline case study presents a storyboard and design specification. Production and learner testing remain planned unless a completed build and evidence become available.
+- Preserve approved professional titles, dates, degrees, and resume facts. Do not infer outcomes from production counts or marketing assets.
+- Contact already includes a LinkedIn profile link; it is not a placeholder. External profile availability is separate from local link correctness.
+- Older material under 'fable-redesign/' is historical working material, outside the nine-page site reviewed for this job.
 
-All paths are **relative** (GitHub Pages ready).
+## Local preview and handoff
 
-## Case study ↔ real local evidence
+From this directory, run 'python -m http.server 8080 --bind 127.0.0.1' only if that port is free. Leave other jobs and servers running.
 
-| Case study | Source on SchmitzPC (Operator) |
-|------------|--------------------------------|
-| Storyline Algebra 1 | `Desktop\Algebra 1 Storyline` (+ storyboards) |
-| Curriculum architecture | `Desktop\Real Engagement with Mathematics` — lesson engine Activate/Model/Guide/Apply/Reflect/Extend; Punchline Math; Color By Number; Scavenger Hunt; Error Analysis Detective as **reusable instructional asset systems** |
-| Assessment design | Item banks / district progress-monitoring assessment contribution; standards alignment in REM engines & worksheets |
-| PD / adult learning | Mentor, lead teacher, PD facilitation (process-based) |
-| AI workflow | Optional modern ID practice under human judgment |
+The assigned overnight job, changelog, doer verdict, backups, and PNG/browser evidence are stored beside the job in:
 
-## Replace screenshot placeholders
+'C:/Users/trebo/Desktop/Printable Adventure Line/jobs/'
 
-Placeholders live in `assets/images/placeholders/` and are **labeled by artifact type** in each case study (student page, teacher key, cover system, Storyline slide, curriculum map diagram, etc.).
+- 'JOB-eportfolio-astra-iterate.md'
+- 'CHANGELOG-OVERNIGHT.md'
+- 'DONE-eportfolio-astra-iterate.md'
+- 'eportfolio-evidence/'
 
-**Asset refresh steps:**
-
-1. Copy real PNG/PDF samples from:
-   - `Desktop\Real Engagement with Mathematics`
-   - `Desktop\Algebra 1 Storyline`
-2. Prefer exporting PDF pages to PNG for web.
-3. Save into `assets/images/` (e.g. `assets/images/rem-student-page-01.png`).
-4. Update the corresponding `<img src="...">` in the case study HTML (and keep meaningful `alt` text).
-5. Do **not** center Scribble mascot / marketplace branding as the hero aesthetic; choose pages that show instructional structure, layout systems, keys, and Storyline screens.
-
-Suggested captures:
-
-- Storyline: menu/nav slide, worked-example interaction, feedback slide
-- REM: curriculum/phase diagram if available, student page, teacher key, cover system (as production system evidence)
-- Assessment: blueprint or alignment view, sample item/engine page, teacher key
-
-## Resume PDF
-
-See [`resume/README.md`](resume/README.md). PDF is in place at:
-
-`resume/Robert-Schmitz-Resume.pdf`
-
-The download button on `resume.html` links to that file.
-
-## LinkedIn
-
-Contact page uses a **LinkedIn TBD** placeholder. Replace when the public URL is confirmed.
-
-## Deploy on GitHub Pages
-
-1. Create a repo; push this folder contents to the default branch (or `/docs`).
-2. Settings → Pages → Deploy from branch → `/` (root) or `/docs` as configured.
-3. Confirm `index.html` loads; check project subpaths and CSS/JS.
-
-Local preview:
-
-```bash
-cd robert-schmitz-id-portfolio
-python3 -m http.server 8080
-# open http://localhost:8080/
-```
-
-## Stack
-
-HTML + CSS + light JS only. Google Fonts (Poppins). Navy + soft neutral + teal/orange accent.
-
-## Facts policy
-
-Copy uses only stated professional facts from the owner-approved resume (years teaching, courses, lead/mentor/PD, curriculum mapping, district progress-monitoring assessment contribution, 10,000+ standards-aligned items, district-wide Canvas package adoption, M.Ed. Mathematics Education UCF 4.0, B.S. Social Studies Education USF, UCF ID certification, Ed.D. in progress at UCF, models/tools listed). **No invented metrics, jobs, or outcome percentages.**
+Consult the latest dated verdict and matching source hashes before relying on older screenshots. Doer verification does not replace independent QA Judge / Human Look or Operator sign-off. Publication remains a separate lifecycle state.
