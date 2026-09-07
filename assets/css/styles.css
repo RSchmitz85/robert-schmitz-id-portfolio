@@ -5,6 +5,35 @@
    Color: deep navy structure, cool neutrals, one signal orange.
    ============================================================ */
 
+/* ------------------------------------------------------------
+   Metric-matched fallback faces.
+
+   Both real faces load from Google with display=swap, so the FIRST paint of
+   every cold visit is a fallback face, and a visitor behind a proxy that
+   blocks fonts.gstatic.com never gets anything else. Segoe UI and Arial are
+   narrower than Inter, so the hero tagline set six lines in Inter and five in
+   the fallback — the CTA row and everything below it moved 28.89px the moment
+   the webfont arrived.
+
+   size-adjust values are MEASURED, not chosen: a 137-character mixed
+   specimen rendered at 100px on 2026-09-07 (ad_pass5_metrics.py) gave
+     Inter          7034.375   Space Grotesk  7080.089
+     Segoe UI       6495.264   Arial          6655.811
+   so Inter/Segoe = 108.300%, Inter/Arial = 105.688%,
+      Grotesk/Segoe = 109.004%, Grotesk/Arial = 106.375%.
+
+   Only the advance width needs correcting: line-height here is unitless
+   (1.7 / 1.45 / 1.12), so the line box is a multiple of the specified
+   font-size and is unaffected by font ascent/descent. ascent-override and
+   descent-override are therefore deliberately omitted — they would change
+   nothing and could only introduce error. Browsers without size-adjust
+   support ignore these faces and behave exactly as the site does today.
+   ------------------------------------------------------------ */
+@font-face { font-family: "Inter Fallback";  src: local("Segoe UI");        size-adjust: 108.300%; }
+@font-face { font-family: "Inter Fallback2"; src: local("Arial"), local("Helvetica Neue"); size-adjust: 105.688%; }
+@font-face { font-family: "Grotesk Fallback";  src: local("Segoe UI");      size-adjust: 109.004%; }
+@font-face { font-family: "Grotesk Fallback2"; src: local("Arial"), local("Helvetica Neue"); size-adjust: 106.375%; }
+
 :root {
   /* Navy structure */
   --navy-950: #081120;
@@ -26,7 +55,19 @@
   --line-strong: #c6d1de;
   --ink: #14213a;
   --ink-soft: #4c5b74;
-  --ink-faint: #8494ab;
+  /* Third neutral tier. Was #8494ab, which is 3.09:1 on white and 2.85:1 on
+     --paper-cool — below AA on every light surface it is used on (card
+     kickers, flow-step and slide-map numerals, skill-block headings, the quiz
+     meta and provenance lines, the tools-strip labels). Darkened along the
+     SAME hue and saturation (215.4deg / 18.8%) until it cleared 4.5:1 on the
+     harder of the two light grounds: 4.90 on white, 4.52 on --paper-cool,
+     while staying clearly lighter than --ink-soft (6.87) so the ramp keeps
+     three distinct steps. Solved in ad_pass5_solve_ink.py, not eyeballed. */
+  --ink-faint: #60728d;
+  /* The one place the old value was correct: it sits on navy in the footer,
+     where it measures 6.12:1. Kept under its own name so a light-surface fix
+     can never silently darken text on a dark surface. */
+  --ink-on-dark: #8494ab;
   --white: #ffffff;
 
   /* Semantic */
@@ -41,14 +82,14 @@
   --accent-soft: var(--orange-soft);
 
   /* Type */
-  --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font: "Inter", "Inter Fallback", "Inter Fallback2", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "Grotesk Fallback", "Grotesk Fallback2", "Inter", system-ui, sans-serif;
   /* Math is set in the text face, never the display face: Space Grotesk's
      single-storey lowercase y has no true descender and reads as "u" at
      equation size — unacceptable in "y = mx + b". Variables italic per
      standard math typography, matching the prose convention already used
      on these pages ("Solve for <em>x</em>"). */
-  --font-math: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-math: "Inter", "Inter Fallback", "Inter Fallback2", system-ui, -apple-system, "Segoe UI", sans-serif;
   --fs-2xs: 0.6875rem;
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;
@@ -335,7 +376,12 @@ code { font-size: 0.92em; background: var(--paper-cool); padding: 0.1em 0.35em; 
 .hero-pair__item--teacher figcaption { color: #ffc9a3; }
 .hero-pair__note {
   grid-column: 1 / -1; margin: 0; font-size: var(--fs-xs);
-  color: rgba(231, 237, 246, 0.55); text-align: center;
+  /* Was rgba(231, 237, 246, 0.55) — a translucent light-on-navy colour from
+     the pre-rewrite hero. On the white section this element now lives in it
+     resolves to about 1.3:1, i.e. invisible. Removing the later #b9c6d9 rule
+     alone would have left THIS declaration winning over .text-muted, so the
+     surface colour is corrected at the source instead. */
+  color: var(--text-muted); text-align: center;
 }
 @media (max-width: 900px) {
   .hero__grid { grid-template-columns: 1fr; }
@@ -694,7 +740,7 @@ a.card--visual:hover .card__thumb img { transform: scale(1.03); }
 @media (max-width: 700px) { .contact-grid { grid-template-columns: 1fr; } }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--navy-950); color: var(--ink-faint); padding: var(--space-6) 0 var(--space-5); margin-top: var(--space-10); }
+.site-footer { background: var(--navy-950); color: var(--ink-on-dark); padding: var(--space-6) 0 var(--space-5); margin-top: var(--space-10); }
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-5); }
 .site-footer a { color: #b9c6d9; text-decoration: none; }
 .site-footer a:hover { color: var(--white); }
@@ -847,7 +893,15 @@ html { scroll-padding-top: calc(var(--sticky-header-h, 4.5rem) + var(--sticky-ta
 .logo__role, .breadcrumb, .breadcrumb a { color: var(--ink-soft); }
 .hero { padding-block: clamp(2.25rem, 4vw, 3.5rem); }
 .hero h1 { max-width: 17ch; }
-.hero__meta, .hero-pair__note { color: #b9c6d9; }
+/* .hero-pair__note was dropped from this rule on 2026-09-07. #b9c6d9 is a
+   dark-surface colour and .hero__meta still earns it (9.91:1 on the navy
+   hero). But the 2026-09-06 rewrite moved the only .hero-pair__note on the
+   site out of the navy hero and into the white featured-case section, and
+   this rule followed the class name instead of the surface — leaving the one
+   line that tells a visitor the artifacts are clickable at 1.73:1 on white.
+   The element already carries .text-muted, so removing it here lets the
+   correct colour apply: #4c5b74, 6.87:1. */
+.hero__meta { color: #b9c6d9; }
 .hero-pair__item figcaption { position: static; background: var(--navy-800); padding: .7rem; }
 .hero-pair__item { border-radius: .25rem; }
 .stat span, .practice-tile p, .flow-diagram .flow-step span { font-size: .875rem; }
@@ -1070,10 +1124,31 @@ dialog.lightbox[open] { grid-template-columns: minmax(0,1fr); align-items: stret
 /* AD-05 — storyline.html specified a slide master in words and never rendered a
    slide. Screens run full container width, outside the ~735px text column. */
 .screens__intro { max-width: 68ch; }
-.sem { font-weight: var(--fw-semibold); white-space: nowrap; }
-.sem--teal { color: #0D8A7D; }
-.sem--violet { color: #7B32AC; }
-.sem--amber { color: #A06A00; }
+/* Semantic-colour keys in prose.
+
+   These used to BE the swatch: the words "violet = the move to make" were set
+   in violet. That forces one string to do two jobs, and the jobs conflict —
+   a palette value bright enough to be that palette value is rarely dark
+   enough to read as small bold text. The previous fix darkened the text until
+   it passed, which broke the other job: the sentence promises the module's
+   semantic colour is "held exactly", but shipped violet as #7B32AC and amber
+   as #A06A00 while the palette table 160 lines below on this same page
+   declares #9B4DCA and #F0A500. Teal was the only one still true to the
+   spec — and it was the one measuring 4.24:1, below AA.
+
+   Split the two jobs. The chip carries the real value (a graphical object,
+   and its colour IS the content). The words carry the meaning at full text
+   contrast. The page now agrees with its own palette table, and the claim
+   "held exactly" is true again. */
+.sem { font-weight: var(--fw-semibold); white-space: nowrap; color: var(--ink); }
+.sem::before {
+  content: ""; display: inline-block; width: 0.62em; height: 0.62em;
+  margin-right: 0.38em; border-radius: 2px;
+  background: var(--sem-color); border: 1px solid var(--ink-faint);
+}
+.sem--teal { --sem-color: #0D8A7D; }
+.sem--violet { --sem-color: #9B4DCA; }
+.sem--amber { --sem-color: #F0A500; }
 .screen-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); }
 .screen { margin: 0; }
 .screen img {
@@ -1095,4 +1170,57 @@ dialog.lightbox[open] { grid-template-columns: minmax(0,1fr); align-items: stret
   .pair-grid { grid-template-columns: 1fr; }
   .mcq__options { grid-template-columns: 1fr; }
   .mcq__option { word-break: normal; overflow-wrap: anywhere; }
+}
+
+/* Overnight doer: compact packaging inspection and scannable experience. */
+.packaging-evidence { margin-top: 1.5rem; border-block: 1px solid var(--border); }
+.packaging-evidence > summary { padding: 1.1rem .25rem; cursor: pointer; font-weight: 600; color: var(--navy-900); }
+.packaging-evidence > summary span { display: block; margin: .35rem 0 0 1.25rem; font-size: .875rem; font-weight: 400; color: var(--text-muted); }
+.packaging-evidence > summary:focus-visible { outline: 3px solid var(--orange-700); outline-offset: 3px; }
+.packaging-evidence[open] { padding-bottom: 1.5rem; }
+.experience-list { list-style: none; padding: 0; margin: 0; }
+.experience-list > li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 1.5rem; padding: 1.25rem 0; margin: 0; border-bottom: 1px solid var(--border); }
+.experience-list h3 { font-size: 1.0625rem; margin: 0 0 .35rem; line-height: 1.4; }
+.experience-list p { margin: 0; }
+.experience-list .experience-list__dates { font-size: .875rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+@media (max-width: 600px) {
+  .experience-list > li { grid-template-columns: minmax(0, 1fr); gap: .6rem; }
+}
+/* Homepage r1: concise introduction, working evidence, supporting curriculum. */
+.homepage .home-hero { background: var(--navy-900); padding-block: clamp(2rem, 4vw, 3.4rem); }
+.homepage .home-hero::before { display: none; }
+.homepage .home-hero h1 { max-width: 24ch; font-size: clamp(2.5rem, 4.5vw, 3.8rem); margin-bottom: 1.2rem; }
+.homepage .home-hero .hero__tagline { max-width: 44rem; }
+.home-hero__secondary { color: #e7edf6; font-size: .875rem; }
+.home-hero__secondary:hover { color: #ffc9a3; }
+.home-hero__note { margin-top: 1.25rem; font-size: .8125rem; color: #b9c6d9; }
+.home-work__grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: clamp(2rem, 4vw, 3.5rem); }
+.home-work__case { min-width: 0; }
+.home-work__case > p { font-size: .9375rem; line-height: 1.6; color: var(--ink-soft); }
+.home-work__case .home-work__label { font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; color: var(--orange-700); font-weight: 600; }
+.home-work__case h3 { max-width: 29ch; font-size: 1.4rem; line-height: 1.25; }
+.home-work .mcq { margin-top: 1.5rem; box-shadow: none; border-top: 3px solid var(--navy-800); }
+.home-work .mcq__head { flex-wrap: wrap; }
+.home-work .mcq__option { min-height: 48px; }
+#hero-check { scroll-margin-top: calc(var(--sticky-header-h, 4.5rem) + 1.5rem); }
+.home-work__preview { display: block; margin-top: 1.5rem; border: 1px solid var(--line-strong); border-radius: .5rem; overflow: hidden; background: var(--paper-cool); }
+.home-work__preview img { width: 100%; height: auto; }
+.home-work__case .home-work__disclosure { margin-top: .75rem; font-size: .75rem; }
+.home-work__link { font-size: .875rem; font-weight: 600; }
+.homepage .feature-case__label { background: none; padding: 0; color: var(--orange-700); }
+.homepage .feature-case__media { max-width: 31rem; justify-self: end; }
+.homepage .supporting-link { font-size: .875rem; }
+.home-background__grid { display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; }
+.home-background h2 { font-size: 1.5rem; }
+.home-background p { color: var(--ink-soft); font-size: .9375rem; }
+@media (max-width: 800px) {
+  .home-work__grid, .home-background__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .homepage .feature-case__media { justify-self: start; max-width: 34rem; }
+  .home-work__pd { border-top: 1px solid var(--line); padding-top: 2rem; }
+}
+@media (max-width: 600px) {
+  .homepage .home-hero .btn { width: auto; }
+  .homepage .home-hero h1 { font-size: clamp(2.15rem, 8.5vw, 3rem); }
+  .home-hero .btn-row { align-items: flex-start; flex-direction: column; }
+  .home-work .mcq { padding: 1rem; }
 }
