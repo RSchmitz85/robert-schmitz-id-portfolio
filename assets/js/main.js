@@ -138,7 +138,7 @@
         feedback.classList.toggle("is-wrong", !correct);
         feedback.innerHTML = "";
         var label = document.createElement("strong");
-        label.textContent = correct ? "Correct" : "Not yet — here is why";
+        label.textContent = option.getAttribute("data-feedback-label") || (correct ? "Correct" : "Not yet — here is why");
         var body = document.createElement("span");
         // Feedback prose carries real math, so it needs italic variables like the
         // choices above it. A plain-text attribute cannot hold that markup, so the

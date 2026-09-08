@@ -70,7 +70,7 @@
           </div>
           <div>
             <dt>Impact</dt>
-            <dd>The architecture held at scale; teacher keys cannot drift by construction; the Canvas course package ran district-wide. Learner-outcome claims stay out of scope below.</dd>
+            <dd>A shared source supports consistent student and teacher editions across 144 lessons. The Canvas course package ran district-wide. Learning impact attributable to these materials has not been measured.</dd>
           </div>
         </dl>
         <nav class="case-index" aria-label="On this page">
@@ -107,7 +107,7 @@
 
       <section class="case-section" aria-labelledby="artifacts">
         <h2 id="artifacts">The core artifact: Guided Notes, shipped twice per lesson</h2>
-        <p class="text-muted">U5-L03, <em>Subtract Polynomials</em> — a four-page student reconstruction with a four-page annotated teacher edition, exactly as shipped. The teacher edition is not a separate document: it is the same renderer in teacher-key mode, so the two can never disagree. Select any page to inspect it.</p>
+        <p class="text-muted">U5-L03, <em>Subtract Polynomials</em> — a four-page student reconstruction with a four-page annotated teacher edition, exactly as shipped. The teacher edition is not a separate document: it uses the same renderer in teacher-key mode, reducing manual transcription and version mismatch. Both editions still require mathematical and visual review. Select any page to inspect it.</p>
         <div class="pair-grid u-mt-6">
           <figure class="pair-fig">
             <span class="pair-tag">Student</span>
@@ -136,17 +136,17 @@
         <h2 id="practice">Practice systems: each engine encodes one feedback loop</h2>
         <p class="text-muted">Around the Guided Notes core sit reusable practice engines. Each one designs a different feedback loop into the paper itself — so the check happens during practice, not a day later at grading. Two engines in evidence, student page beside its teacher support.</p>
 
-        <h3 class="u-mt-6">Color By Number — the picture verifies the math</h3>
+        <h3 class="u-mt-6">Color By Number — a visual cue for checking work</h3>
         <div class="pair-grid u-mt-4">
           <figure class="pair-fig">
             <span class="pair-tag">Student</span>
             <a class="artifact-zoom" href="../assets/images/cbn-u01-l01-student-scene.png" aria-label="Enlarge: Color By Number student scene: a numbered line-art storefront with every region keyed to an equation answer"><img width="1020" height="1320" src="../assets/images/cbn-u01-l01-student-scene.png" alt="Color By Number student scene: a numbered line-art storefront with every region keyed to an equation answer" loading="lazy"></a>
-            <figcaption><strong>Twenty regions, ten colors, two problems per color.</strong> Solve, match the answer to a color, and the scene fills in — a wrong answer paints a wrong picture the learner can see immediately.</figcaption>
+            <figcaption><strong>Twenty regions, ten colors, two problems per color.</strong> Solve, match the answer to a color, and the scene fills in — the reference picture offers a comparison cue. Learners still need to show and check their mathematics; coloring can be copied or guessed.</figcaption>
           </figure>
           <figure class="pair-fig pair-fig--teacher">
             <span class="pair-tag">Teacher</span>
             <a class="artifact-zoom" href="../assets/images/cbn-u01-l01-teacher-colored.png" aria-label="Enlarge: The same storefront scene on the teacher key, fully and realistically colored, with the ten-color answer key along the bottom"><img width="1020" height="1320" src="../assets/images/cbn-u01-l01-teacher-colored.png" alt="The same storefront scene on the teacher key, fully and realistically colored, with the ten-color answer key along the bottom" loading="lazy"></a>
-            <figcaption><strong>The facilitator sees "correct" at a glance.</strong> The completed reference shows the solution-matched coloring, so checking thirty learner pages takes seconds, not a key lookup per problem.</figcaption>
+            <figcaption><strong>A reference for facilitator review.</strong> The completed reference shows the intended coloring. Pair it with the worked solutions to check the reasoning behind a learner’s answer.</figcaption>
           </figure>
         </div>
 
@@ -171,7 +171,7 @@
           </figure>
           <figure>
             <a class="artifact-zoom" href="../assets/images/sh-u03-l01-route-recording-teacher.png" aria-label="Enlarge: annotated teacher copy of a fifteen-station slope route recording sheet; each station card carries the slope answer and the ID of the next station, and the last station returns to the first"><img width="980" height="1268" src="../assets/images/sh-u03-l01-route-recording-teacher.png" alt="Annotated teacher copy of a fifteen-station slope route recording sheet; each station card carries the slope answer and the ID of the next station, and station T08 routes back to T15 to close the loop" loading="lazy"></a>
-            <figcaption><strong>Movement as feedback</strong> — the teacher copy of one 15-station route. Each station's answer <em>is</em> the address of the next station, so a wrong answer dead-ends the route immediately instead of waiting for a key. The route closes on itself: 15 unique IDs, back to the start.</figcaption>
+            <figcaption><strong>Movement as feedback</strong> — the teacher copy of one 15-station route. Each station's answer <em>is</em> the address of the next station, so an unmatched answer can prompt a recheck. An incorrect answer may still match another station, so the route alone does not establish correctness. The route closes on itself: 15 unique IDs, back to the start.</figcaption>
           </figure>
           <figure>
             <a class="artifact-zoom" href="../assets/images/ead-err111-student-claims.jpg" aria-label="Enlarge: Error Analysis Detective casebook page with six flawed exponential-growth claims; learners mark the first bad line, code the error type, then repair and verify"><img width="927" height="1200" src="../assets/images/ead-err111-student-claims.jpg" alt="Error Analysis Detective casebook page with six flawed exponential-growth claims; learners mark the first bad line, code the error type, then repair and verify" loading="lazy"></a>
@@ -189,7 +189,7 @@
           <li><div class="flow-step"><strong>Scenes &amp; graphs</strong><span>Concept models resolved first</span></div></li>
           <li><div class="flow-step"><strong>Assets</strong><span>Every required asset must resolve — or the run blocks</span></div></li>
           <li><div class="flow-step"><strong>Renderers</strong><span>Guided Notes + practice pages</span></div></li>
-          <li><div class="flow-step"><strong>Teacher-key mode</strong><span>Same source — keys never drift</span></div></li>
+          <li><div class="flow-step"><strong>Teacher-key mode</strong><span>Same source — paired editions</span></div></li>
           <li class="flow-gate"><div class="flow-step"><strong>Publication gate</strong><span>Fail-closed checks before release</span></div></li>
         </ol>
         <div class="artifact-grid artifact-grid--lead u-mt-8">
@@ -229,11 +229,11 @@
           </li>
           <li>
             <strong>Teacher keys as a renderer mode</strong>
-            <span>Keys are generated from the same source as student pages. Drift between "what learners see" and "what the key says" becomes structurally impossible — the failure mode is deleted, not policed.</span>
+            <span>Keys are generated from the same source as student pages. This reduces version mismatch and repeated manual entry. Source errors and rendering defects remain possible, so the final student and teacher pages are reviewed together.</span>
           </li>
           <li>
             <strong>Practice formats as systems, not one-offs</strong>
-            <span>Each engine encodes one feedback loop — visual self-verification, route-as-feedback, printed peer coaching, misconception analysis — and travels across any standard on the spine.</span>
+            <span>Each engine encodes one feedback loop — visual comparison, route checking, printed peer coaching, misconception analysis — and travels across any standard on the spine.</span>
           </li>
           <li>
             <strong>Fail-closed production</strong>
@@ -246,7 +246,7 @@
         <h2 id="outcome">Impact — and what remains to evaluate</h2>
         <p>The architecture held: 144 lessons across ten units, each shipping as a student reconstruction with an annotated teacher edition, produced through the same pipeline and gate. New topics inherit lesson phases, evidence patterns, and asset templates. The district-wide Canvas package — with its 10,000+ standards-aligned assessment items — was delivered by instructors who did not build it, which was the real test of whether structure, not the designer's presence, carried the quality.</p>
         <div class="callout u-mt-6">
-          <p><strong>Honest limits.</strong> Evidence on this page is the shipped design itself — page systems, keys, and pipeline behavior. What remains to evaluate: learner-outcome effects isolated to these materials (no such metrics are claimed here), facilitation fidelity when engines run in classrooms I never visit, and item-level analytics from LMS delivery to drive the next revision cycle. Marketplace sales and download counts exist but are not learning evidence, so they are not cited as impact.</p>
+          <p><strong>Evidence and next evaluation.</strong> Evidence on this page is the shipped design itself — page systems, keys, and pipeline behavior. What remains to evaluate: learner-outcome effects isolated to these materials (no such metrics are claimed here), facilitation fidelity when engines run in classrooms I never visit, and item-level analytics from LMS delivery to drive the next revision cycle. Marketplace sales and download counts exist but are not learning evidence, so they are not cited as impact.</p>
         </div>
         <p class="u-mt-6">The designer's question underneath the whole system: <em>what must stay constant so quality scales?</em> The answer was the evidence design and the spine — plus a pipeline that refuses to ship a lesson whose parts don't resolve.</p>
       </section>
