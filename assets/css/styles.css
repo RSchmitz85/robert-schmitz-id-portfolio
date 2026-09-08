@@ -1290,3 +1290,25 @@ dialog.lightbox[open] { grid-template-columns: minmax(0,1fr); align-items: stret
   .homepage .home-hero { padding-block:2rem; }
   .hero-artifact figcaption { padding:1rem; }
 }
+/* Course evidence and branching conversation */
+.tour-grid--visual { grid-template-columns:1fr; }
+.tour-grid--visual li { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); column-gap:2rem; }
+.tour-grid--visual figure { grid-column:1; grid-row:2 / span 5; margin:0; }
+.tour-grid--visual .tour-number { grid-column:1 / -1; margin-bottom:.5rem; }
+.tour-grid--visual h3,.tour-grid--visual p { grid-column:2; }
+.tour-grid--visual img { display:block; width:100%; height:auto; border-radius:8px; }
+.tour-grid--visual figcaption { font-size:.85rem; margin-top:.65rem; }
+.decision-note { padding:1.3rem 1.5rem; margin:1.5rem 0; border-left:3px solid var(--orange-700); background:var(--paper-cool); }
+.decision-note h3 { margin-top:0; }
+.evidence-scope { margin:1.5rem 0; }
+.evidence-scope summary { cursor:pointer; font-weight:600; padding:.8rem 0; }
+.conversation { padding:clamp(1rem,4vw,2rem); border:1px solid var(--line); border-radius:14px; background:var(--paper-cool); }
+.conversation-options { display:grid; gap:.85rem; margin:1.5rem 0; }
+.conversation-options button { width:100%; font:inherit; line-height:1.6; text-align:left; padding:1rem 1.2rem; color:var(--ink); background:white; border:2px solid #aab8c7; border-radius:8px; cursor:pointer; }
+.conversation-options button[aria-pressed="true"] { border-color:#a44312; background:#fff3e9; }
+.conversation-options button:focus-visible { outline:3px solid #1766a4; outline-offset:3px; }
+.conversation .btn:disabled { opacity:.55; cursor:not-allowed; }
+.conversation-feedback { border-left:3px solid #1766a4; padding:.1rem 1rem; margin:1.5rem 0; }
+.alex-reply { margin:1.3rem 0; padding:1rem; background:white; border-left:3px solid #1766a4; }
+.conversation-review li { padding:.5rem 0; }
+@media(max-width:700px) { .tour-grid--visual li { display:block; } .tour-grid--visual figure { margin:1rem 0; } .conversation .btn { width:100%; white-space:normal; } }
