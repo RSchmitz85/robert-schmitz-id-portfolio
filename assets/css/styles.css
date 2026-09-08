@@ -1224,3 +1224,13 @@ dialog.lightbox[open] { grid-template-columns: minmax(0,1fr); align-items: stret
   .home-hero .btn-row { align-items: flex-start; flex-direction: column; }
   .home-work .mcq { padding: 1rem; }
 }
+
+/* Published graphing course */
+.gsi-feature {display:grid;grid-template-columns:1.15fr 1fr;gap:2rem;align-items:center;padding:1.5rem;border:1px solid #c9d7d4;border-radius:16px;margin-bottom:2.5rem;background:#fff;}
+.gsi-feature img {display:block;width:100%;height:auto;border-radius:8px;}
+.gsi-feature h3 {font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.15;}
+.gsi-player {position:relative;aspect-ratio:16/10;background:#20242a;border-radius:12px;overflow:hidden;margin:1.5rem 0;}
+.gsi-player img {display:block;width:100%;height:100%;object-fit:contain;opacity:.58;}
+.gsi-player iframe {display:block;border:0;width:100%;height:100%;}
+.gsi-load {position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);min-width:240px;}
+@media(max-width:700px){.gsi-feature{grid-template-columns:1fr;padding:1rem;gap:1rem}.gsi-player{aspect-ratio:4/3}.gsi-load{min-width:220px;}}
