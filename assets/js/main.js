@@ -91,7 +91,7 @@
       boxImg.alt = img.alt;
       var figure = link.closest("figure");
       var figureCaption = figure && figure.querySelector("figcaption");
-      caption.textContent = figureCaption ? figureCaption.textContent.trim() : img.alt;
+      caption.textContent = figureCaption ? figureCaption.innerText.trim().replace(/\s+/g, " ") : img.alt;
       original.href = link.href;
       previousOverflow = document.body.style.overflow;
       document.body.style.overflow = "hidden";

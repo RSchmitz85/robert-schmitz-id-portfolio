@@ -80,3 +80,11 @@
 @media(max-width:1000px){.studio-intro{gap:32px}.studio-hero h1{font-size:3.5rem}.studio-guide img{width:125px;height:156px}.studio-guide p{font-size:23px}}
 @media(max-width:760px){.studio-hero{padding:44px 0 52px;background-position:65% center}.studio-intro{grid-template-columns:1fr;gap:38px}.studio-hero h1{font-size:clamp(2.7rem,10vw,4rem)}.studio-description{max-width:540px}.studio-feature{transform:none;max-width:540px;width:100%;margin:auto}.studio-guide img{width:138px;height:173px}.homepage .section{padding:50px 0}.studio-hero .btn-row{align-items:flex-start}.studio-note{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.homepage *{scroll-behavior:auto!important}}
+.home-guitar{padding:55px 0;background:#e6edf0;border-top:1px solid #cdd8db}
+.home-guitar__inner{display:grid;grid-template-columns:1fr 1.05fr;gap:55px;align-items:center}
+.homepage .home-guitar h2{font-size:clamp(1.9rem,3vw,2.7rem);margin:18px 0 22px}
+.home-guitar__copy>p:not(.eyebrow):not(.studio-status){font-size:15px;line-height:1.8;color:#46565d;margin-bottom:24px}
+.home-guitar__screen{margin:0;background:#f7eee2;padding:16px;border:1px solid #cbbb9f;box-shadow:7px 8px 0 #172d3810;transform:rotate(1deg)}
+.home-guitar__screen img{display:block;width:100%;height:auto}
+.home-guitar__screen figcaption{font-size:11px;line-height:1.6;color:#46565d;padding:12px 2px 0}
+@media(max-width:760px){.home-guitar{padding:45px 0}.home-guitar__inner{grid-template-columns:1fr;gap:28px}.home-guitar__screen{transform:none}}
