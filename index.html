@@ -22,6 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/home-studio.css">
 </head>
 <body class="homepage">
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -45,19 +46,23 @@
   </header>
 
   <main id="main">
-    <section class="hero home-hero" aria-labelledby="home-heading">
-      <div class="container home-intro">
-        <div class="home-intro__copy">
-        <p class="eyebrow">Instructional design · L&amp;D · Edtech</p>
+    <section class="studio-hero" aria-labelledby="home-heading">
+      <div class="container studio-intro">
+        <div class="studio-intro__copy">
+        <p class="eyebrow">Robert Schmitz · Instructional designer</p>
         <h1 id="home-heading">Make feedback<br><em>worth acting on.</em></h1>
-        <p class="hero__tagline">Learners need more than a right-or-wrong result. I’m Robert Schmitz. I design practice, feedback, and job aids that explain what to do next.</p>
+        <p class="studio-lead">A wrong answer is a place to start.</p>
+        <p class="studio-description">I build learning experiences that help people spot the mistake, practice the next move, and understand why it works.</p>
         <div class="btn-row">
           <a class="btn btn--accent" href="projects/graphing-slope-intercept.html#quick-tour">Take the quick course tour →</a>
-          <a class="home-hero__secondary" href="resume/Robert_Schmitz_Distinctive_Resume_2026_v2.pdf" download="Robert-Schmitz-Resume.pdf">Download resume (PDF)</a>
+          <a class="studio-secondary" href="#projects">Explore my work ↓</a>
         </div>
-        <p class="home-hero__note">Open to L&amp;D and edtech roles · Remote preferred</p>
+        <p class="studio-note">L&amp;D · Edtech · Learning with a little imagination</p>
         </div>
-        <figure class="hero-artifact"><a href="projects/graphing-slope-intercept.html#play" aria-label="Explore the playable Graphing Slope-Intercept Form course"><img src="assets/images/graphing-storyline-player.jpg" width="1440" height="900" fetchpriority="high" alt="Opening screen of the published Graphing Slope-Intercept Form Storyline course."></a><figcaption><span>Featured · Playable Storyline course</span><strong>Graphing Slope-Intercept Form</strong><span>Worked examples → practice → feedback</span></figcaption></figure>
+        <div class="studio-feature">
+          <div class="studio-guide"><div><span class="studio-kicker">Step inside the learning lab</span><p>A little curiosity.<br>A clear next move.</p><span>Meet Scribble, a guide through my classroom resources.</span></div><img src="assets/images/studio/explorer.webp" width="512" height="640" alt="Scribble the explorer, holding a compass and map." fetchpriority="high"></div>
+          <figure class="studio-screen"><a href="projects/graphing-slope-intercept.html#play"><img src="assets/images/tour-model.webp" width="1280" height="720" alt="Actual Storyline course screen showing the four steps for graphing a line." fetchpriority="high"></a><figcaption><span>Playable Storyline course</span><a href="projects/graphing-slope-intercept.html#play">Graphing Slope-Intercept Form ↗</a></figcaption></figure>
+        </div>
       </div>
     </section>
 
@@ -65,17 +70,17 @@
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">Selected work</p>
-          <h2 id="projects-heading">Learning design you can explore.</h2>
+          <h2 id="projects-heading">Get curious. Try something.</h2>
+          <p class="studio-section-intro">Choose a response. Find an error. Follow a lesson from first example to independent practice.</p>
         </div>
         <article class="workplace-feature">
-          <div><p class="eyebrow">Workplace learning · New portfolio concept</p><h3>Turn a missed handoff into a useful conversation.</h3><p>A three-decision manager conversation with branching responses, specific feedback, and a practical handoff agreement. Explore how the same feedback principles apply at work.</p></div>
-          <a class="btn btn--primary" href="projects/workplace-feedback.html">Try the workplace scenario →</a>
+          <div class="workplace-feature__copy"><p class="eyebrow">01 / Workplace learning</p><h3>The handoff was missed.<br>What do you say next?</h3><p>Step into a manager conversation. Choose your response, hear the obstacle, and work toward an agreement for the next handoff.</p><a class="btn btn--primary" href="projects/workplace-feedback.html">Try the conversation →</a><p class="studio-status">Independent portfolio concept · Three decisions</p></div>
+          <div class="studio-conversation"><span class="studio-kicker">The design challenge</span><blockquote>How do you address the missed work and make space to understand what happened?</blockquote><div class="studio-conversation__steps"><span>Open</span><i>→</i><span>Listen</span><i>→</i><span>Agree</span></div><p>Explore how each response shapes the conversation.</p></div>
         </article>
         <div class="home-work__grid">
           <article class="home-work__case" aria-labelledby="elearning-heading">
-            <p class="home-work__label">01 / eLearning · HTML prototype + storyboard</p>
-            <h3 id="elearning-heading">A wrong answer needs a useful next step.</h3>
-            <p>Algebra learners can lose track of which terms to divide. I wrote the interaction and per-choice feedback to make that error visible and explain the next move.</p>
+            <div class="studio-case-top"><div><p class="home-work__label">02 / Feedback in action</p><h3 id="elearning-heading">Find the mistake.<br>Make the next move.</h3></div><img src="assets/images/studio/detective.webp" width="512" height="640" alt="Scribble inspecting an evidence card with a magnifying glass." loading="lazy"></div>
+            <p>One tiny algebra slip can change the whole answer. Try a choice below: the feedback points to the exact step that needs attention.</p>
           <div class="mcq" id="hero-check" tabindex="-1" aria-label="HTML feedback prototype">
             <div class="mcq__head">
               <span class="mcq__tag">HTML feedback prototype</span>
@@ -101,9 +106,8 @@
             <noscript><p>JavaScript is off. <a href="projects/storyline.html#feedback-design">Read the feedback design in the storyboard case</a>.</p></noscript>
           </article>
           <article class="home-work__case home-work__pd" aria-labelledby="pd-heading">
-            <p class="home-work__label">02 / Adult learning · Representative session design</p>
-            <h3 id="pd-heading">Help participants put the session to work.</h3>
-            <p>I structured a 60-minute educator PD session around modeled practice, peer adaptation, and a specific transfer commitment. Inspect the agenda and follow-up job aid.</p>
+            <div class="studio-case-top"><div><p class="home-work__label">03 / Adult learning</p><h3 id="pd-heading">Monday morning<br>starts here.</h3></div><img src="assets/images/studio/partner.webp" width="512" height="640" alt="Scribble holding two speech bubbles for a partner conversation." loading="lazy"></div>
+            <p>A good workshop should leave people with something they can use. This 60-minute session gives educators time to watch a routine, adapt it with a peer, and plan its place in an upcoming lesson.</p>
             <a class="home-work__preview" href="projects/professional-development.html#artifacts" aria-label="View the representative adult-learning agenda and transfer job aid">
               <img src="assets/images/pd-session-agenda-preview.png" width="1036" height="1179" alt="Representative PD agenda: frame the gap, model, collaborative practice, debrief the design, and commit and transfer." loading="lazy">
             </a>
@@ -117,19 +121,20 @@
     <section class="section section--muted" id="featured-case" aria-labelledby="featured-heading">
       <div class="container feature-case">
         <div>
-          <span class="feature-case__label">Supporting case · curriculum systems</span>
-          <h2 id="featured-heading">Scalable Algebra 1 Architecture</h2>
+          <span class="feature-case__label">04 / Curriculum systems</span>
+          <h2 id="featured-heading"><span class="studio-number">144</span> lessons.<br>One coherent learning experience.</h2>
           <div class="feature-case__pt">
-            <strong>The problem</strong>
-            <p>Course materials drift at scale: each lesson reinvents structure, practice disconnects from objectives, and answer keys stop matching the pages learners actually use.</p>
+            <strong>Consistency is a design problem.</strong>
+            <p>A course should feel connected from lesson to lesson. The challenge is keeping the structure familiar while the mathematics becomes more demanding.</p>
           </div>
           <div class="feature-case__pt">
-            <strong>My role</strong>
-            <p>Curriculum architect and sole instructional designer — course architecture, evidence design, page systems, and the production pipeline spec.</p>
+            <strong>I designed the system behind the pages.</strong>
+            <p>As curriculum architect and sole instructional designer, I planned the course sequence, practice structure, student pages, teacher support, and production pipeline.</p>
           </div>
           <div class="feature-case__pt">
-            <strong>The work</strong>
-            <p>One course spine spans 144 lessons across ten units. Student pages and teacher editions share a source to reduce answer-key mismatch risk. The paired pages show that design in one lesson; learning impact remains unmeasured.</p>
+            <strong>Follow the same lesson from both sides.</strong>
+            <p>The architecture spans 144 lessons across ten units. These student and teacher pages share a source to reduce answer-key mismatch risk. Compare the practice space with the worked support beside it.</p>
+            <p class="studio-status">Artifact evidence shown here; learning impact has not been measured.</p>
           </div>
 <div class="btn-row">
             <a class="btn btn--primary" href="projects/curriculum-system.html">Inspect the curriculum case</a>
@@ -159,12 +164,23 @@
     </section>
 
 
+    <section class="studio-resources" aria-labelledby="resources-heading">
+      <div class="container">
+        <div class="studio-resource-heading"><div><p class="eyebrow">Teacher resources · A world built for practice</p><h2 id="resources-heading">Give the learning<br>some character.</h2><p>Meet the detectives, makers, and explorers in my classroom work. Each activity gives learners a different reason to tackle the next problem.</p></div><img src="assets/images/studio/artist.webp" width="512" height="640" alt="Scribble the artist holding a color-by-number activity and paintbrush." loading="lazy"></div>
+        <div class="studio-resource-grid">
+          <a class="studio-resource" href="projects/task-card-system.html"><img src="assets/images/studio/gamer.webp" width="512" height="640" alt="Scribble wearing a headset and holding a game controller." loading="lazy"><span class="studio-kicker">Task-card system</span><h3>Choose the right challenge.</h3><p>See how a selection guide helps instructors choose practice from a varied bank of tasks.</p><span class="studio-resource-link">Explore the task cards ↗</span></a>
+          <a class="studio-resource" href="projects/punchline-two-step.html"><img src="assets/images/studio/idea.webp" width="505" height="640" alt="Scribble sharing a glowing idea." loading="lazy"><span class="studio-kicker">Punchline Math</span><h3>Solve. Decode. Reveal.</h3><p>A two-step-equation activity connects worked problems to a punchline worth uncovering.</p><span class="studio-resource-link">See the student experience ↗</span></a>
+          <a class="studio-resource" href="projects/classroom-implementation.html"><img src="assets/images/studio/explorer.webp" width="512" height="640" alt="Scribble ready to explore with a compass and map." loading="lazy"><span class="studio-kicker">Classroom implementation</span><h3>Build a place to explore.</h3><p>Room layouts, station cues, and teacher guidance help turn a resource into a classroom routine.</p><span class="studio-resource-link">Explore the classroom system ↗</span></a>
+        </div>
+        <p class="studio-resource-footer">Want to see the wider portfolio? <a href="projects.html">Explore all projects →</a></p>
+      </div>
+    </section>
     <section class="section section--tight home-background" aria-labelledby="background-heading">
       <div class="container home-background__grid">
-        <h2 id="background-heading">Design approach<br>&amp; background</h2>
+        <h2 id="background-heading">Imagination gets<br>attention.<br><span class="studio-accent">Design gives it<br>somewhere to go.</span></h2>
         <div>
-          <p><strong>Approach:</strong> Start with the learning need, align practice to the objective, and write feedback around the likely error.</p>
-          <p><strong>Current artifacts:</strong> A published Storyline Web course, HTML/CSS/JS interactions, Storyline storyboards, and Canvas/QTI assessment packages.</p>
+          <p>I like learning experiences with personality: a character to follow, a problem to investigate, a reason to try again. Every visual choice still needs to serve the task.</p>
+          <p>I start with what learners need to do, build practice around it, and write feedback for the places they’re likely to get stuck. My work includes a published Storyline Web course, HTML interactions, storyboards, and Canvas/QTI assessment packages.</p>
           <p><strong>Credentials:</strong> M.Ed. Mathematics Education, UCF · UCF Professional Certification in Instructional Design. <a href="resume.html">View full resume</a>.</p>
         </div>
       </div>
@@ -173,7 +189,7 @@
       <div class="container">
         <div class="cta-band">
           <div>
-            <h2>Have a learning problem to solve?</h2>
+            <h2>Let’s make the next<br>“aha” moment happen.</h2>
             <p>Open to instructional design and eLearning roles in L&amp;D and edtech. Remote preferred.</p>
           </div>
           <div class="btn-row u-mt-0">
