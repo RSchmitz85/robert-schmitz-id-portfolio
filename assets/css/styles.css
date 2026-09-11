@@ -1323,3 +1323,7 @@ dialog.lightbox[open] { grid-template-columns: minmax(0,1fr); align-items: stret
 .showcase-catalog { width:min(1120px,calc(100% - 2.5rem)); margin:0 auto 4rem; }
 .showcase-card-image { display:block; width:100%; height:210px; object-fit:contain; background:#f2f5f7; border-radius:8px; margin-bottom:1.3rem; }
 @media(max-width:700px) { .showcase-pair { grid-template-columns:1fr; gap:0; } .showcase-figure { padding:.65rem; } }
+
+/* Stacked fractions in the algebra feedback explorer. */
+.mcq math { font-size: 1em; vertical-align: middle; }
+.mcq__option:has(math) { min-height: 72px; }

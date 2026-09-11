@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=stacked-fractions">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -117,17 +117,17 @@
           <p class="mcq__prompt">Solve for <em>x</em>, assuming <em>m</em> ≠ 0.</p>
           <span class="mcq__math"><em>y</em> = <em>mx</em> + <em>b</em></span>
           <div class="mcq__options">
-            <button type="button" class="mcq__option" data-correct="true" data-fb-id="fb-sl-a" data-fb="Subtract b from both sides, then divide the entire quantity y − b by m. The prompt assumes m ≠ 0, so this division is valid. This explains the selected answer; a choice alone does not show your reasoning."><em>x</em> = (<em>y</em> − <em>b</em>) / <em>m</em></button>
-            <button type="button" class="mcq__option" data-correct="false" data-fb-id="fb-sl-b" data-fb="This divides only b by m. Both terms in y − b must be divided by m: x = (y − b) / m."><em>x</em> = <em>y</em> − <em>b</em>/<em>m</em></button>
-            <button type="button" class="mcq__option" data-correct="false" data-fb-id="fb-sl-c" data-fb="Subtracting b from both sides gives y − b, not b − y. Reversing those terms changes the sign of the expression."><em>x</em> = (<em>b</em> − <em>y</em>) / <em>m</em></button>
-            <button type="button" class="mcq__option" data-correct="false" data-fb-id="fb-sl-d" data-fb="Dividing first is valid, but every term must be divided by m: y/m = x + b/m. Then subtract b/m, not b."><em>x</em> = <em>y</em>/<em>m</em> − <em>b</em></button>
+            <button type="button" class="mcq__option" data-correct="true" data-fb-id="fb-sl-a" data-fb="Subtract b from both sides, then divide the entire quantity y − b by m. The prompt assumes m ≠ 0, so this division is valid. This explains the selected answer; a choice alone does not show your reasoning."><em>x</em> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>y</mi><mo>−</mo><mi>b</mi></mrow><mi>m</mi></mfrac></math></button>
+            <button type="button" class="mcq__option" data-correct="false" data-fb-id="fb-sl-b" data-fb="This divides only b by m. Both terms in y − b must be divided by m: x equals the quantity y minus b, divided by m."><em>x</em> = <em>y</em> − <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>b</mi></mrow><mi>m</mi></mfrac></math></button>
+            <button type="button" class="mcq__option" data-correct="false" data-fb-id="fb-sl-c" data-fb="Subtracting b from both sides gives y − b, not b − y. Reversing those terms changes the sign of the expression."><em>x</em> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>b</mi><mo>−</mo><mi>y</mi></mrow><mi>m</mi></mfrac></math></button>
+            <button type="button" class="mcq__option" data-correct="false" data-fb-id="fb-sl-d" data-fb="Dividing first is valid, but every term must be divided by m: y divided by m equals x plus b divided by m. Then subtract b divided by m, not b."><em>x</em> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>y</mi></mrow><mi>m</mi></mfrac></math> − <em>b</em></button>
           </div>
           <!-- Rich feedback copy: same wording as data-fb, but variables set in
                italic so the prose matches the choices it is explaining. -->
           <template id="fb-sl-a">Subtract <em>b</em> from both sides, then divide the entire quantity <em>y</em> − <em>b</em> by <em>m</em>. The prompt assumes <em>m</em> ≠ 0, so this division is valid. This explains the selected answer; a choice alone does not show your reasoning.</template>
-          <template id="fb-sl-b">This divides only <em>b</em> by <em>m</em>. Both terms in <em>y</em> − <em>b</em> must be divided by <em>m</em>: <em>x</em> = (<em>y</em> − <em>b</em>) / <em>m</em>.</template>
+          <template id="fb-sl-b">This divides only <em>b</em> by <em>m</em>. Both terms in <em>y</em> − <em>b</em> must be divided by <em>m</em>: <em>x</em> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>y</mi><mo>−</mo><mi>b</mi></mrow><mi>m</mi></mfrac></math>.</template>
           <template id="fb-sl-c">Subtracting <em>b</em> from both sides gives <em>y</em> − <em>b</em>, not <em>b</em> − <em>y</em>. Reversing those terms changes the sign of the expression.</template>
-          <template id="fb-sl-d">Dividing first is valid, but every term must be divided by <em>m</em>: <em>y</em>/<em>m</em> = <em>x</em> + <em>b</em>/<em>m</em>. Then subtract <em>b</em>/<em>m</em>, not <em>b</em>.</template>
+          <template id="fb-sl-d">Dividing first is valid, but every term must be divided by <em>m</em>: <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>y</mi></mrow><mi>m</mi></mfrac></math> = <em>x</em> + <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>b</mi></mrow><mi>m</mi></mfrac></math>. Then subtract <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>b</mi></mrow><mi>m</mi></mfrac></math>, not <em>b</em>.</template>
           <div class="mcq__feedback" role="status" aria-live="polite">Choose an answer to see its feedback. You can explore all four choices; no score is recorded.</div>
           <p class="mcq__foot">The planned Storyline build specifies one attempt and 10 points for this item. Those constraints are not implemented in this HTML explorer. <noscript>JavaScript is off, so the buttons will not respond — the full feedback design is written out further down this page.</noscript></p>
         </div>
@@ -275,12 +275,12 @@
         <div class="not-this" role="img" aria-label="Reproduction of the module's misconception strip: the incorrect form x equals y minus b over m is struck through, next to the correct form x equals the quantity y minus b, divided by m">
           <div class="not-this__wrong">
             <span class="not-this__label">Not this</span>
-            <span class="not-this__math"><s><em>x</em> = <em>y</em> − <em>b</em>/<em>m</em></s></span>
+            <span class="not-this__math"><s><em>x</em> = <em>y</em> − <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>b</mi></mrow><mi>m</mi></mfrac></math></s></span>
             <p>That only divides <em>b</em>. Keep <em>y − b</em> together.</p>
           </div>
           <div class="not-this__right">
             <span class="not-this__label">This</span>
-            <span class="not-this__math"><em>x</em> = (<em>y</em> − <em>b</em>) / <em>m</em></span>
+            <span class="not-this__math"><em>x</em> = <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>y</mi><mo>−</mo><mi>b</mi></mrow><mi>m</mi></mfrac></math></span>
             <p>The whole quantity <em>y − b</em> is divided by <em>m</em> · <em>m ≠ 0</em></p>
           </div>
         </div>
@@ -288,7 +288,7 @@
         <div class="feedback-samples">
           <blockquote class="feedback-sample">
             <span class="feedback-sample__ctx">Q3 · learner picks x = y − b/m</span>
-            <p>"Close — but that only divides <em>b</em> by <em>m</em>. The entire quantity <em>y − b</em> must be divided by <em>m</em>: x = (y − b) / m."</p>
+            <p>"Close — but that only divides <em>b</em> by <em>m</em>. The entire quantity <em>y − b</em> must be divided by <em>m</em>: x equals the quantity y minus b, divided by m."</p>
           </blockquote>
           <blockquote class="feedback-sample">
             <span class="feedback-sample__ctx">Q4 · learner picks w = P/2 − 2l</span>
