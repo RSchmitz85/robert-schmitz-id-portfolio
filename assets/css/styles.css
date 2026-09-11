@@ -1325,5 +1325,5 @@ dialog.lightbox[open] { grid-template-columns: minmax(0,1fr); align-items: stret
 @media(max-width:700px) { .showcase-pair { grid-template-columns:1fr; gap:0; } .showcase-figure { padding:.65rem; } }
 
 /* Stacked fractions in the algebra feedback explorer. */
-.mcq math { font-size: 1em; vertical-align: middle; }
+math { font-size: 1em; vertical-align: middle; }
 .mcq__option:has(math) { min-height: 72px; }
