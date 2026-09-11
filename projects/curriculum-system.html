@@ -22,6 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="stylesheet" href="../assets/css/portfolio-showcase.css?v=20260910">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -54,8 +55,36 @@
         </nav>
         <p class="eyebrow">Case study · Curriculum systems</p>
         <h1>Scalable Algebra 1 Curriculum Architecture</h1>
-        <p class="lead">One course spine carried 144 lessons across ten units — every lesson a student reconstruction page set beside an annotated teacher edition, produced through a pipeline that refuses to ship a page whose parts don't resolve.</p>
-        <dl class="case-facts">
+        <p class="lead">A 144-lesson system that connects the objective, student practice, and worked teacher support. Start with one lesson to see how the pieces fit.</p>
+<p><strong>My role:</strong> Curriculum architecture, assessment design, paired materials, and production specifications.</p><p><a class="btn btn--primary" href="#system-tour">See one lesson, end to end ↓</a></p>
+        <nav class="case-index" aria-label="On this page">
+          <p class="case-index__label">Explore the evidence</p>
+          <ul>
+            <li><a href="#problem">The problem</a></li>
+            <li><a href="#artifacts">Guided Notes core</a></li>
+            <li><a href="#practice">Practice systems</a></li>
+            <li><a href="#methodology">Process &amp; pipeline</a></li>
+            <li><a href="#outcome">Impact &amp; limits</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header><section class="section system-tour" id="system-tour" aria-labelledby="system-tour-heading"><div class="container"><p class="eyebrow">One lesson / Four connected decisions</p><h2 id="system-tour-heading">From the objective to the next teaching move.</h2><p>U5-L03 · Subtract Polynomials. The student and teacher pages below are from the same lesson.</p><div class="system-tour-grid"><article><span class="tour-step">01 / Objective</span><h3>Subtract and explain.</h3><p>Distribute the subtraction sign, combine like terms, and explain why each sign changes.</p><a href="../assets/images/gn-u5-l03-student-1.jpg"><img src="../assets/images/gn-u5-l03-student-1.jpg" width="1300" height="1683" alt="Opening student page with the model and vocabulary." loading="lazy"></a></article><article><span class="tour-step">02 / Student task</span><h3>Make the thinking visible.</h3><p>The learner completes the reasoning and applies the model to new polynomial pairs.</p><a href="../assets/images/gn-u5-l03-student-2.png"><img src="../assets/images/gn-u5-l03-student-2.png" width="1300" height="1683" alt="Student practice page with space for reasoning." loading="lazy"></a></article><article><span class="tour-step">03 / Teacher support</span><h3>Show the intended reasoning.</h3><p>The matched teacher edition supplies worked responses, including an open-ended example.</p><a href="../assets/images/gn-u5-l03-teacher-2.png"><img src="../assets/images/gn-u5-l03-teacher-2.png" width="1300" height="1683" alt="Matching teacher page showing completed responses in red." loading="lazy"></a></article><article class="system-review"><span class="tour-step">04 / Review decision</span><h3>Locate the breakdown.</h3><p>If a response changes only the first sign, return to distributing −1 before adding more practice.</p><p>This is an intended teaching response. Learner impact has not been measured for this sample.</p><a href="#outcome">Read the evidence and limits →</a></article></div><p class="text-muted">Select any page to inspect it at full size. The complete case study follows.</p></div></section>
+
+    <nav class="case-tabs" aria-label="Project case studies">
+      <div class="container">
+        <ul>
+          <li><a href="curriculum-system.html" aria-current="page">Curriculum system</a></li>
+          <li><a href="storyline.html">Storyline</a></li>
+          <li><a href="assessment-design.html">Assessment</a></li>
+          <li><a href="professional-development.html">PD / adult learning</a></li>
+          <li><a href="ai-workflow.html">AI workflow</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="case-section" aria-labelledby="problem">
+        <h2 id="problem">The problem</h2>        <dl class="case-facts">
           <div>
             <dt>Audience</dt>
             <dd>Algebra 1 learners — including intervention settings — and the facilitators who deliver the course, many of whom did not build it.</dd>
@@ -73,34 +102,6 @@
             <dd>A shared source supports consistent student and teacher editions across 144 lessons. The Canvas course package ran district-wide. Learning impact attributable to these materials has not been measured.</dd>
           </div>
         </dl>
-        <nav class="case-index" aria-label="On this page">
-          <p class="case-index__label">Explore the evidence</p>
-          <ul>
-            <li><a href="#problem">The problem</a></li>
-            <li><a href="#artifacts">Guided Notes core</a></li>
-            <li><a href="#practice">Practice systems</a></li>
-            <li><a href="#methodology">Process &amp; pipeline</a></li>
-            <li><a href="#outcome">Impact &amp; limits</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <nav class="case-tabs" aria-label="Project case studies">
-      <div class="container">
-        <ul>
-          <li><a href="curriculum-system.html" aria-current="page">Curriculum system</a></li>
-          <li><a href="storyline.html">Storyline</a></li>
-          <li><a href="assessment-design.html">Assessment</a></li>
-          <li><a href="professional-development.html">PD / adult learning</a></li>
-          <li><a href="ai-workflow.html">AI workflow</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container">
-      <section class="case-section" aria-labelledby="problem">
-        <h2 id="problem">The problem</h2>
         <p>Course materials drift at scale. Individual lessons get rebuilt from scratch, practice disconnects from the objective it was supposed to prove, and answer keys quietly stop matching the pages in front of learners. The design problem was a <strong>scalable architecture</strong>: shared lesson phases, predictable evidence patterns, and page systems that let one designer ship 144 coherent lessons — without lowering mathematical rigor to get there.</p>
         <p>Two spines govern everything. The course runs <strong>Conceptual → Visual → Procedural → Transfer</strong>; each lesson runs <strong>Activate → Model → Guide → Apply → Reflect → Extend</strong>. Objectives and their evidence are fixed before instruction is authored — Dick &amp; Carey's order — and a production engine enforces that same order mechanically.</p>
       </section>
