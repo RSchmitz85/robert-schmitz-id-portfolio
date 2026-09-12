@@ -57,3 +57,6 @@
 .resource-sheet:hover,.resource-sheet:focus-visible{z-index:5;transform:rotate(0deg) scale(1.04)}
 @media(min-width:1151px){.homepage .welcome-stage{grid-template-columns:minmax(260px,.65fr) minmax(0,1.95fr);gap:28px}.homepage .welcome-person{gap:12px}.homepage .welcome-person img{width:88px;height:88px}}
 @media(prefers-reduced-motion:reduce){.resource-sheet{transition:none}}
+
+/* Keep the overlapping previews free of clipped captions; links carry accessible names. */
+.resource-sheet span{display:none}
