@@ -1,0 +1,18 @@
+/* Keep related copy and animation together across wide screens. */
+.homepage .supporting-work{padding-block:26px}
+.homepage .supporting-work__inner{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,3vw,48px);justify-content:normal;align-items:center}
+.homepage .supporting-work__inner>div>p{max-width:60ch;margin-bottom:16px}
+.homepage .supporting-links{max-width:none}
+.homepage .classroom-invitation{display:grid;grid-template-columns:minmax(150px,.65fr) minmax(0,1fr);gap:18px;padding:22px;border-radius:20px;background:#fffaf2b8;text-align:left;text-decoration:none;align-items:center}
+.homepage .classroom-invitation video{width:100%;max-width:260px;justify-self:center}
+.homepage .classroom-invitation h3{font-size:clamp(24px,2vw,32px);line-height:1.15;margin:0 0 14px;color:#172d38}
+.homepage .classroom-invitation p{font-size:16px;line-height:1.6;font-weight:400;margin:0 0 16px}
+.homepage .classroom-invitation .eyebrow{font-size:11px;font-weight:600}
+.homepage .classroom-invitation span{font-size:15px;text-decoration:underline;text-underline-offset:4px}
+.homepage .classroom-invitation:focus-visible{outline:3px solid #245d57;outline-offset:5px}
+.homepage .home-background{padding-block:30px}
+.homepage .home-background__grid{grid-template-columns:minmax(260px,.65fr) minmax(0,1.35fr);gap:32px;align-items:start}
+.homepage .home-background__grid p{max-width:85ch;margin-top:0;margin-bottom:12px}
+.homepage .home-background__grid h2{margin-bottom:0}
+@media(max-width:1000px){.homepage .supporting-work__inner{grid-template-columns:1fr}.homepage .classroom-invitation{grid-template-columns:180px 1fr}.homepage .home-background__grid{grid-template-columns:1fr;gap:18px}}
+@media(max-width:540px){.homepage .classroom-invitation{grid-template-columns:100px minmax(0,1fr);padding:16px;gap:12px}.homepage .classroom-invitation h3{font-size:23px}.homepage .classroom-invitation p{font-size:15px}.homepage .classroom-invitation .eyebrow{font-size:10px}.homepage .home-background{padding-block:24px}}
