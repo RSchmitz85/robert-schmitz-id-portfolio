@@ -44,3 +44,11 @@
 .homepage .studio-section-intro{font-size:19px}
 @media(max-width:1000px){.homepage .feature-description{display:block}}
 @media(max-width:760px){.homepage .welcome-copy h1{font-size:40px}.homepage .imagination-intro{font-size:19px}.homepage .feature-switch button{font-size:12px;padding-inline:7px}.homepage .feature-description h2{font-size:23px}.homepage .workplace-feature__copy>p,.homepage .flagship-copy>p,.homepage .supporting-work__inner>div>p,.homepage .home-background__grid p{font-size:17px}}
+/* Give the introduction a visible portrait and align it with the showcase. */
+.homepage .welcome-stage{align-items:start;padding-block:20px 28px}
+.homepage .welcome-copy{justify-self:start;max-width:680px;margin:0}
+.homepage .welcome-person{gap:24px;margin-bottom:22px}
+.homepage .welcome-person img{width:176px;height:176px;flex-shrink:0}
+.homepage .welcome-person .eyebrow{font-size:12px;max-width:25ch}
+@media(max-width:1000px) and (min-width:761px){.homepage .welcome-person img{width:144px;height:144px}.homepage .welcome-person{gap:16px}}
+@media(max-width:760px){.homepage .welcome-stage{padding-block:8px 24px}.homepage .welcome-person img{width:144px;height:144px}.homepage .welcome-person{gap:20px}.homepage .welcome-person .eyebrow{font-size:11px}}
