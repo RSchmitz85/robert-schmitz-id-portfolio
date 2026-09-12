@@ -12,3 +12,20 @@
   mask-image:radial-gradient(ellipse 65% 65% at 55% 48%,#000 65%,rgba(0,0,0,.9) 75%,rgba(0,0,0,.4) 90%,transparent 100%),linear-gradient(90deg,transparent,#000 16%,#000 84%,transparent),linear-gradient(transparent,#000 12%,#000 84%,transparent);
   mask-composite:intersect;
 }
+/* Keep broad sections, but bound the scale of individual media and text. */
+.homepage .welcome-stage{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);padding-block:30px 40px;gap:clamp(28px,4vw,64px)}
+.homepage .welcome-copy{max-width:620px;padding:0;justify-self:center}
+.homepage .welcome-copy h1{font-size:clamp(36px,3.3vw,52px);line-height:1.12;max-width:18ch}
+.homepage .welcome-person img{width:88px;height:88px}
+.homepage .featured-stage{width:100%;max-width:760px;justify-self:start}
+.homepage .real-work-image{background:#f6f2e9}
+.homepage .real-work-image img{height:clamp(240px,24vw,360px);aspect-ratio:auto;object-fit:contain}
+.homepage .feature-description{padding:14px 10px 8px;gap:16px}
+.homepage .feature-description h2{font-size:20px}
+.homepage .flagship-preview{aspect-ratio:auto}
+.homepage .flagship-preview img{height:300px;object-fit:contain}
+.homepage .workplace-feature__copy>p,.homepage .flagship-copy>p,.homepage .home-background__grid p{max-width:65ch}
+.homepage .supporting-work__inner{grid-template-columns:minmax(0,900px) 220px;justify-content:space-between}
+.homepage .supporting-mascot video{width:210px}
+@media(max-width:1000px){.homepage .feature-description{display:block}.homepage .flagship-preview img{height:230px}}
+@media(max-width:760px){.homepage .welcome-stage{grid-template-columns:1fr;padding-block:16px 30px;gap:24px}.homepage .welcome-copy,.homepage .featured-stage{max-width:none;justify-self:stretch}.homepage .welcome-copy h1{font-size:36px}.homepage .real-work-image img{height:auto;aspect-ratio:16/9}.homepage .flagship-preview img{height:auto}.homepage .supporting-work__inner{grid-template-columns:1fr}.homepage .supporting-mascot video{width:150px}}
