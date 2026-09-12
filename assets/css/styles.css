@@ -110,7 +110,7 @@
   --track-caps: 0.14em;
 
   /* Layout */
-  --max-w: 76rem;
+  --max-w: 88rem;
   --max-w-narrow: 46rem;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -181,7 +181,7 @@ code { font-size: 0.92em; background: var(--paper-cool); padding: 0.1em 0.35em; 
 .skip-link:focus { left: var(--space-4); top: var(--space-4); }
 
 /* ---------- Layout utilities ---------- */
-.container { width: min(100% - 2.5rem, var(--max-w)); margin-inline: auto; }
+.container { width: min(100% - clamp(2.5rem, 6vw, 6rem), var(--max-w)); margin-inline: auto; }
 .container--narrow { width: min(100% - 2.5rem, var(--max-w-narrow)); }
 .section { padding: clamp(2.75rem, 5.5vw, 4.25rem) 0; }
 .section--tight { padding: clamp(1.75rem, 3vw, 2.5rem) 0; }
