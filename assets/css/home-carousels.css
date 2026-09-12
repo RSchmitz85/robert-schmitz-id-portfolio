@@ -1,0 +1,59 @@
+.collection-carousel{--collection-accent:#315b48;--collection-tint:#e7ede0}
+.storyline-board{--collection-accent:#805123;--collection-tint:#f0e6d5}
+.carousel-slides{display:grid;flex:1;min-width:0}
+.collection-slide{grid-area:1/1;display:flex;flex-direction:column;min-width:0}
+.collection-slide[hidden]{display:none}
+.carousel-art{position:relative;display:flex;align-items:center;justify-content:center;height:260px;padding:20px 30px 32px;background:var(--collection-tint);overflow:hidden;touch-action:pan-y}
+.carousel-art img{display:block;max-width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 8px 10px #233c3525);transition:transform .25s ease}
+.resource-art{background:radial-gradient(ellipse at 50% 40%,#f9faee,var(--collection-tint))}
+.resource-art img{transform:rotate(-3deg);width:auto}
+.carousel-art:hover img{transform:scale(1.025)}
+.lesson-art{padding:18px 16px 32px}.lesson-art img{width:100%;height:auto;max-height:100%}
+.art-label{position:absolute;bottom:8px;left:0;right:0;text-align:center;color:var(--collection-accent);font-size:.8125rem;font-weight:600}
+.carousel-copy{padding:20px 24px 10px;display:flex;flex-direction:column;gap:10px;flex:1}
+.homepage .project-category{font-size:.8125rem;letter-spacing:.05em;text-transform:uppercase;color:var(--collection-accent);font-weight:700;margin:0}
+.homepage .carousel-copy h3{font-size:1.5rem;line-height:1.22;letter-spacing:-.025em;margin:0;color:#173b37}
+.homepage .project-hook{font-size:1rem;font-weight:600;line-height:1.5;margin:0;color:#314c47}
+.homepage .project-description{font-size:1rem;line-height:1.6;margin:0;color:#475a53}
+.carousel-project-link,.carousel-pending{margin-top:auto;padding-top:8px;min-height:44px;font-size:1rem;color:var(--collection-accent);font-weight:600;text-underline-offset:4px}
+.carousel-pending{font-size:.875rem;font-weight:500}
+.carousel-controls{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:12px 20px 16px}
+.carousel-controls[hidden]{display:none}
+.carousel-arrow{display:flex;align-items:center;justify-content:center;width:44px;height:44px;flex-shrink:0;border:1px solid #bdc8b9;border-radius:50%;background:#fffdf8;color:var(--collection-accent);font-size:1.4rem;cursor:pointer;transition:background .2s,color .2s}
+.carousel-arrow:hover{background:var(--collection-accent);color:#fff}
+.carousel-position{display:flex;flex-direction:column;align-items:center;gap:0}
+.carousel-counter{font-size:.8125rem;font-variant-numeric:tabular-nums;color:#50604e;font-weight:600;letter-spacing:.08em}
+.carousel-dots{display:flex;align-items:center;justify-content:center;flex-wrap:wrap}
+.carousel-dots button{display:flex;align-items:center;justify-content:center;padding:0;width:24px;height:24px;background:transparent;border:0;cursor:pointer}
+.carousel-dots button span{width:6px;height:6px;background:#abb7a4;border-radius:10px;transition:width .2s,background .2s}
+.carousel-dots button[aria-current] span{width:18px;background:var(--collection-accent)}
+.collection-all{display:flex;justify-content:space-between;gap:12px;padding:16px 24px;border-top:1px solid #d9ded0;color:var(--collection-accent);font-size:.875rem;font-weight:600;text-decoration:none;background:#fafaf3}
+.collection-all:hover{text-decoration:underline;text-underline-offset:4px}
+.development-art{background-color:#f0e9da;background-image:linear-gradient(#b29b7920 1px,transparent 1px),linear-gradient(90deg,#b29b7920 1px,transparent 1px);background-size:22px 22px}
+.development-sheet{width:85%;padding:20px;background:#fffdf5;border:1px solid #ded3ba;box-shadow:4px 8px 0 #ccb99340;transform:rotate(-3deg);color:#765b35}
+.development-sheet>span{font-size:.6875rem;letter-spacing:.12em;font-weight:700}
+.wireframe-row{display:flex;align-items:center;gap:10px;margin-top:16px}.wireframe-row i{font-size:.75rem;font-style:normal}.wireframe-row b{height:14px;background:#e7dfcd;flex:1;border-radius:3px}.wireframe-row b:last-child{flex:.5;background:#d5dfd0}
+.development-sheet p{font-family:var(--font-display);font-size:1.2rem;margin:16px 0 0}
+@media(min-width:1151px){.carousel-art{height:220px}.carousel-copy{min-height:275px}}
+@media(max-width:650px){.carousel-art{height:260px}.carousel-copy{padding-inline:20px}.collection-all{padding-inline:20px}}
+@media(prefers-reduced-motion:reduce){.carousel-art img,.carousel-arrow,.carousel-dots button span{transition:none}}
+.homepage .collection-carousel{background:rgba(255,253,248,.58);border-color:#b9c5b8a6}
+.homepage .board-heading{background:#e7edde70}
+.homepage .storyline-board .board-heading{background:#eee0c970}
+.homepage .carousel-art{height:340px;background-color:transparent}
+.homepage .resource-art{background:transparent}
+.homepage .carousel-copy{background:#fffdf85c}
+.homepage .collection-all{background:#fafaf359}
+.homepage .resource-collage{position:relative;display:block;padding:0;isolation:isolate}
+.resource-sheet{position:absolute;display:block;background:#fffdf6;box-shadow:0 7px 16px #233c3538;border:3px solid #fffdf6;border-radius:3px;overflow:hidden;text-decoration:none;transition:transform .2s ease}
+.homepage .resource-sheet img{width:100%;height:100%;object-fit:cover;object-position:top;transform:none;filter:none}
+.resource-sheet span{position:absolute;bottom:0;left:0;right:0;padding:5px 6px;background:#fffdf6f5;color:#20453d;font-size:.75rem;font-weight:600;line-height:1.25}
+.sheet-0{width:51%;height:89%;left:25%;top:6%;z-index:3;transform:rotate(-3deg)}
+.sheet-1,.sheet-2,.sheet-3,.sheet-4{width:32%;height:45%}
+.sheet-1{left:2%;top:3%;transform:rotate(-7deg)}
+.sheet-2{right:2%;top:4%;transform:rotate(7deg)}
+.sheet-3{left:2%;bottom:3%;transform:rotate(4deg);z-index:4}
+.sheet-4{right:2%;bottom:3%;transform:rotate(-4deg);z-index:4}
+.resource-sheet:hover,.resource-sheet:focus-visible{z-index:5;transform:rotate(0deg) scale(1.04)}
+@media(min-width:1151px){.homepage .welcome-stage{grid-template-columns:minmax(260px,.65fr) minmax(0,1.95fr);gap:28px}.homepage .welcome-person{gap:12px}.homepage .welcome-person img{width:88px;height:88px}}
+@media(prefers-reduced-motion:reduce){.resource-sheet{transition:none}}
