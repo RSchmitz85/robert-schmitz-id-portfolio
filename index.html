@@ -25,6 +25,10 @@
   <link rel="stylesheet" href="assets/css/home-studio.css?v=hiring-focus-20260910">
   <link rel="stylesheet" href="assets/css/addie-process.css">
 <link rel="stylesheet" href="assets/css/portfolio-showcase.css?v=20260910">
+<style>
+.scribble-welcome{background:#fffaf2;padding:24px 24px 0}.welcome-stage{position:relative;max-width:1180px;margin:0 auto;isolation:isolate;min-height:480px;aspect-ratio:784/470;border-bottom:1px solid #ded6c9;overflow:hidden}.welcome-stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:-1}.welcome-copy{position:absolute;left:4%;top:50%;transform:translateY(-50%);width:46%}.welcome-copy .eyebrow{font-size:10px;letter-spacing:.15em;color:#7d4d26;margin:0 0 24px}.welcome-copy h1{font-size:clamp(30px,4.2vw,52px);letter-spacing:-.05em;line-height:1.07;margin:0 0 12px;color:#172d38}.welcome-role{font-size:clamp(18px,2.2vw,26px);font-weight:500;margin:0 0 26px}.welcome-tagline{font-size:clamp(18px,2.3vw,28px);line-height:1.4;color:#46565d;margin:0 0 28px}.welcome-copy .btn-row{gap:20px;align-items:center;flex-wrap:wrap}.welcome-about{font-size:14px;color:#172d38;text-underline-offset:5px}.homepage .home-work{padding-top:42px}
+@media(max-width:680px){.scribble-welcome{padding:16px 16px 0}.welcome-stage{aspect-ratio:auto;min-height:0;display:flex;flex-direction:column;overflow:visible}.welcome-copy{position:relative;left:auto;top:auto;transform:none;width:100%;padding:24px 8px 0;order:0}.welcome-copy h1{font-size:40px}.welcome-copy .eyebrow{margin-bottom:18px}.welcome-role{font-size:22px;margin-bottom:16px}.welcome-tagline{font-size:22px;margin-bottom:22px}.welcome-stage video{position:relative;inset:auto;order:1;z-index:0;aspect-ratio:784/470;width:100%;height:auto;margin-top:12px}.homepage .home-work{padding-top:32px}}
+</style>
 </head>
 <body class="homepage">
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -48,18 +52,12 @@
   </header>
 
   <main id="main">
-  <section class="studio-hero person-hero" aria-labelledby="home-heading">
-    <div class="container studio-intro">
-      <div class="studio-intro__copy">
-        <div class="person-intro"><img src="assets/images/robert-schmitz-headshot.jpg" width="1254" height="1254" alt="Robert Schmitz"><div><p class="eyebrow">Hi, I’m Robert Schmitz.</p><p class="person-role">Instructional designer<br>Educator. Builder. Problem solver.</p></div></div>
-        <h1 id="home-heading">I turn tricky tasks<br>into <em>clear next steps.</em></h1>
-        <p class="studio-description">I bring a classroom-tested eye for where learners get stuck to scenario design, Storyline lessons, and practical support for instructors.</p>
-        <div class="btn-row"><a class="btn btn--accent" href="#projects">See my work ↓</a><a class="studio-secondary" href="about.html">Meet the designer →</a></div>
-        <p class="studio-note">M.Ed., Mathematics Education · UCF Instructional Design certification</p>
-      </div>
-      <figure class="hero-artifact"><div class="artifact-label"><span>Inside my work</span><span>01 / Make the mechanism visible</span></div><a href="projects/acoustic-guitar.html#walkthrough"><img src="assets/images/acoustic-guitar-showcase.webp" width="1191" height="670" alt="My guitar lesson compares a correctly seated string anchor with an unseated ball end."></a><figcaption><h2>A hidden problem.<br>A visible explanation.</h2><p>See how a diagram becomes a decision, feedback, and another attempt.</p><a href="projects/acoustic-guitar.html#walkthrough">Watch the short interaction walkthrough →</a></figcaption></figure>
-    </div>
-  </section>
+  <section class="scribble-welcome" aria-labelledby="home-heading">
+  <div class="welcome-stage">
+    <video id="scribble-video" muted loop playsinline preload="auto" poster="assets/images/scribble-welcome-poster.png" aria-hidden="true"><source src="assets/video/scribble-welcome-loop.mp4" type="video/mp4"></video>
+    <div class="welcome-copy"><p class="eyebrow">Learning with a little imagination</p><h1 id="home-heading">Robert Schmitz</h1><p class="welcome-role">Instructional Designer</p><p class="welcome-tagline">Thoughtful learning.<br>Meaningful engagement.</p><div class="btn-row"><a class="btn btn--primary" href="#projects">View My Work <span aria-hidden="true">↓</span></a><a class="welcome-about" href="about.html">About Me <span aria-hidden="true">↗</span></a></div></div>
+  </div>
+</section>
   <section class="section home-work" id="projects" aria-labelledby="projects-heading">
     <div class="container">
       <div class="section-head"><p class="eyebrow">Selected work</p><h2 id="projects-heading">Three problems.<br>Three ways to practice.</h2><p class="studio-section-intro">Each case connects a learning problem to a design decision, an inspectable artifact, and its current evidence.</p></div>
@@ -96,5 +94,8 @@
     </div>
   </footer>
   <script src="assets/js/main.js?v=20260910"></script>
+<script>
+(()=>{const v=document.getElementById('scribble-video'),mq=matchMedia('(prefers-reduced-motion: reduce)');v.muted=true;const sync=()=>{if(mq.matches){v.pause();v.currentTime=0;}else{v.play().catch(()=>{});}};mq.addEventListener('change',sync);sync();})();
+</script>
 </body>
 </html>
