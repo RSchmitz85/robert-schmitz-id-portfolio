@@ -95,7 +95,7 @@
   </footer>
   <script src="assets/js/main.js?v=20260910"></script>
 <script>
-(()=>{const v=document.getElementById('scribble-video'),mq=matchMedia('(prefers-reduced-motion: reduce)');v.muted=true;const sync=()=>{if(mq.matches){v.pause();v.currentTime=0;}else{v.play().catch(()=>{});}};mq.addEventListener('change',sync);sync();})();
+(()=>{const v=document.getElementById('scribble-video'),mq=matchMedia('(prefers-reduced-motion: reduce)');v.muted=true;v.defaultPlaybackRate=0.75;v.playbackRate=0.75;const sync=()=>{if(mq.matches){v.pause();v.currentTime=0;}else{v.play().catch(()=>{});}};mq.addEventListener('change',sync);sync();})();
 </script>
 </body>
 </html>
