@@ -1,0 +1,63 @@
+/* A clearer personal introduction and distinct routes into real work. */
+.homepage .welcome-stage{padding:12px 0 28px;border-bottom:0}
+.homepage .welcome-copy{max-width:570px;padding-right:12px}
+.homepage .welcome-person img{width:124px;height:124px;border:3px solid #c49b6e;box-shadow:0 8px 24px #172d3812}
+.homepage .welcome-person .eyebrow{font-size:11px;color:#724925}
+.homepage .welcome-copy h1{font-size:clamp(34px,4.2vw,56px)}
+.homepage .welcome-role{color:#496169;font-size:20px;margin-bottom:24px}
+.homepage .welcome-tagline{font-size:clamp(19px,2vw,25px);line-height:1.5;color:#263e46;max-width:36ch}
+.homepage .welcome-tagline strong{color:#245d57;font-weight:600;text-decoration:underline;text-decoration-color:#d8ac76;text-decoration-thickness:3px;text-underline-offset:7px}
+.homepage .welcome-stage video{max-width:350px;transform:none}
+.work-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-block:1px solid #c9cfc7;background:#f0f2ec}
+.work-paths a{display:block;padding:24px;text-decoration:none;color:#173c3b;transition:background .18s}
+.work-paths a+a{border-left:1px solid #c9cfc7}
+.work-paths a:hover{background:#e0e9df}
+.work-paths span{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;color:#56655d}
+.work-paths strong{display:flex;justify-content:space-between;gap:12px;font-size:16px;line-height:1.45}
+.work-paths b{color:#8c5227}
+.homepage .home-work{padding-top:64px}
+.homepage .home-work .section-head{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;align-items:end;margin-bottom:32px}
+.homepage .home-work .section-head>.eyebrow{grid-column:1/-1}
+.homepage .home-work .section-head h2{margin-bottom:0}
+.homepage .home-work .section-head>.studio-section-intro{max-width:46ch;padding-bottom:6px}
+.homepage .workplace-feature{background:#173e3c;border:0;border-top:5px solid #cfa069;color:#edf3ed;box-shadow:0 12px 30px #102c3010}
+.homepage .workplace-feature h3{color:#fffaf2}
+.homepage .workplace-feature__copy>p,.homepage .workplace-feature dd{color:#dce6df}
+.homepage .workplace-feature .eyebrow,.homepage .workplace-feature dt{color:#f0bd83}
+.homepage .workplace-feature .studio-status{color:#bdcec7}
+.homepage .workplace-feature .btn--primary{background:#f2c18c;color:#173e3c}
+.homepage .studio-conversation{background:#fffaf2;border:1px solid #d6c9b5;box-shadow:8px 8px 0 #0a2928;transform:none}
+.homepage .flagship-card{background:#fffdf8;border:1px solid #d6c8b7;box-shadow:0 8px 24px #243e3810}
+.homepage .flagship-card:nth-child(2){background:#f2f6f3;border-color:#becfc5}
+.homepage .flagship-preview{padding:18px;background:#e9dfcf;border-bottom:4px solid #bc8250}
+.homepage .flagship-card:nth-child(2) .flagship-preview{background:#dce9e1;border-bottom-color:#3c7566}
+.homepage .flagship-copy{padding:30px}
+.homepage .flagship-card h3{font-size:29px}
+.homepage .supporting-work{background:#e6ece6;border-block:1px solid #c4d1c5}
+.homepage .supporting-links a{border-bottom:1px solid #bbcabe;padding-bottom:12px}
+.homepage .home-background{border-bottom:1px solid #ded6c9}
+.homepage .home-background h2{border-left:4px solid #bc8250;padding-left:22px}
+#workplace-heading,#guitar-heading,#graphing-heading{scroll-margin-top:100px}
+@media(max-width:760px){
+ .homepage .welcome-person img{width:100px;height:100px}
+ .homepage .welcome-copy{padding-left:8px}
+ .homepage .welcome-tagline br{display:none}
+ .homepage .home-work .section-head{grid-template-columns:1fr;gap:18px}
+ .work-paths a{padding:18px 12px}.work-paths strong{font-size:14px}
+ .homepage .home-work{padding-top:40px}
+}
+@media(max-width:600px){
+ .homepage .welcome-stage{padding-bottom:12px}
+ .homepage .welcome-stage video{width:230px;margin-top:0}
+ .homepage .welcome-person{margin-bottom:16px}
+ .work-paths{grid-template-columns:1fr}
+ .work-paths a{padding:15px 18px}
+ .work-paths a+a{border-left:0;border-top:1px solid #c9cfc7}
+ .work-paths span{margin-bottom:5px}
+ .homepage .flagship-copy{padding:24px}
+}
+@media(prefers-reduced-motion:reduce){.work-paths a{transition:none}}
+
+.homepage .studio-conversation{color:#173e3c}
+.homepage .studio-conversation__steps span{color:#173e3c;background:#e8eee5;border-color:#b9cabc}
+.homepage .studio-conversation__steps i{color:#68776c}
