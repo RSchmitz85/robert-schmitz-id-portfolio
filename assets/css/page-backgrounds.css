@@ -27,3 +27,13 @@ body .art-background{position:relative;isolation:isolate;background:#fffaf2;bord
 @media print{.art-background::before{display:none}}
 /* Fade decorative scenery at both page edges, without masking content. */
 body .art-background::before{mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 72%,transparent),linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}
+/* A taller scene runs behind the introduction and the work that follows. */
+main.vertical-art{position:relative;isolation:isolate}
+main.vertical-art::before{content:"";position:absolute;inset:0 0 auto;height:clamp(1100px,125vw,1900px);max-height:100%;z-index:-1;pointer-events:none;background:linear-gradient(90deg,#fffaf2dc,#fffaf2a8 48%,#fffaf24d),var(--page-art) 65% center/cover no-repeat;opacity:.55;mask-image:linear-gradient(transparent,#000 7%,#000 78%,transparent),linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-composite:intersect}
+main.vertical-art .art-background{background:transparent;isolation:auto}
+main.vertical-art .art-background::before{display:none}
+@media(max-width:760px){main.vertical-art::before{height:1800px;background-position:62% center;opacity:.35}}
+/* Keep scenery pale, especially behind the portrait and page copy. */
+main.vertical-art::before{background-image:linear-gradient(90deg,#fffaf2ed,#fffaf2c4 48%,#fffaf28c);background-image:linear-gradient(90deg,#fffaf2ed,#fffaf2c4 48%,#fffaf28c),var(--page-art);opacity:.48}
+main.vertical-art.art-about::before{opacity:.3}
+main.vertical-art{--bg:#fffaf2;background:#fffaf2}
