@@ -44,19 +44,14 @@
 .homepage .resource-art{background:transparent}
 .homepage .carousel-copy{background:#fffdf85c}
 .homepage .collection-all{background:#fafaf359}
-.homepage .resource-collage{position:relative;display:block;padding:0;isolation:isolate}
-.resource-sheet{position:absolute;display:block;background:#fffdf6;box-shadow:0 7px 16px #233c3538;border:3px solid #fffdf6;border-radius:3px;overflow:hidden;text-decoration:none;transition:transform .2s ease}
-.homepage .resource-sheet img{width:100%;height:100%;object-fit:cover;object-position:top;transform:none;filter:none}
-.resource-sheet span{position:absolute;bottom:0;left:0;right:0;padding:5px 6px;background:#fffdf6f5;color:#20453d;font-size:.75rem;font-weight:600;line-height:1.25}
-.sheet-0{width:51%;height:89%;left:25%;top:6%;z-index:3;transform:rotate(-3deg)}
-.sheet-1,.sheet-2,.sheet-3,.sheet-4{width:32%;height:45%}
-.sheet-1{left:2%;top:3%;transform:rotate(-7deg)}
-.sheet-2{right:2%;top:4%;transform:rotate(7deg)}
-.sheet-3{left:2%;bottom:3%;transform:rotate(4deg);z-index:4}
-.sheet-4{right:2%;bottom:3%;transform:rotate(-4deg);z-index:4}
-.resource-sheet:hover,.resource-sheet:focus-visible{z-index:5;transform:rotate(0deg) scale(1.04)}
 @media(min-width:1151px){.homepage .welcome-stage{grid-template-columns:minmax(260px,.65fr) minmax(0,1.95fr);gap:28px}.homepage .welcome-person{gap:12px}.homepage .welcome-person img{width:88px;height:88px}}
-@media(prefers-reduced-motion:reduce){.resource-sheet{transition:none}}
 
-/* Keep the overlapping previews free of clipped captions; links carry accessible names. */
-.resource-sheet span{display:none}
+
+
+/* Give each project a full-width, close-up preview. */
+.homepage .carousel-art:not(.development-art){padding:0}
+.homepage .carousel-art:not(.development-art) img{width:100%;height:100%;max-height:none;object-fit:cover;object-position:center top;transform:none;filter:none}
+.homepage .lesson-art .art-label{background:#fffdf8e6;bottom:0;padding:6px}
+
+.homepage .lesson-art{height:auto;aspect-ratio:16/9}
+.homepage .lesson-art .art-label{display:none}
