@@ -1,3 +1,20 @@
+.art-home{--page-art:url('../images/backgrounds/home-v2.webp')}
+.art-about{--page-art:url('../images/backgrounds/about-v2.webp')}
+.art-contact{--page-art:url('../images/backgrounds/contact-v2.webp')}
+.art-guitar{--page-art:url('../images/backgrounds/guitar-v2.webp')}
+.art-assessment{--page-art:url('../images/backgrounds/assessment-v2.webp')}
+.art-implementation{--page-art:url('../images/backgrounds/implementation-v2.webp')}
+.art-color{--page-art:url('../images/backgrounds/color-v2.webp')}
+.art-curriculum{--page-art:url('../images/backgrounds/curriculum-v2.webp')}
+.art-detective{--page-art:url('../images/backgrounds/detective-v2.webp')}
+.art-graphing{--page-art:url('../images/backgrounds/graphing-v2.webp')}
+.art-professional{--page-art:url('../images/backgrounds/professional-v2.webp')}
+.art-punchline{--page-art:url('../images/backgrounds/punchline-v2.webp')}
+.art-rally{--page-art:url('../images/backgrounds/rally-v2.webp')}
+.art-slope{--page-art:url('../images/backgrounds/slope-v2.webp')}
+.art-storyline{--page-art:url('../images/backgrounds/storyline-v2.webp')}
+.art-taskcards{--page-art:url('../images/backgrounds/taskcards-v2.webp')}
+.art-workplace{--page-art:url('../images/backgrounds/workplace-v2.webp')}
 /* Decorative artwork stays behind content and does not alter its geometry. */
 .art-studio{--page-art:url('../images/backgrounds/studio-v1.webp')}
 .art-trail{--page-art:url('../images/backgrounds/trail-v1.webp')}
