@@ -6,3 +6,9 @@
 .homepage .welcome-copy{width:100%;max-width:650px}
 .homepage .welcome-copy h1{max-width:16ch}
 @media(max-width:760px){.homepage .welcome-stage{grid-template-columns:minmax(0,1fr)}.homepage .welcome-copy{max-width:none}}
+/* Feather the video backdrop around the character, without a rectangular rim. */
+.homepage .supporting-mascot video{
+  -webkit-mask-image:radial-gradient(ellipse 65% 65% at 55% 48%,#000 65%,rgba(0,0,0,.9) 75%,rgba(0,0,0,.4) 90%,transparent 100%),linear-gradient(90deg,transparent,#000 16%,#000 84%,transparent),linear-gradient(transparent,#000 12%,#000 84%,transparent);
+  mask-image:radial-gradient(ellipse 65% 65% at 55% 48%,#000 65%,rgba(0,0,0,.9) 75%,rgba(0,0,0,.4) 90%,transparent 100%),linear-gradient(90deg,transparent,#000 16%,#000 84%,transparent),linear-gradient(transparent,#000 12%,#000 84%,transparent);
+  mask-composite:intersect;
+}
