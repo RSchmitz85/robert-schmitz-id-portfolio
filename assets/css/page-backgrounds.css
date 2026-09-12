@@ -1,0 +1,10 @@
+/* Decorative artwork stays behind content and does not alter its geometry. */
+.art-studio{--page-art:url('../images/backgrounds/studio-v1.webp')}
+.art-trail{--page-art:url('../images/backgrounds/trail-v1.webp')}
+.art-digital{--page-art:url('../images/backgrounds/digital-v1.webp')}
+body .art-background{position:relative;isolation:isolate;background:#fffaf2;border-block-color:transparent}
+.art-background::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(90deg,#fffaf2ed 0%,#fffaf2ad 42%,#fffaf220 78%),var(--page-art);background-size:cover;background-position:center 65%;opacity:.8;mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 72%,transparent)}
+.art-gallery::before{bottom:auto;height:760px;max-height:100%;opacity:.36;background-position:center bottom}
+.home-background.art-background::before{opacity:.22}
+@media(max-width:760px){.art-background::before{opacity:.42;background-position:65% center;background-image:linear-gradient(90deg,#fffaf2e6,#fffaf2a6),var(--page-art)}.art-gallery::before{opacity:.22}}
+@media print{.art-background::before{display:none}}
