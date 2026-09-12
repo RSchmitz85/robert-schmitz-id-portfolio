@@ -28,6 +28,3 @@
 .homepage .workplace-feature{background:radial-gradient(ellipse at center,#e3ebe3 10%,#fffaf2 72%)}
 .homepage .studio-conversation{border-color:transparent;box-shadow:0 0 24px 12px #fffaf2;background:#fffaf2}
 .homepage .supporting-links a,.homepage .work-paths a+a,.homepage .home-work__case{border-color:transparent}
-/* A closer feather removes the remaining halo around the animated badge. */
-.homepage .classroom-invitation{background:transparent}
-.homepage .classroom-invitation video{mask-image:radial-gradient(ellipse 51% 57% at 53% 48%,#000 57%,rgba(0,0,0,.96) 68%,rgba(0,0,0,.45) 84%,transparent 100%),linear-gradient(90deg,transparent,#000 18%,#000 81%,transparent),linear-gradient(transparent,#000 12%,#000 78%,transparent);mask-composite:intersect}
