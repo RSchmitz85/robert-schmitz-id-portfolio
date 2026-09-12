@@ -1,0 +1,10 @@
+/* Decorative transitions preserve crisp controls and readable content. */
+body .section--muted,body .section--cool{background:linear-gradient(to bottom,var(--bg),var(--paper-cool) 22%,var(--paper-cool) 78%,var(--bg));border-block-color:transparent}
+body .showcase-header{background:linear-gradient(#f8f4ec,#f5eee3 45%,var(--bg))}
+body .walkthrough,body .person-proof{background:linear-gradient(var(--bg),#eaf0ed 24%,#eaf0ed 76%,var(--bg))}
+body .system-tour{background:linear-gradient(var(--bg),#f1e9dc 24%,#f1e9dc 76%,var(--bg))}
+body .case-hero-image img,body .person-proof img{box-shadow:0 8px 26px #283d3314}
+body .site-header{border-bottom-color:#7f8d7918;box-shadow:0 5px 20px #283d3305}
+body .system-tour-grid article{border-color:#d4c8b755}
+
+body main > .section,body .showcase-header,body .walkthrough,body .person-proof,body .system-tour{border-block-color:transparent}

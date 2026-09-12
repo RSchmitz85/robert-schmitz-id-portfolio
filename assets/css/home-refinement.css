@@ -61,3 +61,29 @@
 .homepage .studio-conversation{color:#173e3c}
 .homepage .studio-conversation__steps span{color:#173e3c;background:#e8eee5;border-color:#b9cabc}
 .homepage .studio-conversation__steps i{color:#68776c}
+
+/* Let the personal introduction lead; place the character with his work. */
+.homepage .welcome-stage{display:block;max-width:1408px;padding:26px 0 46px}
+.homepage .welcome-copy{display:grid;grid-template-columns:170px 1fr;max-width:950px;margin:auto;padding:16px;column-gap:35px}
+.homepage .welcome-person{grid-column:1;grid-row:1/5;display:flex;flex-direction:column;align-items:flex-start;margin:0}
+.homepage .welcome-copy h1,.homepage .welcome-role,.homepage .welcome-tagline,.homepage .welcome-copy .btn-row{grid-column:2}
+.homepage .supporting-work__inner{grid-template-columns:1fr 260px;gap:38px}
+.supporting-mascot video{display:block;width:250px;max-width:100%;aspect-ratio:480/470;object-fit:cover;object-position:right center;mix-blend-mode:multiply;mask-image:linear-gradient(to right,transparent,rgba(0,0,0,.35) 5%,rgba(0,0,0,.85) 12%,#000 20%,#000 94%,transparent),linear-gradient(to bottom,transparent,#000 7%,#000 92%,transparent);mask-composite:intersect}
+.homepage .work-paths{border:0;background:linear-gradient(180deg,#fffaf2,#f0f2e9 40%,#f0f2e9 60%,#fffaf2)}
+.homepage .work-paths a+a{border-color:#667e6014}
+.homepage .workplace-feature{border:0;background:radial-gradient(ellipse at center,#e3ebe3 15%,#eff2e9 65%,#fffaf2 100%);box-shadow:none}
+.homepage .flagship-card,.homepage .flagship-card:nth-child(2){border:0;box-shadow:0 8px 28px #243e3808;background:linear-gradient(#fffaf2,#faf7ef)}
+.homepage .flagship-preview{border:0;background:linear-gradient(#fffaf2,#f1eade 35%,#f1eade 65%,#fffaf2)}
+.homepage .flagship-card:nth-child(2) .flagship-preview{border:0;background:linear-gradient(#fffaf2,#e9efe7 35%,#e9efe7 65%,#fffaf2)}
+.homepage .studio-conversation{border-color:#d6c9b544;box-shadow:0 6px 22px #334d3e08}
+.homepage .supporting-work{border:0;background:linear-gradient(#fffaf2,#edf0e7 28%,#edf0e7 72%,#fffaf2)}
+.homepage .supporting-links a{border-color:#bbcabe44}
+.homepage .home-background{border:0}.homepage .home-background h2{border:0;padding-left:0}
+.homepage .cta-band{background:linear-gradient(135deg,#eef1e8,#f6f2e8);color:#263e3b;border:0;box-shadow:0 8px 32px #263e3b06}
+.homepage .cta-band h2,.homepage .cta-band p{color:#263e3b}
+.homepage .site-footer{background:linear-gradient(#fffaf2,#eff0e8 65%);color:#46565d;border:0}
+.homepage .site-footer a,.homepage .footer-copy{color:#46565d}
+@media(max-width:760px){.homepage .welcome-copy{display:block;max-width:600px;padding:8px}.homepage .welcome-person{flex-direction:row;align-items:center;margin-bottom:22px}.homepage .supporting-work__inner{grid-template-columns:1fr}.supporting-mascot video{width:150px}.homepage .welcome-stage{padding:16px 0 32px}}
+
+.homepage .cta-band{background:radial-gradient(ellipse at center,#edf0e6 10%,#f6f3e9 62%,#fffaf2 100%);box-shadow:none}
+#supporting-heading{scroll-margin-top:110px}
