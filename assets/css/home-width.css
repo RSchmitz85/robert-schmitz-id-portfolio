@@ -29,3 +29,18 @@
 .homepage .supporting-mascot video{width:210px}
 @media(max-width:1000px){.homepage .feature-description{display:block}.homepage .flagship-preview img{height:230px}}
 @media(max-width:760px){.homepage .welcome-stage{grid-template-columns:1fr;padding-block:16px 30px;gap:24px}.homepage .welcome-copy,.homepage .featured-stage{max-width:none;justify-self:stretch}.homepage .welcome-copy h1{font-size:36px}.homepage .real-work-image img{height:auto;aspect-ratio:16/9}.homepage .flagship-preview img{height:auto}.homepage .supporting-work__inner{grid-template-columns:1fr}.homepage .supporting-mascot video{width:150px}}
+/* Readable copy at the wider homepage scale. */
+.homepage .welcome-copy h1{font-size:clamp(40px,3.5vw,58px)}
+.homepage .imagination-intro{font-size:21px;line-height:1.6}
+.homepage .feature-switch button{font-size:14px}
+.homepage .feature-description span{font-size:11px}
+.homepage .feature-description h2{font-size:25px}
+.homepage .feature-description p{font-size:16px;line-height:1.65}
+.homepage .feature-description>a,.homepage .original-material-link{font-size:14px}
+.homepage .workplace-feature__copy>p,.homepage .flagship-copy>p,.homepage .supporting-work__inner>div>p,.homepage .home-background__grid p{font-size:18px;line-height:1.7}
+.homepage .case-snapshot{font-size:16px;line-height:1.6}
+.homepage .workplace-feature .studio-status,.homepage .flagship-copy .studio-status{font-size:14px;line-height:1.6}
+.homepage .home-work__link,.homepage .supporting-links a{font-size:17px}
+.homepage .studio-section-intro{font-size:19px}
+@media(max-width:1000px){.homepage .feature-description{display:block}}
+@media(max-width:760px){.homepage .welcome-copy h1{font-size:40px}.homepage .imagination-intro{font-size:19px}.homepage .feature-switch button{font-size:12px;padding-inline:7px}.homepage .feature-description h2{font-size:23px}.homepage .workplace-feature__copy>p,.homepage .flagship-copy>p,.homepage .supporting-work__inner>div>p,.homepage .home-background__grid p{font-size:17px}}
