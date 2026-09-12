@@ -25,3 +25,5 @@ body .art-background{position:relative;isolation:isolate;background:#fffaf2;bord
 .home-background.art-background::before{opacity:.22}
 @media(max-width:760px){.art-background::before{opacity:.42;background-position:65% center;background-image:linear-gradient(90deg,#fffaf2e6,#fffaf2a6),var(--page-art)}.art-gallery::before{opacity:.22}}
 @media print{.art-background::before{display:none}}
+/* Fade decorative scenery at both page edges, without masking content. */
+body .art-background::before{mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 72%,transparent),linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}

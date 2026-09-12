@@ -3,7 +3,7 @@
 .homepage .supporting-work__inner{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,3vw,48px);justify-content:normal;align-items:center}
 .homepage .supporting-work__inner>div>p{max-width:60ch;margin-bottom:16px}
 .homepage .supporting-links{max-width:none}
-.homepage .classroom-invitation{display:grid;grid-template-columns:minmax(150px,.65fr) minmax(0,1fr);gap:18px;padding:22px;border-radius:20px;background:#fffaf2b8;text-align:left;text-decoration:none;align-items:center}
+.homepage .classroom-invitation{display:grid;grid-template-columns:minmax(150px,.65fr) minmax(0,1fr);gap:18px;padding:22px;border-radius:20px;background:radial-gradient(ellipse at center,rgba(255,250,242,.28) 0%,rgba(255,250,242,.12) 50%,transparent 75%);text-align:left;text-decoration:none;align-items:center}
 .homepage .classroom-invitation video{width:100%;max-width:260px;justify-self:center}
 .homepage .classroom-invitation h3{font-size:clamp(24px,2vw,32px);line-height:1.15;margin:0 0 14px;color:#172d38}
 .homepage .classroom-invitation p{font-size:16px;line-height:1.6;font-weight:400;margin:0 0 16px}
@@ -16,3 +16,7 @@
 .homepage .home-background__grid h2{margin-bottom:0}
 @media(max-width:1000px){.homepage .supporting-work__inner{grid-template-columns:1fr}.homepage .classroom-invitation{grid-template-columns:180px 1fr}.homepage .home-background__grid{grid-template-columns:1fr;gap:18px}}
 @media(max-width:540px){.homepage .classroom-invitation{grid-template-columns:100px minmax(0,1fr);padding:16px;gap:12px}.homepage .classroom-invitation h3{font-size:23px}.homepage .classroom-invitation p{font-size:15px}.homepage .classroom-invitation .eyebrow{font-size:10px}.homepage .home-background{padding-block:24px}}
+.homepage .scribble-welcome::before{mask-image:linear-gradient(#000 82%,transparent),linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}
+.homepage .supporting-work::before{mask-image:linear-gradient(transparent,#000 35%,#000 65%,transparent),linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}
+.homepage .supporting-work{background:radial-gradient(ellipse at center,#edf0e7 15%,#fffaf2 74%)}
+.homepage .cta-band{background:radial-gradient(ellipse at center,#edf0e6 10%,#f6f3e9 48%,#fffaf2 72%)}
