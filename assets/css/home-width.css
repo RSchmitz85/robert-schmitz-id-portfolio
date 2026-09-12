@@ -1,0 +1,8 @@
+/* Let homepage content use the viewport; scenery stays behind the layout. */
+.homepage{--home-gutter:clamp(20px,3vw,56px)}
+.homepage .container{width:calc(100% - 2 * var(--home-gutter));max-width:none}
+.homepage .scribble-welcome{padding-inline:var(--home-gutter)}
+.homepage .welcome-stage{width:100%;max-width:none;padding-inline:0;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(28px,3vw,56px)}
+.homepage .welcome-copy{width:100%;max-width:650px}
+.homepage .welcome-copy h1{max-width:16ch}
+@media(max-width:760px){.homepage .welcome-stage{grid-template-columns:minmax(0,1fr)}.homepage .welcome-copy{max-width:none}}
