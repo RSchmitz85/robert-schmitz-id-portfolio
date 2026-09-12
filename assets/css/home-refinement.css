@@ -87,3 +87,33 @@
 
 .homepage .cta-band{background:radial-gradient(ellipse at center,#edf0e6 10%,#f6f3e9 62%,#fffaf2 100%);box-shadow:none}
 #supporting-heading{scroll-margin-top:110px}
+
+/* A tighter reading rhythm after moving the character out of the introduction. */
+.homepage .welcome-stage{padding:12px 0 22px}
+.homepage .welcome-copy{padding-block:8px;max-width:1000px}
+.homepage .welcome-role{margin-bottom:16px}
+.homepage .welcome-tagline{margin-bottom:20px}
+.homepage .work-paths a{padding-block:18px}
+.homepage .home-work{padding-top:38px}
+.homepage .section{padding-block:48px}
+.homepage .home-work .section-head{margin-bottom:22px}
+.homepage .workplace-feature{margin:24px 0 32px;padding:30px;gap:36px}
+.homepage .supporting-work{padding-block:32px}
+.homepage .home-background__grid{gap:36px}
+.homepage .flagship-copy{padding:24px}
+@media(max-width:760px){
+ .homepage .welcome-stage{padding:8px 0 18px}
+ .homepage .welcome-copy{padding:8px}
+ .homepage .welcome-person{margin-bottom:16px}
+ .homepage .section{padding-block:34px}
+ .homepage .home-work{padding-top:28px}
+ .homepage .workplace-feature{padding:22px;gap:22px}
+ .homepage .work-paths a{padding-block:12px}
+ .homepage .supporting-work{padding-block:28px}
+}
+.homepage .welcome-copy{align-items:center;row-gap:22px}
+.homepage .welcome-person{grid-row:1/3}
+.homepage .welcome-copy h1{font-size:clamp(32px,3.3vw,46px);line-height:1.18;letter-spacing:-.035em;max-width:23ch;margin:0}
+.homepage .welcome-copy h1 strong{font-weight:600;color:#245d57}
+.homepage .welcome-copy .btn-row{margin:0}
+@media(max-width:760px){.homepage .welcome-copy h1{font-size:34px;margin-bottom:24px}}
