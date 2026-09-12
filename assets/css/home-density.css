@@ -20,3 +20,11 @@
 .homepage .supporting-work::before{mask-image:linear-gradient(transparent,#000 35%,#000 65%,transparent),linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-composite:intersect}
 .homepage .supporting-work{background:radial-gradient(ellipse at center,#edf0e7 15%,#fffaf2 74%)}
 .homepage .cta-band{background:radial-gradient(ellipse at center,#edf0e6 10%,#f6f3e9 48%,#fffaf2 72%)}
+/* Fade the panel fills themselves as well as the artwork behind them. */
+.homepage .flagship-preview,.homepage .flagship-card:nth-child(2) .flagship-preview{background:radial-gradient(ellipse at center,#f1eade 10%,#fffaf2 72%);border-color:transparent}
+.homepage .flagship-card:nth-child(2) .flagship-preview{background:radial-gradient(ellipse at center,#e9efe7 10%,#fffaf2 72%)}
+.homepage .flagship-card,.homepage .flagship-card:nth-child(2){background:radial-gradient(ellipse at center,#faf7ef 10%,#fffaf2 72%);box-shadow:none;border-color:transparent}
+.homepage .work-paths{background:radial-gradient(ellipse at center,#f0f2e9 10%,#fffaf2 72%)}
+.homepage .workplace-feature{background:radial-gradient(ellipse at center,#e3ebe3 10%,#fffaf2 72%)}
+.homepage .studio-conversation{border-color:transparent;box-shadow:0 0 24px 12px #fffaf2;background:#fffaf2}
+.homepage .supporting-links a,.homepage .work-paths a+a,.homepage .home-work__case{border-color:transparent}

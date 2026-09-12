@@ -8,3 +8,8 @@ body .site-header{border-bottom-color:#7f8d7918;box-shadow:0 5px 20px #283d3305}
 body .system-tour-grid article{border-color:#d4c8b755}
 
 body main > .section,body .showcase-header,body .walkthrough,body .person-proof,body .system-tour{border-block-color:transparent}
+/* Container washes disappear before their edges; content remains unmasked. */
+body .section--muted,body .section--cool{background:radial-gradient(ellipse at center,var(--paper-cool) 12%,var(--bg) 72%);border-color:transparent}
+body .walkthrough,body .person-proof{background:radial-gradient(ellipse at center,#eaf0ed 12%,var(--bg) 72%);border-color:transparent}
+body .system-tour{background:radial-gradient(ellipse at center,#f1e9dc 12%,var(--bg) 72%);border-color:transparent}
+body .system-tour-grid article{border-color:transparent;box-shadow:none}
