@@ -57,3 +57,28 @@
  .homepage .carousel-art.development-art,
  .homepage .carousel-art.resource-showcase{height:calc(20vw - 50px)}
 }
+
+/* Let the artwork use the space set by the introduction. */
+@media(min-width:901px){
+ .homepage .project-boards:has(.collection-switch:not([hidden])){contain:size;min-height:540px}
+ .homepage .project-board:not([hidden]),
+ .homepage .carousel-slides,
+ .homepage .collection-slide{min-height:0}
+ .homepage .board-heading{padding:12px 18px}
+ .homepage .board-heading h2{font-size:1.2rem}
+ .homepage .board-heading .board-label,
+ .homepage .board-tools,
+ .homepage .carousel-copy .project-category,
+ .homepage .carousel-copy .project-description{display:none}
+ .homepage .carousel-art.lesson-art,
+ .homepage .carousel-art.development-art,
+ .homepage .carousel-art.resource-showcase{height:auto;min-height:0;flex:1;aspect-ratio:auto}
+ .homepage .carousel-art.resource-showcase{padding:12px 14px 22px!important}
+ .homepage .resource-showcase .cover-display{height:100%;width:68%}
+ .homepage .carousel-art.resource-showcase .resource-mascot{height:92%;width:42%;bottom:20px}
+ .homepage .resource-showcase::after{bottom:12px}
+ .homepage .carousel-copy{flex:0 0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;padding:8px 18px}
+ .homepage .carousel-copy h3{font-size:1.15rem}
+ .homepage .carousel-project-link,.homepage .carousel-pending{margin:0;padding:0;display:flex;align-items:center;font-size:.875rem}
+ .homepage .carousel-position{flex-direction:row;gap:12px}
+}
