@@ -20,3 +20,24 @@
 .homepage .carousel-controls{padding-block:8px 12px}
 .homepage .collection-all{padding:12px 22px}
 @media(max-width:900px){.homepage .welcome-stage{grid-template-columns:1fr;gap:28px;max-width:700px}.homepage .welcome-copy{padding:12px 0;gap:22px}.homepage .welcome-person{width:180px}.homepage .welcome-copy h1{font-size:clamp(2.6rem,7vw,4rem)}.homepage .project-boards{width:100%}}
+
+/* Keep the introduction and project panel visually connected. */
+.homepage .scribble-welcome{padding-top:22px}
+.homepage .welcome-stage{gap:24px;max-width:1440px}
+.homepage .welcome-copy{max-width:none;padding:clamp(22px,3vw,42px);gap:22px;background:#fffdf8b8;border:1px solid #d8ddcf;border-radius:18px;box-shadow:0 12px 32px #233c350b}
+.homepage .welcome-person{display:flex;align-items:center;gap:clamp(20px,2.5vw,36px);width:100%}
+.homepage .welcome-person img{width:clamp(150px,15vw,210px);flex-shrink:0}
+.personal-signature{font-family:var(--font-display);font-size:clamp(1.2rem,1.8vw,1.7rem);line-height:1.45;letter-spacing:-.025em;color:#547166;margin:0}
+.homepage .welcome-copy h1{font-size:clamp(2.6rem,4.2vw,4.25rem);margin-bottom:16px}
+.homepage .personal-tagline{font-size:clamp(1.35rem,1.9vw,1.8rem);margin-bottom:14px}
+.homepage .imagination-intro{margin-bottom:20px}
+.homepage .project-boards{gap:10px}
+.homepage .board-heading{padding:14px 20px}
+.homepage .board-heading h2{font-size:1.4rem}
+.board-tools{margin-top:6px}
+.homepage .carousel-copy{padding:14px 20px 6px;gap:6px}
+.homepage .project-hook{display:none}
+.homepage .carousel-controls{padding-block:4px 8px}
+.homepage .collection-all{padding-block:10px}
+@media(max-width:1100px) and (min-width:901px){.homepage .welcome-person{gap:18px}.personal-signature{font-size:1.15rem}.homepage .welcome-person img{width:150px}.homepage .welcome-copy{padding:22px}}
+@media(max-width:600px){.homepage .welcome-copy{padding:20px;gap:20px}.homepage .welcome-person img{width:120px}.homepage .welcome-person{gap:16px}.personal-signature{font-size:1.05rem}.homepage .welcome-copy h1{font-size:clamp(2rem,8vw,3rem)}}
