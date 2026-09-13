@@ -1,0 +1,13 @@
+/* Continuous scenery remains visible at every scroll position. */
+body main.scenic-page{position:relative;isolation:isolate;background:transparent;--scenery:url('../images/backgrounds/about-v2.webp')}
+body main.scenic-resume{--scenery:url('../images/backgrounds/studio-v1.webp')}
+body main.scenic-page::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(90deg,#fffaf299,#fffaf247),var(--scenery);background-size:cover;background-position:center;}
+body main.scenic-page>.page-header,body main.scenic-page>.section{background:transparent;border:0}
+body main.scenic-page>.section>.container{background:#fffaf2e6;border:1px solid #fffaf2cc;border-radius:12px;padding:36px}
+body main.scenic-page>.page-header>.container{background:#fffaf2c9;border-radius:12px;padding:28px 36px}
+body main.scenic-page>.section{padding:28px 0}
+body main.scenic-page>.about-decisions>.container{background:#f2eee5ed}
+body main.scenic-page>.about-connect>.container{background:#e8ede5ed}
+body main.scenic-resume>.section>.container{background:#fffaf2ed}
+@media(max-width:600px){body main.scenic-page>.section>.container,body main.scenic-page>.page-header>.container{width:calc(100% - 28px);padding:24px 20px}body main.scenic-page>.section{padding:16px 0}body main.scenic-page::before{background-position:62% center}}
+@media print{body main.scenic-page::before{display:none}body main.scenic-page>.section>.container,body main.scenic-page>.page-header>.container{background:#fff;border:0;padding:0}}
