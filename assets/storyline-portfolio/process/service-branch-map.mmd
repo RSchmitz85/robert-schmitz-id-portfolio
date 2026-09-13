@@ -1,0 +1,25 @@
+flowchart TD
+  A[1–6 Mission, evidence, policy and worked example] --> D1[7 Acknowledge: A1 / B2 / C0]
+  D1 --> F1[8–10 Actual response consequence]
+  F1 --> D2[11 Investigate: A2 / B1 / C0]
+  D2 --> F2[12–14 Actual response consequence]
+  F2 --> D3[15 Offer: A1 / B0 / C2]
+  D3 --> F3[16–18 Consequence; B opens delivery promise]
+  F3 --> D4[19 Escalate: A1 / B2 / C0]
+  D4 --> F4[20–22 Consequence; C opens compensation promise]
+  F4 --> R[23 Explicit repair reminder]
+  R --> D5[24 Follow-through: A1 / B0 / C2]
+  D5 -->|A or B| FAIL[31 Work remains]
+  D5 -->|C preview only| PRE[27 Full response plus applicable corrections]
+  PRE -->|Back; no mutation| D5
+  PRE -->|Send once| SAVE[28 Score D5, record corrections and follow-up]
+  SAVE --> G{At least 8; no open promise; owner, channel, time?}
+  G -->|No| FAIL
+  G -->|Yes| E{Earlier unauthorized promise?}
+  E -->|No| CLEAR[29 Clear plan]
+  E -->|Yes| REC[30 Credible recovery]
+  CLEAR --> REVIEW[32–36 Read-only personalized debrief]
+  REC --> REVIEW
+  FAIL --> REVIEW
+  REVIEW --> TRANS[37–38 Guide and transfer]
+  TRANS -->|Replay resets all variables| A

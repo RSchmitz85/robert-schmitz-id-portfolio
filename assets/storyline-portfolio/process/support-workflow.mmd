@@ -1,0 +1,23 @@
+flowchart TD
+  M[1–3 Mission and orientation] --> GP[4–24 Guided case: WS-14 wrong default printer]
+  GP --> C[25–26 Independent case: LP-07 stalled behind J-883]
+  C --> P[27 Choose priority from matrix]
+  P --> KB[28 Select relevant article]
+  KB --> ACT[29 Select and execute action]
+  ACT --> V[Increment action version; clear old verification and closure]
+  V --> OK{Queue-specific action approved?}
+  OK -->|Yes| REP[30 Fresh test and Dana confirmation available]
+  OK -->|No| WRONG[No successful confirmation; factual consequence]
+  REP --> VERIFY[Learner inspects reply; verify current version]
+  WRONG --> DOC[31–32 Structured evidence, work, verification and owner]
+  VERIFY --> DOC
+  DOC --> STATUS[33 Save actual status]
+  STATUS --> SUB[34 Review all fields and submit once]
+  SUB --> SCORE[Freeze snapshot and five 20-point criteria]
+  SCORE --> G{80 or more AND approved action AND fresh verification before Resolved?}
+  G -->|Yes| PASS[35 Pass]
+  G -->|No| FAIL[36 Work remains]
+  PASS --> R[37–40 Criterion-specific read-only review]
+  FAIL --> R
+  R --> T[41 Checklist and transfer]
+  T -->|Retry resets every challenge field| C

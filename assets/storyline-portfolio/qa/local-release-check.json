@@ -1,0 +1,46 @@
+{
+  "scope": "Local release files, static links, package integrity and PDF checks",
+  "errors": [],
+  "case_study_links_checked": 40,
+  "delivery_zip_integrity": {
+    "Service Recovery - Web.zip": {
+      "files": 316,
+      "bad_member": null,
+      "story_html": true
+    },
+    "Support Ticket - Web.zip": {
+      "files": 310,
+      "bad_member": null,
+      "story_html": true
+    }
+  },
+  "job_aids": {
+    "Service Recovery Conversation Guide.pdf": {
+      "pages": 1,
+      "text_characters": 1334
+    },
+    "Ticket Resolution Checklist.pdf": {
+      "pages": 1,
+      "text_characters": 1225
+    }
+  },
+  "files_over_50mb": [],
+  "status": "pass",
+  "checked_utc": "2026-09-13T09:37:30.134406+00:00",
+  "browser_checks": {
+    "desktop_case_study_screens": "Both case-study heroes and actual-course evidence inspected; corrected two improperly cropped screenshots.",
+    "responsive_case_studies": "Both 390-pixel viewport heroes inspected; document width and scrollWidth both 375 pixels with scrollbar; service stacked content inspected.",
+    "home_carousel": "Service Recovery first, Support Ticket selectable; old guitar and graphing entries retained.",
+    "preview_frames": "Both final 52-second renders inspected at 2,11,20,29,38,47 seconds; corrected final design-preview label."
+  },
+  "preserved_links": {
+    "index.html": {
+      "original_destinations": 29,
+      "removed_destinations": []
+    },
+    "projects.html": {
+      "original_destinations": 26,
+      "removed_destinations": []
+    }
+  }
+}

@@ -1,0 +1,32 @@
+NORTHLINE LOGISTICS / RELAY DESK
+Resolve the ticket.
+Verify the work.
+Use evidence to prioritize, act, document, and close.
+Priority matrix
+P1 / Critical
+Whole site stopped; no usable alternative.
+P2 / High
+Team blocked; no practical alternative; dispatch deadline within one hour.
+P3 / Normal
+One person or workstation; a usable alternative; no immediate team-wide
+block.
+01
+Inspect the effect on work
+Who is affected? What is blocked? Is there an alternative? When is the deadline?
+02
+Match the article to the symptom
+KB-101: wrong printer. KB-202: online label printer with a stalled queue. KB-303: offline or
+disconnected device.
+03
+Keep the action within its approved scope
+Use the correct workstation, device, and job IDs. Never purge unrelated queues or reset a
+shared server to solve this ticket.
+04
+Verify after the latest action
+Confirm the right printer, readable output, and restored work. A new action invalidates the
+earlier confirmation.
+05
+Document, then choose the status
+Record evidence, action/KB, verification, and outcome/owner. Select Resolved only after
+confirmation; otherwise retain ownership and use the appropriate waiting status.
+SELF-DIRECTED CONCEPT | Fictional company, records and procedures.

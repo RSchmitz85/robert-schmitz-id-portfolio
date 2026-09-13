@@ -1,0 +1,37 @@
+{
+  "scope": "Serialized native trigger audit; separate from live player QA",
+  "courses": {
+    "service": {
+      "source": "Service Recovery - Complete Native.story",
+      "sha256": "721d4bd431cb1db71fff0f12a5e076b3223c381267e58f55e3f15d4374ab5577",
+      "bytes": 35993609,
+      "slides": 38,
+      "layers": 32,
+      "triggers": 485,
+      "custom_variables": 48,
+      "videos": 4,
+      "paths_checked": 243,
+      "outcomes": {
+        "clear-plan": 13,
+        "credible-recovery": 2,
+        "work-remains": 228
+      },
+      "duplicate_send_review_and_reset": "pass"
+    },
+    "support": {
+      "source": "Support Ticket - Complete Native.story",
+      "sha256": "2d83d484288473a3a02207b84f71586c5c8a6e239022b4e5212b707e8b5f2379",
+      "bytes": 20366830,
+      "slides": 41,
+      "layers": 74,
+      "triggers": 601,
+      "custom_variables": 54,
+      "videos": 3,
+      "submitted_combinations_checked": 1296,
+      "missing_fields_guard": "pass",
+      "verification_order_and_new_action_reset": "pass",
+      "review_freeze_and_attempt_reset": "pass"
+    }
+  },
+  "status": "pass"
+}

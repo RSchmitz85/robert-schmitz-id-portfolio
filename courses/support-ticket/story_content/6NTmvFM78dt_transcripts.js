@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":700,"text":"Welcome to Relay Desk. Start in Tickets and read what is happening to the employee’s work."},{"start":7362,"text":"Check who is affected, whether a workable alternative exists, and whether a deadline is at risk."},{"start":14408,"text":"Use the priority matrix, then open Knowledge and choose the article that matches the evidence."},{"start":21518,"text":"Actions contains the approved troubleshooting controls. Change only what the selected procedure authorizes."},{"start":29524,"text":"Use Activity to inspect the result. Record useful notes, then select the status that matches the evidence."}]}]};
+    window.globalLoadJsAsset('story_content/6NTmvFM78dt_transcripts.js', JSON.stringify(data));
+})();

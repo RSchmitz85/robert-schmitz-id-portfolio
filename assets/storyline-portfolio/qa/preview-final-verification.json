@@ -1,0 +1,202 @@
+{
+  "checked_utc": "2026-09-13T09:35:38.528180+00:00",
+  "label": "Design preview; full interactive course available from case study",
+  "previews": {
+    "service-source-preview": {
+      "bytes": 1830385,
+      "sha256": "81164cbfbdbc79743ada6b8d17f568c3352c1986099a5d0a63e468ae473dffd9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "format": {
+          "duration": "52.000000"
+        }
+      },
+      "hyperframes_check": {
+        "ok": true,
+        "strict": false,
+        "lint": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "filesScanned": 1
+        },
+        "runtime": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": []
+        },
+        "layout": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "duration": 52,
+          "samples": [
+            2.889,
+            8.667,
+            14.444,
+            20.222,
+            26,
+            31.778,
+            37.556,
+            43.333,
+            49.111
+          ],
+          "transitionSamples": [],
+          "transitionSamplesDropped": 0,
+          "tolerance": 2,
+          "totalIssueCount": 0,
+          "truncated": false
+        },
+        "motion": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "enabled": false,
+          "samples": 0
+        },
+        "contrast": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "enabled": true,
+          "samples": [
+            2.889,
+            14.444,
+            26,
+            37.556,
+            49.111
+          ],
+          "checked": 14,
+          "passed": 14
+        },
+        "snapshots": {
+          "enabled": false,
+          "files": [],
+          "times": [],
+          "findingFiles": []
+        },
+        "_meta": {
+          "version": "0.8.36",
+          "latestVersion": "0.8.36",
+          "updateAvailable": false
+        }
+      }
+    },
+    "support-source-preview": {
+      "bytes": 1331482,
+      "sha256": "1da22b603f802fcf3acca844d2fbf0b9cd200e6e10574e9d87dcc3f61cd890d6",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720
+          }
+        ],
+        "format": {
+          "duration": "52.000000"
+        }
+      },
+      "hyperframes_check": {
+        "ok": true,
+        "strict": false,
+        "lint": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "filesScanned": 1
+        },
+        "runtime": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": []
+        },
+        "layout": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "duration": 52,
+          "samples": [
+            2.889,
+            8.667,
+            14.444,
+            20.222,
+            26,
+            31.778,
+            37.556,
+            43.333,
+            49.111
+          ],
+          "transitionSamples": [],
+          "transitionSamplesDropped": 0,
+          "tolerance": 2,
+          "totalIssueCount": 0,
+          "truncated": false
+        },
+        "motion": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "enabled": false,
+          "samples": 0
+        },
+        "contrast": {
+          "ok": true,
+          "errorCount": 0,
+          "warningCount": 0,
+          "infoCount": 0,
+          "findings": [],
+          "enabled": true,
+          "samples": [
+            2.889,
+            14.444,
+            26,
+            37.556,
+            49.111
+          ],
+          "checked": 14,
+          "passed": 14
+        },
+        "snapshots": {
+          "enabled": false,
+          "files": [],
+          "times": [],
+          "findingFiles": []
+        },
+        "_meta": {
+          "version": "0.8.36",
+          "latestVersion": "0.8.36",
+          "updateAvailable": false
+        }
+      }
+    }
+  }
+}

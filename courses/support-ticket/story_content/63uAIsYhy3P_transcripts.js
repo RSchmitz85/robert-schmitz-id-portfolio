@@ -1,0 +1,5 @@
+
+(function() {
+    const data = {"transcripts":[{"name":"captions","cues":[{"start":700,"text":"Eli’s workstation sends packing slips to the office printer. The intended packing printer works for other people."},{"start":8557,"text":"One workstation is affected, and a nearby printer is available. Under this matrix, choose priority P three."},{"start":16606,"text":"Knowledge article one zero one fits a wrong default printer. Open Actions for the affected workstation."},{"start":24868,"text":"Select packing printer zero three as the default, apply the change, and request one test packing slip."},{"start":32469,"text":"The action is recorded. Keep the ticket in progress until Eli confirms where it printed and whether it is readable."}]}]};
+    window.globalLoadJsAsset('story_content/63uAIsYhy3P_transcripts.js', JSON.stringify(data));
+})();
