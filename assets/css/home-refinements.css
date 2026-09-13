@@ -1,0 +1,21 @@
+/* Refinements below the introduction and collection carousel. */
+.homepage .flagship-card[id]{scroll-margin-top:calc(var(--sticky-header-h, 73px) + 20px)}
+.homepage .flagship-copy>p:not(.eyebrow):not(.studio-status),
+.homepage .home-background p,.homepage .classroom-invitation p{font-size:1rem;line-height:1.65}
+.homepage .home-work .eyebrow,.homepage .supporting-work .eyebrow,
+.homepage .home-background .eyebrow{font-size:.875rem;line-height:1.5}
+.homepage .workplace-feature .studio-status,.homepage .flagship-copy .studio-status{font-size:.875rem!important;line-height:1.5}
+.homepage .flagship-preview{aspect-ratio:auto;display:block;text-decoration:none}
+.homepage .flagship-preview img{height:auto;aspect-ratio:1191/670;object-fit:contain}
+.homepage .preview-caption{display:flex;justify-content:space-between;gap:12px;padding:12px 0 0;color:#24584c;font-size:.9375rem;font-weight:600;line-height:1.4;text-decoration:underline;text-underline-offset:4px}
+.homepage .flagship-preview:hover .preview-caption{color:#784719}
+.homepage .flagship-preview:focus-visible{outline:3px solid #784719;outline-offset:3px}
+@media(max-width:540px){
+ .homepage .classroom-invitation{grid-template-columns:minmax(110px,.8fr) minmax(0,1fr);gap:8px 14px;padding:16px}
+ .homepage .classroom-invitation__copy{display:contents}
+ .homepage .classroom-invitation video{grid-column:1;grid-row:1/3;max-width:180px}
+ .homepage .classroom-invitation .eyebrow{grid-column:2;grid-row:1;align-self:end;margin:0;font-size:.875rem}
+ .homepage .classroom-invitation h3{grid-column:2;grid-row:2;align-self:start;margin:0;font-size:1.4375rem}
+ .homepage .classroom-invitation__copy>p:not(.eyebrow){grid-column:1/-1;margin:8px 0 4px}
+ .homepage .classroom-invitation__copy>span{grid-column:1/-1}
+}
