@@ -1,4 +1,19 @@
 /* Refinements below the introduction and collection carousel. */
+.homepage .conversation-art,.homepage .approach-art,.homepage .contact-art{background-repeat:no-repeat;border-radius:12px}
+.homepage .conversation-art{height:210px;margin-bottom:22px;background-image:url('../images/backgrounds/workplace-v2.webp');background-size:cover;background-position:right 65%}
+.homepage .approach-art{height:210px;margin-top:20px;background-image:url('../images/backgrounds/home-v2.webp');background-size:auto 140%;background-position:right 65%}
+.homepage .home-background.art-background::before{opacity:.5}
+.homepage .home-background__grid>div:last-child{background:#fffaf2ed;padding:18px;border-radius:12px}
+.homepage .cta-band{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.8fr);gap:20px 36px;align-items:center}
+.homepage .cta-band>.contact-art{grid-column:2;grid-row:1/3;height:300px;background-image:url('../images/backgrounds/contact-v2.webp');background-size:auto 125%;background-position:right 70%}
+.homepage .cta-band>div:not(.contact-art){grid-column:1}
+@media(max-width:760px){
+ .homepage .cta-band{grid-template-columns:minmax(0,1fr)}
+ .homepage .cta-band>.contact-art{grid-column:1;grid-row:2;height:220px}
+ .homepage .cta-band>.btn-row{grid-row:3}
+ .homepage .conversation-art{height:190px;background-size:auto 125%}
+ .homepage .approach-art{height:220px;background-size:cover}
+}
 .homepage .flagship-card[id]{scroll-margin-top:calc(var(--sticky-header-h, 73px) + 20px)}
 .homepage .flagship-copy>p:not(.eyebrow):not(.studio-status),
 .homepage .home-background p,.homepage .classroom-invitation p{font-size:1rem;line-height:1.65}
