@@ -64,12 +64,10 @@
  .homepage .project-board:not([hidden]),
  .homepage .carousel-slides,
  .homepage .collection-slide{min-height:0}
- .homepage .board-heading{padding:12px 18px}
- .homepage .board-heading h2{font-size:1.2rem}
- .homepage .board-heading .board-label,
- .homepage .board-tools,
- .homepage .carousel-copy .project-category,
- .homepage .carousel-copy .project-description{display:none}
+ .homepage .board-heading{padding:8px 18px;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px}
+ .homepage .board-heading h2{font-size:1.2rem;flex-basis:100%;order:2}
+ .homepage .board-heading .board-label,.homepage .board-tools{display:block;margin:0;font-size:.75rem;line-height:1.4}
+ .homepage .board-tools{margin-left:auto}
  .homepage .carousel-art.lesson-art,
  .homepage .carousel-art.development-art,
  .homepage .carousel-art.resource-showcase{height:auto;min-height:0;flex:1;aspect-ratio:auto}
@@ -77,8 +75,11 @@
  .homepage .resource-showcase .cover-display{height:100%;width:68%}
  .homepage .carousel-art.resource-showcase .resource-mascot{height:92%;width:42%;bottom:20px}
  .homepage .resource-showcase::after{bottom:12px}
- .homepage .carousel-copy{flex:0 0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;padding:8px 18px}
- .homepage .carousel-copy h3{font-size:1.15rem}
- .homepage .carousel-project-link,.homepage .carousel-pending{margin:0;padding:0;display:flex;align-items:center;font-size:.875rem}
+ .homepage .carousel-copy{flex:0 0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:baseline;gap:3px 12px;padding:10px 18px 6px}
+ .homepage .carousel-copy h3{font-size:1.15rem;grid-column:1;grid-row:1}
+ .homepage .carousel-copy .project-category{display:block;grid-column:1;grid-row:2;font-size:.75rem;line-height:1.4}
+ .homepage .carousel-copy .project-hook{display:block;grid-column:2;grid-row:2;font-size:.8125rem;line-height:1.4;text-align:right}
+ .homepage .carousel-copy .project-description{display:block;grid-column:1/-1;grid-row:3;margin:2px 0 0;font-size:.9375rem;line-height:1.4}
+ .homepage .carousel-project-link,.homepage .carousel-pending{margin:0;padding:0;display:flex;align-items:center;justify-self:end;grid-column:2;grid-row:1;font-size:.875rem}
  .homepage .carousel-position{flex-direction:row;gap:12px}
 }
