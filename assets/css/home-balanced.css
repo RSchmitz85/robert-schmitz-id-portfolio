@@ -44,8 +44,8 @@
 
 /* Use the available desktop width and give Robert a larger visual presence. */
 @media(min-width:901px){
- .homepage .scribble-welcome{padding-inline:clamp(20px,2vw,40px)}
- .homepage .welcome-stage{max-width:1760px;gap:24px}
+ .homepage .scribble-welcome{padding-inline:20px}
+ .homepage .welcome-stage{max-width:none;gap:24px}
  .homepage .welcome-copy{padding:28px}
  .homepage .welcome-person img{width:clamp(220px,21vw,360px);height:auto}
  .personal-signature{font-size:clamp(1.35rem,2vw,2.25rem)}
