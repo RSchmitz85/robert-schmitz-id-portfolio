@@ -66,5 +66,5 @@
 
 @media(min-width:1200px){.homepage .welcome-stage{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr)}}
 
-/* Keep the introduction stationary when carousel content changes height. */
-@media(min-width:901px){.homepage .welcome-copy{align-self:start}}
+/* Align both panels while keeping the introduction anchored at the top. */
+@media(min-width:901px){.homepage .welcome-stage{align-items:stretch}.homepage .welcome-copy,.homepage .project-boards{align-self:stretch}.homepage .project-board:not([hidden]){flex:1}.homepage .project-board .collection-carousel{flex:1}}
