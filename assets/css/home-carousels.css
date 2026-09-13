@@ -55,3 +55,20 @@
 
 .homepage .lesson-art{height:auto;aspect-ratio:16/9}
 .homepage .lesson-art .art-label{display:none}
+
+/* Covers and characters form a small display shelf, with the original art intact. */
+.homepage .welcome-person{flex-wrap:wrap;gap:20px}
+.homepage .welcome-person img{width:clamp(160px,14vw,210px);height:clamp(160px,14vw,210px);border:3px solid #b98e60;box-shadow:0 10px 28px #253e3820}
+.homepage .resource-showcase{height:340px;padding:24px 22px!important;isolation:isolate;background:radial-gradient(ellipse at 78% 45%,#dce6d5a8,transparent 65%)}
+.resource-showcase::before{content:"";position:absolute;width:65%;height:75%;right:-8%;top:12%;border:1px solid #78948038;border-radius:50%;transform:rotate(-25deg);z-index:-1}
+.resource-showcase::after{content:"";position:absolute;bottom:19px;left:5%;right:5%;height:12px;border-radius:50%;background:#475a5320;filter:blur(7px);z-index:-1}
+.cover-display{display:flex;align-items:center;justify-content:center;width:66%;height:90%;margin-right:auto;transform:rotate(-5deg);filter:drop-shadow(5px 10px 7px #233c3530)}
+.homepage .carousel-art.resource-showcase .resource-cover{width:100%;height:100%;object-fit:contain;object-position:center;transform:none}
+.homepage .carousel-art.resource-showcase .resource-mascot{position:absolute;right:1%;bottom:23px;width:36%;height:73%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 8px 5px #233c3526)}
+.homepage .carousel-art.showcase-partner .resource-mascot{width:40%}
+.homepage .showcase-artist{background:radial-gradient(ellipse at 75% 40%,#ead4a9a8,transparent 65%)}
+.homepage .showcase-punchline{background:radial-gradient(ellipse at 75% 40%,#d9c8e1a8,transparent 65%)}
+.task-cover{display:flex;flex-direction:column;justify-content:space-between;gap:20px;width:100%;max-width:255px;height:100%;padding:22px 18px;border:5px double #b7c7a5;background:#173b38;color:#fff5dd}
+.task-cover>span{font-size:.65rem;letter-spacing:.08em;line-height:1.5}
+.task-cover strong{font-size:clamp(1.15rem,2vw,1.8rem);line-height:1.2}
+@media(max-width:650px){.homepage .welcome-person img{width:160px;height:160px}.homepage .resource-showcase{height:300px}.homepage .welcome-person{gap:16px}.task-cover strong{font-size:1.35rem}}
