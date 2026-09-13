@@ -45,8 +45,8 @@
 /* Use the available desktop width and give Robert a larger visual presence. */
 @media(min-width:901px){
  .homepage .scribble-welcome{padding-inline:clamp(20px,2vw,40px)}
- .homepage .welcome-stage{max-width:none;gap:24px}
- .homepage .welcome-copy{padding:clamp(24px,2.4vw,46px)}
+ .homepage .welcome-stage{max-width:1760px;gap:24px}
+ .homepage .welcome-copy{padding:28px}
  .homepage .welcome-person img{width:clamp(220px,21vw,360px);height:auto}
  .personal-signature{font-size:clamp(1.35rem,2vw,2.25rem)}
  .homepage .welcome-copy h1{font-size:clamp(3rem,4.8vw,5.5rem)}
@@ -63,3 +63,5 @@
  .homepage .welcome-person img{width:180px;height:auto}
  .personal-signature{font-size:1.2rem}
 }
+
+@media(min-width:1200px){.homepage .welcome-stage{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr)}}
