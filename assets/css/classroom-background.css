@@ -1,17 +1,26 @@
-.classroom-page .classroom-hero {
-  background-color: #faf4e8;
-  background-image: linear-gradient(90deg, #fffaf250, #fffaf21a), url('../images/backgrounds/classroom-sunlit-v1.webp');
-  background-size: cover;
-  background-position: center 72%;
-  padding-block: 52px 60px;
+/* One continuous classroom backdrop remains visible throughout the page. */
+body.classroom-page { position: relative; isolation: isolate; background: #faf4e8; }
+body.classroom-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(#fffaf270, #fffaf270), url('../images/backgrounds/classroom-sunlit-v1.webp') center / cover no-repeat;
 }
-.classroom-page .classroom-ensemble img {
-  box-shadow: 0 15px 40px #43371c16;
-}
+.classroom-page .classroom-hero { background: transparent; padding-block: 52px 60px; }
+.classroom-page .resource-section,
+.classroom-page .art-background { background: transparent; border-block-color: #b6a88b30; }
+.classroom-page .art-background::before { content: none; }
+.classroom-page .classroom-ensemble img { box-shadow: 0 15px 40px #43371c16; }
+.classroom-page .site-header { background: #fffaf2d9; }
+.classroom-page .resource-transfer { background: #173c3deb; }
+.classroom-page .site-footer { background: #102838ed; }
 @media (max-width: 900px) {
-  .classroom-page .classroom-hero {
-    background-position: center;
-    background-image: linear-gradient(#fffaf27a, #fffaf23d), url('../images/backgrounds/classroom-sunlit-v1.webp');
-    padding-block: 32px 40px;
+  body.classroom-page::before {
+    background-image: linear-gradient(#fffaf299, #fffaf299), url('../images/backgrounds/classroom-sunlit-v1.webp');
   }
+  .classroom-page .classroom-hero { padding-block: 32px 40px; }
 }
+
+.classroom-page main#main { background: transparent; }
