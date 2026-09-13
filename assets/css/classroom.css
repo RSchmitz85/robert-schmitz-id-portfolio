@@ -36,3 +36,8 @@
   .classroom-page .resource-card[href="projects/guided-notes.html"] .resource-card-link{margin-top:16px}
   .classroom-page .resource-card[href="projects/guided-notes.html"] h3{font-size:32px}
 }
+
+/* Keep each decorative icon beside its invitation. */
+.classroom-page .invitation-prompt{display:flex;align-items:center;gap:12px;width:100%;margin:20px 0 24px}
+.classroom-page .invitation-prompt .invitation-motif{width:34px;height:34px;margin:0;flex:0 0 34px}
+.classroom-page .resource-card--invitation .invitation-prompt .invitation-line{margin:0;min-width:0}
