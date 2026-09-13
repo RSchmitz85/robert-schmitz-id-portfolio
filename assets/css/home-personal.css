@@ -1,0 +1,28 @@
+/* Lead with Robert; place the work in a separate supporting row. */
+.homepage .welcome-stage{display:flex;flex-direction:column;align-items:stretch;gap:48px;max-width:1320px}
+.homepage .welcome-copy{display:grid;grid-template-columns:minmax(240px,340px) minmax(0,1fr);align-items:center;gap:clamp(36px,5vw,80px);max-width:none;width:100%;padding:36px 20px 28px}
+.homepage .welcome-person{display:block;margin:0}
+.homepage .welcome-person img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;border:5px solid #fff8ec;box-shadow:0 16px 50px #253e3828}
+.homepage .personal-intro>.eyebrow{color:#704724;font-size:.875rem;letter-spacing:.15em;margin:0 0 16px;font-weight:600}
+.homepage .welcome-copy h1{font-size:clamp(3rem,6vw,5.5rem);line-height:1.02;letter-spacing:-.055em;max-width:none;margin:0 0 22px;color:#172d38}
+.homepage .personal-tagline{font-family:var(--font-display);font-size:clamp(1.5rem,2.5vw,2.1rem);line-height:1.25;letter-spacing:-.025em;margin:0 0 18px;color:#245d57}
+.homepage .imagination-intro{max-width:52ch;font-size:1.1875rem;margin-bottom:26px}
+.homepage .project-boards{width:100%;max-width:1120px;align-self:center;border-top:1px solid #a4b7aa80;padding-top:32px;position:relative}
+.homepage .project-boards::before{content:"Explore my work";position:absolute;top:-11px;left:50%;transform:translateX(-50%);padding:0 20px;background:#fffaf2;color:#52655e;font-size:.8125rem;letter-spacing:.09em;text-transform:uppercase;white-space:nowrap}
+.homepage .board-heading{padding:18px 24px 16px}
+.homepage .board-heading h2{font-size:1.75rem}
+.homepage .carousel-copy{min-height:0}
+@media(max-width:800px){
+ .homepage .welcome-copy{grid-template-columns:190px minmax(0,1fr);gap:28px;padding:20px 0 12px}
+ .homepage .welcome-copy h1{font-size:clamp(2.6rem,6vw,3.6rem)}
+ .homepage .imagination-intro{font-size:1.0625rem}
+}
+@media(max-width:600px){
+ .homepage .welcome-stage{gap:36px}
+ .homepage .welcome-copy{grid-template-columns:1fr;gap:24px;padding-top:8px}
+ .homepage .welcome-person{width:180px}
+ .homepage .welcome-copy h1{font-size:clamp(2.5rem,10vw,3.5rem)}
+ .homepage .personal-intro>.eyebrow{margin-bottom:12px}
+ .homepage .personal-tagline{font-size:1.5rem}
+ .homepage .welcome-copy .btn-row{gap:16px}
+}
