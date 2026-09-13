@@ -40,3 +40,20 @@
  .homepage .carousel-art.resource-showcase .resource-mascot{width:39%;height:78%;right:-1%;bottom:26px}
  .homepage .carousel-art.showcase-partner .resource-mascot{width:42%}
 }
+@media(min-width:901px){
+ .homepage .carousel-art.resource-showcase{height:clamp(164px,calc(20vw - 26px),294px)}
+}
+@media(min-width:901px) and (max-width:1199px){
+ .homepage .carousel-art.lesson-art,
+ .homepage .carousel-art.development-art,
+ .homepage .carousel-art.resource-showcase{height:125px}
+ .homepage .carousel-art.resource-showcase{padding:10px 12px 18px!important}
+ .homepage .carousel-art.resource-showcase .resource-mascot{bottom:16px}
+ .homepage .resource-showcase::after{bottom:10px}
+}
+
+@media(min-width:1200px) and (max-width:1350px){
+ .homepage .carousel-art.lesson-art,
+ .homepage .carousel-art.development-art,
+ .homepage .carousel-art.resource-showcase{height:calc(20vw - 50px)}
+}

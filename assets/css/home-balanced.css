@@ -80,3 +80,23 @@
  .homepage .project-description{font-size:1.1875rem;line-height:1.5}
  .homepage .carousel-project-link{font-size:1.125rem}
 }
+/* Fit the project showcase to the introduction instead of adding empty space below it. */
+@media(min-width:901px){
+ .homepage .project-boards{gap:8px}
+ .homepage .collection-switch button{font-size:.875rem;padding:8px}
+ .homepage .board-heading{padding:10px 20px}
+ .homepage .board-heading h2{font-size:1.4rem;line-height:1.2}
+ .homepage .board-heading .board-label{font-size:.75rem;margin-bottom:4px}
+ .homepage .board-tools{font-size:.75rem;margin-top:4px}
+ .homepage .carousel-art.lesson-art,
+ .homepage .carousel-art.development-art,
+ .homepage .carousel-art.resource-showcase{height:clamp(164px,calc(20vw - 26px),294px);aspect-ratio:auto;flex-shrink:0}
+ .homepage .carousel-art.lesson-art img{object-fit:contain;object-position:center}
+ .homepage .carousel-copy{padding:10px 20px 4px;gap:5px}
+ .homepage .carousel-copy h3{font-size:1.4rem}
+ .homepage .project-description{font-size:1rem;line-height:1.45}
+ .homepage .carousel-project-link{font-size:1rem;padding-top:4px}
+ .homepage .carousel-controls{padding-block:2px 6px}
+ .homepage .collection-all{padding-block:8px}
+}
+
