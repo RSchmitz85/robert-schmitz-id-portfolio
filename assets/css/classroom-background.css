@@ -1,0 +1,17 @@
+.classroom-page .classroom-hero {
+  background-color: #faf4e8;
+  background-image: linear-gradient(90deg, #fffaf250, #fffaf21a), url('../images/backgrounds/classroom-sunlit-v1.webp');
+  background-size: cover;
+  background-position: center 72%;
+  padding-block: 52px 60px;
+}
+.classroom-page .classroom-ensemble img {
+  box-shadow: 0 15px 40px #43371c16;
+}
+@media (max-width: 900px) {
+  .classroom-page .classroom-hero {
+    background-position: center;
+    background-image: linear-gradient(#fffaf27a, #fffaf23d), url('../images/backgrounds/classroom-sunlit-v1.webp');
+    padding-block: 32px 40px;
+  }
+}
