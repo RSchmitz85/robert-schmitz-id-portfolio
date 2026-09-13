@@ -41,3 +41,25 @@
 .homepage .collection-all{padding-block:10px}
 @media(max-width:1100px) and (min-width:901px){.homepage .welcome-person{gap:18px}.personal-signature{font-size:1.15rem}.homepage .welcome-person img{width:150px}.homepage .welcome-copy{padding:22px}}
 @media(max-width:600px){.homepage .welcome-copy{padding:20px;gap:20px}.homepage .welcome-person img{width:120px}.homepage .welcome-person{gap:16px}.personal-signature{font-size:1.05rem}.homepage .welcome-copy h1{font-size:clamp(2rem,8vw,3rem)}}
+
+/* Use the available desktop width and give Robert a larger visual presence. */
+@media(min-width:901px){
+ .homepage .scribble-welcome{padding-inline:clamp(20px,2vw,40px)}
+ .homepage .welcome-stage{max-width:none;gap:24px}
+ .homepage .welcome-copy{padding:clamp(24px,2.4vw,46px)}
+ .homepage .welcome-person img{width:clamp(220px,21vw,360px);height:auto}
+ .personal-signature{font-size:clamp(1.35rem,2vw,2.25rem)}
+ .homepage .welcome-copy h1{font-size:clamp(3rem,4.8vw,5.5rem)}
+ .homepage .personal-tagline{font-size:clamp(1.6rem,2.2vw,2.5rem)}
+ .homepage .imagination-intro{max-width:52ch;font-size:clamp(1.25rem,1.4vw,1.5rem)}
+ .homepage .board-heading h2{font-size:clamp(1.55rem,1.8vw,2rem)}
+ .homepage .carousel-copy h3{font-size:1.55rem}
+ .homepage .project-description{font-size:1.0625rem}
+ .collection-switch button{font-size:1rem}
+ .board-tools{font-size:.875rem}
+}
+@media(max-width:600px){
+ .homepage .welcome-person{flex-wrap:wrap}
+ .homepage .welcome-person img{width:180px;height:auto}
+ .personal-signature{font-size:1.2rem}
+}
