@@ -14,3 +14,25 @@
 /* Ensemble artwork retains its full frame at every screen size. */
 .classroom-hero-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.35fr);gap:32px}.classroom-ensemble{min-width:0}.classroom-ensemble img{display:block;width:100%;height:auto;border-radius:14px}
 @media(max-width:900px){.classroom-hero-grid{grid-template-columns:1fr}.classroom-ensemble{max-width:900px;width:100%;margin:auto}}
+
+/* Short invitations give the featured cards a clear visual destination. */
+.classroom-page .resource-card--invitation{--invitation-accent:#77502b}
+.classroom-page .invitation--notes{--invitation-accent:#245d57}
+.classroom-page .resource-card--invitation .resource-card-copy{position:relative;isolation:isolate;overflow:hidden}
+.classroom-page .resource-card--invitation .resource-card-copy::after{content:"";position:absolute;z-index:-1;right:-65px;bottom:-80px;width:230px;height:230px;border:1px solid #b9ac8d40;border-radius:50%;box-shadow:0 0 0 22px #b9ac8d0c,0 0 0 44px #b9ac8d08;pointer-events:none}
+.classroom-page .invitation-motif{width:48px;height:48px;color:var(--invitation-accent);margin:14px 0 12px;flex:none}
+.classroom-page .resource-card--invitation .invitation-description{margin:0 0 6px}
+.classroom-page .resource-card--invitation .invitation-line{font-family:Georgia,serif;font-style:italic;font-size:25px;line-height:1.35;color:var(--invitation-accent);margin:0 0 24px;max-width:100%}
+.classroom-page .resource-card--invitation .invitation-button{display:inline-flex;align-items:center;gap:24px;padding:13px 20px;background:var(--invitation-accent);color:#fffaf2;text-decoration:none;border-radius:4px;margin-top:0;min-height:46px}
+.classroom-page .resource-card--invitation:hover .invitation-button,.classroom-page .resource-card--invitation:focus-visible .invitation-button{box-shadow:0 4px 12px #172d3826;text-decoration:underline;text-underline-offset:4px}
+
+/* Guided Notes fills the two remaining columns in the final catalog row. */
+@media(min-width:1001px){
+  .classroom-page .resource-card[href="projects/guided-notes.html"]{grid-column:span 2;display:grid;grid-template-columns:1fr 1fr}
+  .classroom-page .resource-card[href="projects/guided-notes.html"] .resource-card-art{height:100%;min-height:360px;border:0;align-items:center;padding:25px 20px}
+  .classroom-page .resource-card[href="projects/guided-notes.html"] .collection-paper{align-self:center;margin-top:0}
+  .classroom-page .resource-card[href="projects/guided-notes.html"] .collection-mascot{height:280px;align-self:center;margin-bottom:0}
+  .classroom-page .resource-card[href="projects/guided-notes.html"] .resource-card-copy{justify-content:center;padding:30px}
+  .classroom-page .resource-card[href="projects/guided-notes.html"] .resource-card-link{margin-top:16px}
+  .classroom-page .resource-card[href="projects/guided-notes.html"] h3{font-size:32px}
+}
