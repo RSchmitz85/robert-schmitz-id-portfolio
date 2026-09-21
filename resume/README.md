@@ -1,11 +1,13 @@
 # Resume PDF
 
-The site resume download is live:
+The homepage and resume page download buttons use `resume/Robert-Schmitz-Resume.pdf`.
+Their version query is the first 12 characters of the PDF SHA-256, so an updated
+resume gets a fresh browser cache entry.
 
-```
-resume/Robert-Schmitz-Resume.pdf
-```
+Source: `Robert_Schmitz_ID_LD_Resume_Repaired.pdf`, supplied on 2026-09-21.
+The supplied two-page PDF is copied without modification.
 
-`resume.html` links the **Download resume (PDF)** button to that file.
+SHA-256: `383eb8bd683c22994d37482c9fcc5172406f537ee83eff61f3bb7e83175afb62`
 
-Source file used for this drop-in: `Robert_Schmitz_EdTech_ID_LD_Resume_2026.pdf` (desktop copy, 2026).
+`Robert_Schmitz_Distinctive_Resume_2026_v2.pdf` contains the same bytes so existing
+links and cached portfolio pages continue to download the current resume.
