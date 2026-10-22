@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-22",
+  "status": "Live Canvas course configured; native quiz repair completed",
+  "course": {
+    "units": 10,
+    "lessons": 40,
+    "practice_questions": 120,
+    "quizzes": 12,
+    "quiz_questions": 68,
+    "assignments": 10
+  },
+  "validation": {
+    "reachable_preview_pages": 77,
+    "checked_local_HTML_pages": 81,
+    "independent_math_checks": 135,
+    "package_files": 120,
+    "Canvas_extension_XML_files_validated": 24,
+    "schema_source": "https://raw.githubusercontent.com/instructure/canvas-lms/master/lib/cc/xsd/cccv1p0.xsd",
+    "schema_sha256": "74ccc55668d2575927bde02553a46d9910635396832e2177dc2c7f27e62031cb",
+    "browser_checked": [
+      "course home layout",
+      "quiz all-correct score 5/5",
+      "quiz wrong and unanswered feedback",
+      "quiz retry resets selected answers"
+    ],
+    "not_tested": [
+      "Complete accessibility audit",
+      "Learner pilot",
+      "Full Student View audit",
+      "Reimport of native Canvas export"
+    ]
+  },
+  "package_sha256": "cd4905c5fa12dc4b1f885518507f584e9613ff03e53307b826f26fe7c8701872",
+  "branding": {
+    "name": "Real Engagement with Mathematics",
+    "palette": "navy and orange",
+    "mascot": "existing Scribble artwork",
+    "applied_to": [
+      "portfolio page",
+      "77-page public preview",
+      "Canvas page and assignment content",
+      "Canvas quiz descriptions",
+      "self-contained package image resource"
+    ],
+    "account_theme": "Course content branded; institutional account theme not changed"
+  },
+  "live_canvas": {
+    "course_url": "https://canvaslite.instructure.com/courses/28678",
+    "course_status": "published",
+    "modules": 12,
+    "core_lessons": 40,
+    "quizzes": 12,
+    "quiz_questions": 68,
+    "application_assignments": 10,
+    "front_page": "REM branded home page with portable inline styles, selected and published",
+    "quiz_repair": "All 68 questions entered through native quiz editor after import generated empty shells",
+    "empty_import_records_removed": 48,
+    "scoring_check": "Teacher preview: one deliberately wrong answer, 9/10 with explanatory feedback",
+    "assignment_check": "Application 1: 12 points, text entry or file upload, readable rubric",
+    "native_export": "Created in Canvas; CDN download blocked by in-app browser",
+    "native_export_page": "https://canvaslite.instructure.com/courses/28678/content_exports",
+    "generated_package_status": "Import candidate; do not overwrite repaired course",
+    "remaining_reviews": [
+      "Complete Student View audit",
+      "Complete accessibility audit",
+      "Learner pilot"
+    ],
+    "visibility": "public",
+    "publishing": "12 modules and all their items published; supporting course map published separately"
+  }
+}

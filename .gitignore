@@ -14,3 +14,4 @@ assets/images/scribble-detective-folders.png
 assets/images/scribble-artist-clipboard.png
 # Frame-extraction scratch from evidence work
 fable-redesign/frames/
+__pycache__/

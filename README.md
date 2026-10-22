@@ -26,6 +26,20 @@ Entry point: [index.html](index.html). All site navigation uses relative paths, 
 - Contact already includes a LinkedIn profile link; it is not a placeholder. External profile availability is separate from local link correctness.
 - Older material under 'fable-redesign/' is historical working material, outside the nine-page site reviewed for this job.
 
+## Algebra 1 course draft (October 22, 2026)
+
+- Portfolio entry: `projects/canvas-algebra1.html`, linked from `projects.html`.
+- Public content preview: `courses/algebra1/index.html`. This is a static preview, not a Canvas instance; it saves no grades or submissions.
+- Import candidate: `assets/downloads/algebra1/algebra1-canvas-course.imscc`.
+- Instructor guidance, answer keys, and import checklist: `assets/downloads/algebra1/instructor-guide.html`.
+- Editable original content: `tools/algebra1_content.py`.
+- REM branding uses the existing Scribble artwork, navy/orange palette, and a portable inline banner in imported Canvas content. The account-level Canvas theme is separate and has not been configured.
+- Rebuild with `python tools/build_algebra1_course.py`; validate with `python tools/validate_algebra1_course.py`.
+- Ten units contain 40 core lessons, 120 explained practice questions, 40 misconception checks, 12 QTI quizzes with 68 questions, and 10 application assignments. The assignments include readable rubrics; native SpeedGrader rubric associations are not configured.
+- The 36-week pacing map is a planning draft with selected Common Core connections. Additional teacher-led practice and local standards review are required for full-year classroom use.
+- Offline checks and selected browser behaviors have been reviewed. Live Canvas import and native quiz scoring have been verified; complete accessibility validation and learner testing remain pending. Do not present the preview as proof of successful Canvas implementation.
+- The YouTube collection is at `projects/youtube-videos.html`, also linked from Projects. The first supplied video is private; its title is unverified and it uses a neutral label.
+
 ## Local preview and handoff
 
 From this directory, run 'python -m http.server 8080 --bind 127.0.0.1' only if that port is free. Leave other jobs and servers running.
@@ -40,3 +54,15 @@ The assigned overnight job, changelog, doer verdict, backups, and PNG/browser ev
 - 'eportfolio-evidence/'
 
 Consult the latest dated verdict and matching source hashes before relying on older screenshots. Doer verification does not replace independent QA Judge / Human Look or Operator sign-off. Publication remains a separate lifecycle state.
+
+## Live Canvas handoff (October 22, 2026)
+
+- Course: https://canvaslite.instructure.com/courses/28678 (published with public visibility).
+- Branded front page selected; 40 lessons, 12 quizzes / 68 questions, and 10 application assignments verified.
+- Quiz import produced empty shells despite completed migration jobs. All 68 questions were entered through the native quiz editor; the 48 empty generated assignment/quiz records were removed.
+- A cumulative preview with one deliberately wrong answer scored 9/10 and displayed explanations. Application 1 accepts text entry or file uploads and displays its 12-point rubric.
+- Native backup created in Canvas Content Exports; the in-app browser blocked its CDN download. The generated source `.imscc` remains an import candidate, not a verified one-step backup.
+- Do not reimport the generated candidate over this course: it could overwrite the repaired quizzes. Use the native Canvas export for backup or migration.
+- Full accessibility, Student View, and learner-pilot review remain pending.
+
+- Published October 22, 2026: all 12 modules and their items, plus the course map. Public course visibility enabled; public course-index listing remains off. Projects links to the branded case study and live course.
