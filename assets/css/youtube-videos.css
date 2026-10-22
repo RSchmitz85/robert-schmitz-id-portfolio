@@ -6,3 +6,4 @@
 .youtube-copy h3 { font-size: var(--fs-lg); overflow-wrap: anywhere; }
 .youtube-copy > p:not(.eyebrow) { color: var(--text-muted); }
 @media (max-width: 760px) { .youtube-grid { grid-template-columns: 1fr; } }
+.youtube-card[id]{scroll-margin-top:100px}
