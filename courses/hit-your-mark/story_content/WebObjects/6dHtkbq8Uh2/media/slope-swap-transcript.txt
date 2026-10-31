@@ -1,0 +1,23 @@
+The teammate exchanged rise and run (slope-swap)
+Duration: 36.000 s
+Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
+
+NARRATION (sentence start - end)
+[00:01.4 - 00:03.5] Starting at zero, six is correct.
+[00:04.3 - 00:06.9] A teammate moves right three and down four.
+[00:08.7 - 00:14.1] That gives slope negative four-thirds: vertical change divided by horizontal change.
+[00:15.1 - 00:18.1] Our equation needs right four and down three.
+[00:19.0 - 00:20.4] Exchange the changes.
+[00:22.2 - 00:27.6] The incorrect drawing predicts arrival at four and a half seconds; the correct graph predicts eight.
+[00:28.6 - 00:32.5] These are graph predictions, not changes to the actual motion.
+
+ESSENTIAL VISUAL INFORMATION (in order of appearance)
+1. Title chip 'Hit Your Mark | The teammate exchanged rise and run'. The approach graph: x, elapsed time (s), 0 to 9; y, meters remaining, 0 to 7, equal units. A gold point at (0, 6) is labelled '(0, 6) correct start ✓'. Headline: 'Start (0, 6): correct ✓'.
+2. A coral-bordered card 'Teammate proposal: right 3, down 4'. A dashed blue arrow runs right 3 from (0, 6) and a dashed orange arrow drops 4 to a coral point (3, 2), labelled '(3, 2) teammate proposal'; the changes are labelled 3 and −4. Headline: 'Proposed: run 3, rise −4'.
+3. The proposed slope triangle is shaded coral and the card adds 'slope = vertical / horizontal = −4/3' (stacked fractions); the −4 and 3 labels pulse as they are named. Headline: 'Proposed slope = −4/3'.
+4. The proposal fades but stays visible. A second card: 'Equation y = −(3/4)x + 6 needs right 4, down 3 · slope −3/4'. A solid blue arrow 'right 4' and a solid orange arrow 'down 3' lead to the cream point (4, 3). Headline: 'Correct: run 4, rise −3'.
+5. An 'Exchange the changes' card shows 'right [3]' and 'down [4]'; the two number tiles swap places in an arc, changing colour, so it reads 'right 4, down 3', then a teal check appears. Headline: 'Exchange the changes'.
+6. Both drawings are extended to the x-axis: a coral line from (0, 6) through (3, 2) to (4.5, 0), ringed and labelled 'proposal predicts 4.5 s'; a cream line from (0, 6) through (4, 3) to (8, 0), ringed in teal and labelled 'equation predicts 8 s'. Headline: 'Wrong prediction 4.5 s; correct prediction 8 s'.
+7. A note appears: 'Two drawings, two predictions. The motion itself did not change.' No figure is shown stopping. Headline: 'Graph predictions, not motion changes'.
+
+All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

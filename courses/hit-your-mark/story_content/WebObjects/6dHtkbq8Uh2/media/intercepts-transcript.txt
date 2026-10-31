@@ -1,0 +1,19 @@
+Which coordinate becomes zero? (intercepts)
+Duration: 30.700 s
+Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
+
+NARRATION (sentence start - end)
+[00:01.2 - 00:04.3] An intercept is where a graph crosses an axis.
+[00:05.3 - 00:08.6] For the y-intercept, set the input x to zero.
+[00:09.5 - 00:13.9] Our model gives zero, six: six meters remain at the start.
+[00:15.1 - 00:18.3] For the x-intercept, set the output y to zero.
+[00:19.2 - 00:22.5] The point eight, zero means arrival after eight seconds.
+[00:23.7 - 00:27.2] Check which coordinate is zero before interpreting an axis crossing.
+
+ESSENTIAL VISUAL INFORMATION (in order of appearance)
+1. Title chip 'Hit Your Mark | Which coordinate becomes zero?'. The approach graph: x, elapsed time (s), 0 to 9; y, meters remaining, 0 to 7, equal units, with the cream segment from (0, 6) to (8, 0). Rings mark the two axis crossings: gold at (0, 6), teal at (8, 0). Headline: 'Intercept = axis crossing'. A model panel (pool lane above stage lane, 'Simplified model · run at 4× speed') sits at the lower right with both figures 6 m from the target and the clock at 0.0 s.
+2. Card 'y-intercept · crosses the y-axis': 'input x = 0'. The y-axis glows blue, labelled 'x = 0'. The gold point (0, 6) is plotted and labelled '(0, 6) y-intercept'; the card adds '→ (0, 6)' with the 0 highlighted and '6 m remain at the start (0 s)'. Headline: 'y-intercept: input x = 0'.
+3. Card 'x-intercept · crosses the x-axis': 'output y = 0'. The x-axis glows orange, labelled 'y = 0 on this axis'. The teal point (8, 0) is plotted and labelled '(8, 0) x-intercept'; the card adds '→ (8, 0)' with the 0 highlighted and '0 m remaining: arrival after 8 s'. In the model panel both figures move to their targets while the clock counts model time 0.0 to 8.0 s at 4× speed. Headline: 'x-intercept: output y = 0'.
+4. Both crossings are ringed again. A box asks 'Which coordinate is 0?' while the zero in (0, 6) and the zero in (8, 0) are highlighted side by side in the two cards. Headline: 'Input 0? Output 0?'.
+
+All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

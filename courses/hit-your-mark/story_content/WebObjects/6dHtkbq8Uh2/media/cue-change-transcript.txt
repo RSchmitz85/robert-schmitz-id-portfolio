@@ -1,0 +1,21 @@
+Two ways to make six seconds (cue-change)
+Duration: 34.467 s
+Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
+
+NARRATION (sentence start - end)
+[00:01.2 - 00:02.8] Now the cue is six seconds.
+[00:03.7 - 00:05.9] The original eight-second approach arrives late.
+[00:07.1 - 00:13.8] One fix keeps the six-meter start and uses one meter per second: y equals negative x plus six.
+[00:15.2 - 00:22.7] Another keeps the three-fourths pace and starts four and a half meters away: y equals negative three-fourths x plus four and a half.
+[00:23.9 - 00:26.6] Both reach zero distance remaining at six seconds.
+[00:27.6 - 00:31.0] Change one parameter, then match the equation to your plan.
+
+ESSENTIAL VISUAL INFORMATION (in order of appearance)
+1. Title chip 'Hit Your Mark | Two ways to make six seconds'. The approach graph (x, elapsed time (s), 0 to 9; y, meters remaining, 0 to 7) with the original cream segment from (0, 6) to (8, 0). A card: 'Original y = −(3/4)x + 6 → 8 s'. A dashed teal vertical line at x = 6 is labelled 'cue: 6 s'. Headline: 'New cue: 6 s'.
+2. In the model panel (pool lane above stage lane, titled 'Model · original plan · 2×', later 'Model · fix 1 · 2×' and 'Model · fix 2 · 2×') both figures follow the original plan while the clock counts model time to 6.0 s and a dot slides down the original segment. At 6 s the figures are still 1.5 m from the target: an orange point (6, 1.5) is labelled '1.5 m still remaining at 6 s'. The card adds a coral 'late' badge and the graph labels '8 s: late'. Headline: 'Original arrival 8 s > cue 6 s: late'.
+3. The original line dims. A gold card 'Fix 1 · change pace: y = −x + 6, start 6 m · 1 m per s → arrives at 6 s'. The figures restart at 6 m and move at 1 m per s; a gold segment is drawn from (0, 6) to (6, 0) in step with the moving dot and the clock (0.0 to 6.0 s). Headline: 'Change pace: y = −x + 6'.
+4. A lilac card 'Fix 2 · change start: y = −(3/4)x + 4.5, start 4.5 m · 3/4 m per s → arrives at 6 s'. The figures reset to 4.5 m from the target and move at the original pace; a lilac segment is drawn from (0, 4.5) to (6, 0) with the dot and clock. Headline: 'Change start: y = −(3/4)x + 4.5'.
+5. A teal ring at (6, 0) is labelled 'both: (6, 0)'; the y-intercepts are labelled (0, 6) in gold and (0, 4.5) in lilac. Headline: 'Same arrival; different parameters'.
+6. The original card is replaced by 'Your turn: change one parameter'. Headline: 'Arrive at exactly 6 s: early is not a match'.
+
+All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

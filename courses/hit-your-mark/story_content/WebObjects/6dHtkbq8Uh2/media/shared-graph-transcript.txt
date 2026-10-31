@@ -1,0 +1,24 @@
+Build the approach graph (shared-graph)
+Duration: 44.833 s
+Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
+
+NARRATION (sentence start - end)
+[00:01.0 - 00:04.4] Start with y equals negative three-fourths x plus six.
+[00:05.3 - 00:11.4] When x is zero, y is six, so plot the y-intercept, zero, six.
+[00:12.3 - 00:15.7] The slope means right four seconds and down three meters.
+[00:16.7 - 00:18.1] Plot four, three.
+[00:21.3 - 00:25.9] Repeat the same changes to reach eight, zero, the x-intercept.
+[00:26.8 - 00:29.4] Zero distance remaining means arrival.
+[00:30.4 - 00:34.3] Connect the points with a straight segment from zero through eight seconds.
+[00:35.3 - 00:40.3] This graph shows distance remaining over time; it does not show a downward physical route.
+
+ESSENTIAL VISUAL INFORMATION (in order of appearance)
+1. Title chip 'Hit Your Mark | Build the approach graph'. An empty grid with equal units: x, elapsed time (s), 0 to 9; y, meters remaining, 0 to 7. An equation card: y = −(3/4)x + 6 (3 over 4 stacked), with 'x = elapsed seconds · y = meters remaining'. Each part highlights as it is read.
+2. The y-axis glows blue for 'x is zero'; the + 6 highlights; a gold point is plotted at (0, 6), labelled '(0, 6) y-intercept'. Headline: 'y-intercept: (0, 6)'.
+3. A card reads 'slope −3/4: right 4 s, down 3 m'. A blue arrow '+4 s' runs right from (0, 6) to x = 4; an orange arrow '−3 m' drops to the point (4, 3), which is labelled. Headline: 'Right 4 s, down 3 m → (4, 3)'.
+4. Pause: headline 'Predict the next point' and a dashed blue bubble 'next point?' to the lower right of (4, 3).
+5. The same blue '+4 s' and orange '−3 m' arrows repeat to a teal point at (8, 0), labelled '(8, 0) x-intercept'. A teal ring circles it with '0 m left = arrival'. Headline: 'x-intercept: (8, 0) = arrival'.
+6. The arrows dim and a straight cream segment is drawn from (0, 6) through (4, 3) to (8, 0); it stops at (8, 0). The x-axis from 0 to 8 is highlighted in teal and labelled '0 ≤ x ≤ 8'. Headline: 'Approach model: 0 ≤ x ≤ 8'.
+7. A panel 'Same model, both scenes' shows a pool lane and a stage lane. For eight seconds a dot slides down the segment from (0, 6) to (8, 0), with a dashed orange drop line to the x-axis showing the remaining distance, while the swimmer and performer figures move horizontally to their targets and a clock counts 0.0 to 8.0 s. Label on the graph: 'remaining falls'. Headline, held: 'A graph of two quantities'.
+
+All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

@@ -1,0 +1,22 @@
+A steady-paced pool drill (pool-intro)
+Duration: 35.067 s
+Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
+
+NARRATION (sentence start - end)
+[00:03.2 - 00:05.2] A swimmer begins six meters from the wall.
+[00:06.1 - 00:09.7] In this short drill, assume a steady pace until arrival.
+[00:14.7 - 00:17.5] After four seconds, three meters remain.
+[00:18.4 - 00:24.0] Notice what changed: time increased, while distance remaining decreased.
+[00:25.0 - 00:27.8] Use those two observations to predict the arrival time.
+[00:28.6 - 00:31.0] Keep your prediction; the graph will help you check it.
+
+ESSENTIAL VISUAL INFORMATION (in order of appearance)
+1. Opening (0 to 2.8 s, no narration): a short illustrative animation, tagged 'Illustrative animation', of a swimmer in a teal cap swimming freestyle toward a tiled pool wall on the right in a sunlit indoor pool; it cuts away while she is still well short of the wall. No numbers are shown over it. Clean cut to the still illustration of the same pool with the swimmer at her starting position, tagged 'The start · 0 s'. Title chip: 'Hit Your Mark | A steady-paced pool drill'.
+2. A gold ring marks the swimmer. A dashed line drops from the swimmer's head to an orange measuring line that runs to the wall, which is outlined in teal. Label: '6 m to the wall · 0 s'. Headline: 'Start: 6 m remaining'.
+3. The picture shrinks into a card at the top right labelled 'Scene at the start'. Its orange measuring line slides down into a simplified model: a to-scale pool lane with a swimmer figure on the left, a teal wall labelled 'WALL' on the right, and tick marks 6, 5, 4, 3, 2, 1, 0 labelled 'm left'. An orange bracket labelled 'remaining' runs from the swimmer figure to the wall. Tag: 'Simplified model · steady pace · to scale'. Two readouts appear: 'Elapsed time 0.0 s' (blue) and 'Distance remaining 6.0 m' (orange).
+4. The model runs for four seconds in real time: the swimmer figure strokes steadily toward the wall, the clock counts 0.0 to 4.0 s and the remaining distance counts 6.0 to 3.0 m, then the figure stops and floats 3 m from the wall. Headline: 'After 4 s: 3 m remaining'. A faded copy of the figure stays at the start, with a grey dashed trail for the distance already covered.
+5. Two change cards appear beside the readouts: blue '0 s → 4 s, time increased (+4 s)' and orange '6 m → 3 m, decreased: 3 − 6 = −3 m'. Headline: 'Time increases. Distance remaining decreases.'
+6. A dashed blue bubble above the wall reads 'arrival: ? s'. Final headline, held to the end: 'When will the distance reach 0?'. The swimmer figure stays 3 m from the wall; no arrival, graph or arrival time is shown.
+
+All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.
+The opening seconds are a muted, trimmed Grok Imagine clip labelled 'Illustrative animation'; it is not a scaled or timed model. Exact distance and time appear only in the labelled simplified model.

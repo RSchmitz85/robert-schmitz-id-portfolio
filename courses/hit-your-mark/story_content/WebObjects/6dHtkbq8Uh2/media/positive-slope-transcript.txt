@@ -1,0 +1,23 @@
+A positive slope and two intercepts (positive-slope)
+Duration: 35.667 s
+Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
+
+NARRATION (sentence start - end)
+[00:01.2 - 00:08.1] For y equals two-thirds x minus two, the constant term places the y-intercept at zero, negative two.
+[00:09.0 - 00:12.5] A positive slope means rise two for run three.
+[00:13.5 - 00:16.2] Moving right three reaches three, zero.
+[00:16.8 - 00:18.4] This is also the x-intercept.
+[00:19.4 - 00:24.5] You could choose a different valid point, such as six, two, and draw the same line.
+[00:25.5 - 00:27.8] The graph rises as x increases.
+[00:28.7 - 00:32.2] This abstract example has no time or distance units.
+
+ESSENTIAL VISUAL INFORMATION (in order of appearance)
+1. Title chip 'Hit Your Mark | A positive slope and two intercepts'. Equal-unit abstract axes labelled only x and y (x from −2 to 9, y from −4 to 4, arrows on both ends). An equation card: y = (2/3)x − 2 (2 over 3 stacked), 'constant term −2 · slope 2/3'; the slope and the constant term highlight as they are read. A gold point is plotted at (0, −2) and listed as 'y-intercept (0, −2)'. Headline: 'y-intercept: (0, −2)'.
+2. A card 'Positive slope: slope = rise / run = 2/3 · up 2 for right 3'. Headline: 'Positive slope: rise 2 for run 3'.
+3. A blue arrow '+3' runs right from (0, −2) and an orange arrow '+2' rises to a teal point (3, 0). Headline: 'Right 3, up 2 → (3, 0)'.
+4. A teal ring marks (3, 0) on the x-axis and the points card adds 'x-intercept (3, 0)'. Headline: '(3, 0) is also the x-intercept'.
+5. The same +3 / +2 moves repeat from (3, 0) to a cream point (6, 2), listed as 'another point (6, 2)'. A complete line with arrowheads at both ends grows out through all three points. Headline: 'Different valid point; same line'.
+6. The step arrows fade; a dot travels up the line from (0, −2) to the upper right, with the label 'as x increases, y increases'. Headline: 'Positive slope: rises to the right'.
+7. A muted chip: 'abstract: no seconds, no meters'.
+
+All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

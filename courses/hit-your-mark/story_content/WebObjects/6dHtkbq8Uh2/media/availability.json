@@ -1,0 +1,44 @@
+{
+  "version": 7,
+  "ready": [
+    "lesson-hook",
+    "pool-intro",
+    "stage-intro",
+    "rate-and-sign",
+    "shared-graph",
+    "intercepts",
+    "slope-swap",
+    "cue-change",
+    "positive-slope",
+    "horizontal-line"
+  ],
+  "captions": [
+    "lesson-hook",
+    "pool-intro",
+    "stage-intro",
+    "rate-and-sign",
+    "shared-graph",
+    "intercepts",
+    "slope-swap",
+    "cue-change",
+    "positive-slope",
+    "horizontal-line"
+  ],
+  "transcripts": [
+    "lesson-hook",
+    "pool-intro",
+    "stage-intro",
+    "rate-and-sign",
+    "shared-graph",
+    "intercepts",
+    "slope-swap",
+    "cue-change",
+    "positive-slope",
+    "horizontal-line"
+  ],
+  "posters": {
+    "pool-intro": "assets/pool-context.png",
+    "stage-intro": "assets/stage-context.png",
+    "lesson-hook": "assets/stage-context.png"
+  }
+}

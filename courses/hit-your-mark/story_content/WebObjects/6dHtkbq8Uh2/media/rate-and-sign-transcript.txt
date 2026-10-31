@@ -1,0 +1,22 @@
+Why is the rate negative? (rate-and-sign)
+Duration: 34.267 s
+Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
+
+NARRATION (sentence start - end)
+[00:01.2 - 00:04.5] The graph tracks distance remaining, not distance already traveled.
+[00:05.5 - 00:07.4] At first, six meters remain.
+[00:08.2 - 00:10.7] Four seconds later, three meters remain.
+[00:11.9 - 00:16.2] The change in remaining distance is three minus six: negative three meters.
+[00:17.6 - 00:21.8] Divide by four elapsed seconds to get negative three-fourths of a meter per second.
+[00:23.3 - 00:26.8] For a move right four on the graph, move down three.
+[00:27.8 - 00:30.8] The negative sign describes the decrease in what remains.
+
+ESSENTIAL VISUAL INFORMATION (in order of appearance)
+1. Title chip 'Hit Your Mark | Why is the rate negative?'. A simplified-model panel ('Simplified model · steady pace') shows a pool lane with a swimmer figure and, below it, a stage-floor lane with a performer figure, both 6 m from a teal target (wall / X mark) on a tick scale 6 to 0 'm left'. A blue clock reads 0.0 s.
+2. Both figures move steadily for four modeled seconds (clock 0.0 to 4.0 s). An orange bracket from each figure to its target shrinks, labelled 'y: remaining'; a grey dashed trail grows behind, labelled 'already traveled: not y'. Headline: 'y = meters remaining'.
+3. Cards on the right: 'Start: 0 s · 6 m remaining', then 'Later: 4 s · 3 m remaining'. A third card, 'Change in remaining distance (final − initial)', builds '3 − 6 = −3 m'. Headline: 'Change in y = 3 − 6 = −3 m'.
+4. A rate card shows the stacked fraction (−3 m) over (4 s), then '= −3/4 m per s' with 3 over 4 stacked. Headline: 'Rate = change in remaining distance / elapsed time'.
+5. The cards clear, the rate card moves to the top right and the model panel shrinks to the lower right. A coordinate grid appears: x, elapsed time (s), 0 to 9; y, meters remaining, 0 to 7, equal units. Point (0, 6) in gold; a blue arrow 'right 4 s' to x = 4, then an orange arrow 'down 3 m' to the point (4, 3). Headline: 'Run: right 4. Rise: down 3.'
+6. The minus sign in −3/4 is highlighted and a note appears: '− = remaining distance decreases; motion stays horizontal →'. The figures in the model still face their targets on level ground.
+
+All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

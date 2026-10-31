@@ -1,0 +1,20 @@
+Why this line has no x-intercept (horizontal-line)
+Duration: 26.567 s
+Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
+
+NARRATION (sentence start - end)
+[00:01.2 - 00:04.1] For y equals three, every output is three.
+[00:04.9 - 00:06.9] Choose two different input values.
+[00:07.8 - 00:11.7] Plot zero, three and another point with y equal to three.
+[00:12.7 - 00:14.9] This horizontal line has slope zero.
+[00:15.8 - 00:18.5] It crosses the y-axis at zero, three.
+[00:19.5 - 00:23.0] It never reaches y equals zero, so it has no x-intercept.
+
+ESSENTIAL VISUAL INFORMATION (in order of appearance)
+1. Title chip 'Hit Your Mark | A horizontal line'. Equal-unit abstract axes labelled only x and y (x from −2 to 9, y from −2 to 5, arrows on both ends). An equation card: 'y = 3', 'every output is 3', with the 3 highlighted. Headline: 'Every y-value is 3'.
+2. A card 'Two different inputs' lists 'x = 0 → y = 3' and 'x = 3 → y = 3' as the gold point (0, 3) and the cream point (3, 3) are plotted and labelled. Headline: 'Two different inputs'.
+3. A complete horizontal line y = 3 grows out with arrowheads at both ends. A blue arrow 'run 3' from (0, 3) to (3, 3) and an orange label 'rise 0'; a card shows 'slope = rise / run = 0/3 = 0'. Headline: 'Slope 0; y-intercept (0, 3)'.
+4. A gold ring marks (0, 3) on the y-axis; a card lists 'y-intercept (0, 3)'.
+5. The x-axis glows orange, labelled 'y = 0'. A teal double arrow between the line and the x-axis at x = 5 is labelled 'always 3 above y = 0'. The card adds 'x-intercept: none'. Headline: 'No x-intercept'.
+
+All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

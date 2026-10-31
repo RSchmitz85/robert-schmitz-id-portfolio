@@ -1,0 +1,7 @@
+
+.hym-design-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:30px}
+.hym-design-grid article{padding:28px;background:#f5eee3;border:1px solid #d9cab5;min-width:0}
+.hym-design-grid h3{font-size:25px;line-height:1.2;margin:16px 0}
+.hym-design-grid p{font-size:15px;line-height:1.75}
+.hym-launch{background:#eaf0ed;padding:30px;border:1px solid #cad8d0}
+@media(max-width:760px){.hym-design-grid{grid-template-columns:1fr}.hym-launch{padding:22px}}
