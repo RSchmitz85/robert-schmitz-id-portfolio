@@ -1,6 +1,5 @@
-A positive slope and two intercepts (positive-slope)
+A positive slope and two intercepts
 Duration: 35.667 s
-Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
 
 NARRATION (sentence start - end)
 [00:01.2 - 00:08.1] For y equals two-thirds x minus two, the constant term places the y-intercept at zero, negative two.
@@ -19,5 +18,3 @@ ESSENTIAL VISUAL INFORMATION (in order of appearance)
 5. The same +3 / +2 moves repeat from (3, 0) to a cream point (6, 2), listed as 'another point (6, 2)'. A complete line with arrowheads at both ends grows out through all three points. Headline: 'Different valid point; same line'.
 6. The step arrows fade; a dot travels up the line from (0, −2) to the upper right, with the label 'as x increases, y increases'. Headline: 'Positive slope: rises to the right'.
 7. A muted chip: 'abstract: no seconds, no meters'.
-
-All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

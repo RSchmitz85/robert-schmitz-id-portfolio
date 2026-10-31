@@ -5,3 +5,16 @@
 .hym-design-grid p{font-size:15px;line-height:1.75}
 .hym-launch{background:#eaf0ed;padding:30px;border:1px solid #cad8d0}
 @media(max-width:760px){.hym-design-grid{grid-template-columns:1fr}.hym-launch{padding:22px}}
+.hym-glance{background:#183c3d;color:#f9f4e8}
+.hym-glance dl{display:grid;grid-template-columns:1.6fr 1fr 1.3fr 1fr;gap:24px;margin:0;padding:26px 0}
+.hym-glance dt{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:#f4c18c;margin-bottom:8px}
+.hym-glance dd{margin:0;font-size:15px;line-height:1.6}
+.hym-objectives{padding-left:1.3em;max-width:72ch}
+.hym-objectives li{margin-bottom:14px;line-height:1.7}
+.hym-decisions h3{font-size:19px;margin:22px 0 6px}
+.hym-decisions p{max-width:72ch}
+.hym-shot{margin:0 0 28px}
+.hym-shot img{display:block;width:100%;height:auto;border:1px solid #d9cab5;box-shadow:8px 8px 0 #d9cab5}
+.hym-shot figcaption{font-size:13px;color:#59636a;margin-top:16px;line-height:1.6}
+@media(max-width:860px){.hym-glance dl{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.hym-glance dl{grid-template-columns:1fr;gap:16px}}

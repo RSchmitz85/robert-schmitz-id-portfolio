@@ -1,6 +1,5 @@
-The teammate exchanged rise and run (slope-swap)
+The teammate exchanged rise and run
 Duration: 36.000 s
-Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
 
 NARRATION (sentence start - end)
 [00:01.4 - 00:03.5] Starting at zero, six is correct.
@@ -19,5 +18,3 @@ ESSENTIAL VISUAL INFORMATION (in order of appearance)
 5. An 'Exchange the changes' card shows 'right [3]' and 'down [4]'; the two number tiles swap places in an arc, changing colour, so it reads 'right 4, down 3', then a teal check appears. Headline: 'Exchange the changes'.
 6. Both drawings are extended to the x-axis: a coral line from (0, 6) through (3, 2) to (4.5, 0), ringed and labelled 'proposal predicts 4.5 s'; a cream line from (0, 6) through (4, 3) to (8, 0), ringed in teal and labelled 'equation predicts 8 s'. Headline: 'Wrong prediction 4.5 s; correct prediction 8 s'.
 7. A note appears: 'Two drawings, two predictions. The motion itself did not change.' No figure is shown stopping. Headline: 'Graph predictions, not motion changes'.
-
-All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

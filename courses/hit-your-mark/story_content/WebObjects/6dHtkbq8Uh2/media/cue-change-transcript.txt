@@ -1,6 +1,5 @@
-Two ways to make six seconds (cue-change)
+Two ways to make six seconds
 Duration: 34.467 s
-Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
 
 NARRATION (sentence start - end)
 [00:01.2 - 00:02.8] Now the cue is six seconds.
@@ -17,5 +16,3 @@ ESSENTIAL VISUAL INFORMATION (in order of appearance)
 4. A lilac card 'Fix 2 · change start: y = −(3/4)x + 4.5, start 4.5 m · 3/4 m per s → arrives at 6 s'. The figures reset to 4.5 m from the target and move at the original pace; a lilac segment is drawn from (0, 4.5) to (6, 0) with the dot and clock. Headline: 'Change start: y = −(3/4)x + 4.5'.
 5. A teal ring at (6, 0) is labelled 'both: (6, 0)'; the y-intercepts are labelled (0, 6) in gold and (0, 4.5) in lilac. Headline: 'Same arrival; different parameters'.
 6. The original card is replaced by 'Your turn: change one parameter'. Headline: 'Arrive at exactly 6 s: early is not a match'.
-
-All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

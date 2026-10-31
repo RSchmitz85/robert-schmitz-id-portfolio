@@ -1,6 +1,5 @@
-A steady-paced pool drill (pool-intro)
+A steady-paced pool drill
 Duration: 35.067 s
-Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
 
 NARRATION (sentence start - end)
 [00:03.2 - 00:05.2] A swimmer begins six meters from the wall.
@@ -17,6 +16,3 @@ ESSENTIAL VISUAL INFORMATION (in order of appearance)
 4. The model runs for four seconds in real time: the swimmer figure strokes steadily toward the wall, the clock counts 0.0 to 4.0 s and the remaining distance counts 6.0 to 3.0 m, then the figure stops and floats 3 m from the wall. Headline: 'After 4 s: 3 m remaining'. A faded copy of the figure stays at the start, with a grey dashed trail for the distance already covered.
 5. Two change cards appear beside the readouts: blue '0 s → 4 s, time increased (+4 s)' and orange '6 m → 3 m, decreased: 3 − 6 = −3 m'. Headline: 'Time increases. Distance remaining decreases.'
 6. A dashed blue bubble above the wall reads 'arrival: ? s'. Final headline, held to the end: 'When will the distance reach 0?'. The swimmer figure stays 3 m from the wall; no arrival, graph or arrival time is shown.
-
-All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.
-The opening seconds are a muted, trimmed Grok Imagine clip labelled 'Illustrative animation'; it is not a scaled or timed model. Exact distance and time appear only in the labelled simplified model.

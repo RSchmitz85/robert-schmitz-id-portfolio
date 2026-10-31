@@ -1,6 +1,5 @@
-Why is the rate negative? (rate-and-sign)
+Why is the rate negative?
 Duration: 34.267 s
-Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
 
 NARRATION (sentence start - end)
 [00:01.2 - 00:04.5] The graph tracks distance remaining, not distance already traveled.
@@ -18,5 +17,3 @@ ESSENTIAL VISUAL INFORMATION (in order of appearance)
 4. A rate card shows the stacked fraction (−3 m) over (4 s), then '= −3/4 m per s' with 3 over 4 stacked. Headline: 'Rate = change in remaining distance / elapsed time'.
 5. The cards clear, the rate card moves to the top right and the model panel shrinks to the lower right. A coordinate grid appears: x, elapsed time (s), 0 to 9; y, meters remaining, 0 to 7, equal units. Point (0, 6) in gold; a blue arrow 'right 4 s' to x = 4, then an orange arrow 'down 3 m' to the point (4, 3). Headline: 'Run: right 4. Rise: down 3.'
 6. The minus sign in −3/4 is highlighted and a note appears: '− = remaining distance decreases; motion stays horizontal →'. The figures in the model still face their targets on level ground.
-
-All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.

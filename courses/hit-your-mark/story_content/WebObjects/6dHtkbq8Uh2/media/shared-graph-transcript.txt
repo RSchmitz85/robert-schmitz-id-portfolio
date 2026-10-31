@@ -1,6 +1,5 @@
-Build the approach graph (shared-graph)
+Build the approach graph
 Duration: 44.833 s
-Narrator: local VoiceStudio/VoxCPM1.5 voice (schmitz-map-v1a reference). Captions use the exact script.
 
 NARRATION (sentence start - end)
 [00:01.0 - 00:04.4] Start with y equals negative three-fourths x plus six.
@@ -20,5 +19,3 @@ ESSENTIAL VISUAL INFORMATION (in order of appearance)
 5. The same blue '+4 s' and orange '−3 m' arrows repeat to a teal point at (8, 0), labelled '(8, 0) x-intercept'. A teal ring circles it with '0 m left = arrival'. Headline: 'x-intercept: (8, 0) = arrival'.
 6. The arrows dim and a straight cream segment is drawn from (0, 6) through (4, 3) to (8, 0); it stops at (8, 0). The x-axis from 0 to 8 is highlighted in teal and labelled '0 ≤ x ≤ 8'. Headline: 'Approach model: 0 ≤ x ≤ 8'.
 7. A panel 'Same model, both scenes' shows a pool lane and a stage lane. For eight seconds a dot slides down the segment from (0, 6) to (8, 0), with a dashed orange drop line to the x-axis showing the remaining distance, while the swimmer and performer figures move horizontally to their targets and a clock counts 0.0 to 8.0 s. Label on the graph: 'remaining falls'. Headline, held: 'A graph of two quantities'.
-
-All text, equations, graphs and numbers on screen are deterministic HTML/SVG; fractions are shown stacked or exact. Any generated scene imagery is illustrative only and carries no measured quantities.
