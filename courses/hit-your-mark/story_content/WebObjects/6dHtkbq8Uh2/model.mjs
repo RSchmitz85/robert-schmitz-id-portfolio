@@ -71,8 +71,8 @@ export function checkTransfer({start,arrival:seconds,rate,domain},sc=SCENARIOS.s
 }
 export function initialState() {return {version:VERSION,evidenceSchema:2,context:null,section:0,records:{},drafts:{},miniRecords:{},miniDrafts:{},supports:{},cueExplored:[],createdAt:new Date().toISOString(),updatedAt:null};}
 const clone=v=>JSON.parse(JSON.stringify(v));
-// The two settings use different numbers, so work is kept per setting. Switching
-// parks the current setting's work and restores any saved work for the other one.
+// The two settings use different numbers, so work is kept per setting. Moving to the
+// other setting parks the current setting's work and restores any saved work for it.
 export const PER_CONTEXT=['records','drafts','miniRecords','miniDrafts','supports','cueExplored'];
 export function switchContext(state,context){
   const next=clone(state);if(next.context===context)return next;
@@ -128,7 +128,15 @@ export function evidence(record,supports=[]) {
   if(record.latest.correct)return 'Revised after feedback';
   return 'Submitted — review feedback';
 }
-export const complete=state=>!!state.context&&CORE.every(id=>!!state.records[id]);
+// Every learner does both settings, in this order: the stage first, then the pool.
+export const ORDER=['stage','pool'];
+export function startSequence(state){return state.context?state:switchContext(state,ORDER[0]);}
+// Work for the setting in use lives at the top level; the other setting's work is parked.
+export const partWork=(state,ctx)=>state.context===ctx?{records:state.records,supports:state.supports}:{records:state.parked?.[ctx]?.records||{},supports:state.parked?.[ctx]?.supports||{}};
+export const partComplete=(state,ctx)=>CORE.every(id=>!!partWork(state,ctx).records[id]);
+// The next setting still to finish after this one, in lesson order (null when both are done).
+export const nextPart=state=>ORDER.find(ctx=>ctx!==state.context&&!partComplete(state,ctx))??null;
+export const complete=state=>!!state.context&&ORDER.every(ctx=>partComplete(state,ctx));
 export const canOfferSupport=record=>!!record&&record.attempts>=2&&!record.latest.correct&&!(record.latest.usedWorkedComparison??!!(record.latest.result?.workedComparison||(record.latest.supported&&!record.latest.supports?.length)));
 // Metadata migration keeps response/history content and timestamps intact while
 // making earlier v7 support and ungraded flags unambiguous on restore/download.
