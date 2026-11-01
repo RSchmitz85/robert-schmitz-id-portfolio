@@ -1,8 +1,7 @@
 {
-  "version": 7,
+  "version": 8,
   "ready": [
-    "lesson-hook",
-    "pool-intro",
+    "hym-intro",
     "stage-intro",
     "rate-and-sign",
     "shared-graph",
@@ -13,8 +12,7 @@
     "horizontal-line"
   ],
   "captions": [
-    "lesson-hook",
-    "pool-intro",
+    "hym-intro",
     "stage-intro",
     "rate-and-sign",
     "shared-graph",
@@ -25,8 +23,7 @@
     "horizontal-line"
   ],
   "transcripts": [
-    "lesson-hook",
-    "pool-intro",
+    "hym-intro",
     "stage-intro",
     "rate-and-sign",
     "shared-graph",
@@ -37,8 +34,7 @@
     "horizontal-line"
   ],
   "posters": {
-    "pool-intro": "assets/pool-context.png",
-    "stage-intro": "assets/stage-context.png",
-    "lesson-hook": "assets/stage-context.png"
+    "hym-intro": "assets/hym-intro-poster.webp",
+    "stage-intro": "assets/stage-context.png"
   }
 }
