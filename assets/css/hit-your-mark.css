@@ -18,3 +18,17 @@
 .hym-shot figcaption{font-size:13px;color:#59636a;margin-top:16px;line-height:1.6}
 @media(max-width:860px){.hym-glance dl{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.hym-glance dl{grid-template-columns:1fr;gap:16px}}
+
+/* declutter 2026-11-01 */
+.hym-hero .case-hero-grid{align-items:center}
+.hym-hero-video video{display:block;width:100%;height:auto;border:1px solid #d9cab5;background:#000}
+.hym-hero-video .walkthrough-transcript{margin-top:12px;font-size:14px}
+.hym-flow{padding-top:24px;padding-bottom:40px}
+.hym-flow .case-section{margin:0;padding:48px 0;border-top:1px solid #e6dccd}
+.hym-flow .case-section:first-child{border-top:0}
+.hym-flow h2{margin-bottom:18px}
+.hym-meta{font-size:14px;color:#59636a;margin-top:18px}
+.hym-points{padding-left:1.2em;max-width:68ch}.hym-points li{margin-bottom:14px;line-height:1.7}
+.hym-flow .hym-design-grid{gap:18px;margin-top:8px}
+.hym-flow .hym-design-grid article{padding:22px}
+.hym-end{text-align:left}
