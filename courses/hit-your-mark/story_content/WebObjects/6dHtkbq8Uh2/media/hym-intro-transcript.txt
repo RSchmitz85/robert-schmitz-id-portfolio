@@ -4,23 +4,27 @@ Three. Two. One. Hit your mark.
 
 On stage, a performer walks toward a tape mark on the floor.
 
-Every second, the distance to the mark shrinks.
+Every second, the distance to the mark drops three quarters of a meter.
 
 In the pool, a swimmer pushes off the wall and glides.
 
-Every second, the distance swum grows.
+Every second, the distance from the start grows one and a half meters.
 
 One number goes down. One goes up.
 
 But both of them are lines.
 
-The slope is the rate: how much it changes each second.
+The slope is the rate: how much the distance changes each second.
 
-The intercept is the start: where you are when the clock begins.
+The y-intercept is where the line crosses the y-axis, at zero seconds.
+
+Six meters from the mark on stage. Three meters from the start in the pool.
+
+That's where you are when the clock starts.
 
 Change either one, and the whole line moves.
 
-Now here's the problem.
+Now, here's the problem.
 
 The director moves the cue earlier.
 
@@ -28,11 +32,9 @@ The coach wants a faster split.
 
 Keep the old plan, and you miss.
 
-Early is wrong. Late is wrong.
-
 So what do you change: the rate, or the start?
 
 Choose your scene. Build the model. Graph it, adjust it, and hit your mark.
 
 VISUAL DESCRIPTION
-A countdown of 3, 2, 1 flashes over moving footage: a performer walking across a stage, a swimmer in a pool, then both side by side. The title HIT YOUR MARK builds word by word as a tape X draws itself on the floor. The performer walks across the stage; the view drifts toward the tape mark while a dotted path draws to it and a ring lands on the X. A stopwatch hand ticks beside the words EVERY SECOND; on a floor diagram the performer steps toward the X and a bracket labeled "distance to the mark" shrinks with each second, and the word SHRINKS squeezes together beside the walking performer. The pool footage wipes in and the view follows the swimmer. On a lane diagram the swimmer moves away from the wall and a bracket labeled "distance swum" grows each second, and the word GROWS stretches out above the water. The stage and the pool play stacked on the left, each shown whole; beside them, an orange bar for the stage shrinks to the left and a blue bar for the pool grows to the right. The bars turn into two lines on one time-and-distance graph while a dot rides each line: BOTH ARE LINES. The letters of SLOPE climb a slanted line, labeled "= the rate", then a staircase builds along a line one step at a time, each step marked "+1 second" across and "change" up. INTERCEPT types out as the view slides down a vertical axis to a dot, labeled "= the start". A dot on the vertical axis is labeled "start"; a stopwatch starts from zero and the line runs out from the dot. Side by side, one line pivots (RATE) and another slides up and down (START). The screen goes dark: NOW HERE'S THE PROBLEM. On stage, a flag marked CUE slides earlier along a timeline under the performer. In the pool, a stopwatch hand in the corner spins faster as the swimmer reaches the wall. On a graph, a dot rides a line past a dashed "new goal" line and a MISS stamp slams down. A token reaches the X before the clock (EARLY), then after it (LATE). The question SO WHAT DO YOU CHANGE appears, then THE RATE? over a tilting line and OR THE START? over a sliding line. A stage and pool split screen with a gold selection box invites the viewer to choose a scene. BUILD (axes draw), GRAPH (a line draws) and ADJUST (the line swings onto a target point) follow. The video ends on the whole stage, the performer walking toward the tape mark as the X draws, a ring lands and the title HIT YOUR MARK appears. No numbers or answers are given.
+A countdown of 3, 2, 1 flashes over a tape X on a stage floor and a swimmer in a pool, then the title HIT YOUR MARK. The performer walks across the stage toward the X; a clock counts the seconds and a readout of the distance to the mark falls from 6 m by 0.75 m each second, labeled "-0.75 m each second". The walk continues beside a graph of distance against time, where a dot steps down a staircase one second at a time in step with the performer until the distance reaches 0 m at 8 seconds, as the performer arrives on the X. On a lane diagram a swimmer pushes off and glides to 3 m from the start. In the pool footage the readout of the distance from the start climbs by 1.5 m each second, labeled "+1.5 m each second", and the swim continues beside a graph whose dot steps up until it reaches the 12 m wall at 6 seconds. Both motions are drawn as lines on one graph, one going down and one going up: BOTH ARE LINES. SLOPE = THE RATE: the stage and pool footage play stacked beside their graphs, each step of 1 second across matched by -0.75 m or +1.5 m up or down. Y-INTERCEPT = THE START: the y-axis glows, and the points (0, 6 m) and (0, 3 m) light up where the lines cross it at t = 0 s. The performer stands at the start position with the clock at 0 s and 6 m to go; the swimmer is at 3 m with the clock at 0 s. As the clock starts, both clips begin moving and each dot leaves the y-axis. One line pivots (RATE) and another slides up and down (START). NOW HERE'S THE PROBLEM. On stage, a flag marked CUE slides earlier under the walking performer. In the pool, a stopwatch runs faster as the swimmer reaches the wall. A MISS stamp slams down. SO WHAT DO YOU CHANGE? THE RATE? OR THE START? A stage and pool split screen invites the viewer to choose a scene, then BUILD, GRAPH and ADJUST. The video ends on the stage with the performer on the tape X, a ring landing and the title HIT YOUR MARK.
