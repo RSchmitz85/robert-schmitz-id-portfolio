@@ -58,3 +58,11 @@ details.more>summary{cursor:pointer;color:#17675C;font-weight:600}
 .lesson-map button.done .map-number{background:#17675C;color:#fff}
 .map-here{font-size:.75em;font-weight:700;color:#17675C;margin-left:.4rem}
 .map-parts button[aria-pressed="true"]{color:#172E43!important}
+/* front page path 2026-11-02 */
+.lesson-path{list-style:none;display:flex;align-items:center;gap:1rem;padding:0;margin:1rem 0;flex-wrap:wrap}
+.path-step{display:flex;align-items:center;gap:.8rem;flex:1 1 260px;cursor:default}
+.path-step img{width:120px;height:80px;object-fit:cover;border-radius:10px}
+.path-step strong{display:block;font-size:1.15rem}
+.path-when{display:block;font-size:.8rem;font-weight:700;color:#17675C;text-transform:uppercase;letter-spacing:.04em}
+.path-done{display:block;font-size:.85rem;color:#17675C}
+.path-arrow{font-size:2rem;color:#9aa;flex:0 0 auto}
