@@ -66,3 +66,6 @@ details.more>summary{cursor:pointer;color:#17675C;font-weight:600}
 .path-when{display:block;font-size:.8rem;font-weight:700;color:#17675C;text-transform:uppercase;letter-spacing:.04em}
 .path-done{display:block;font-size:.85rem;color:#17675C}
 .path-arrow{font-size:2rem;color:#9aa;flex:0 0 auto}
+/* lesson map pick-then-go 2026-11-02 */
+.lesson-map button.picked{outline:3px solid #C2540F;outline-offset:2px;background:#fff4dc}
+.map-go-row{margin-top:1rem;justify-content:flex-end;display:flex}
