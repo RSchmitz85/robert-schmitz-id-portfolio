@@ -1,61 +1,52 @@
 WEBVTT
 
-00:00:00.400 --> 00:00:02.264
-Now, how steep is the line?
+00:00:00.400 --> 00:00:03.062
+Next question: how steep is the line?
 
-00:00:02.264 --> 00:00:03.920
-That's called the slope.
+00:00:03.062 --> 00:00:04.284
+That's the slope.
 
-00:00:04.370 --> 00:00:06.865
+00:00:04.834 --> 00:00:06.838
 Pick two points on the line.
 
-00:00:06.865 --> 00:00:11.410
-On the stage, let's use zero, six, and four, three.
+00:00:06.838 --> 00:00:11.989
+For the stage, let's use the point zero, six, and the point four, three.
 
-00:00:11.860 --> 00:00:13.254
+00:00:12.539 --> 00:00:13.786
 First, the run.
 
-00:00:13.254 --> 00:00:15.762
-We move to the right, four.
+00:00:13.786 --> 00:00:15.948
+We move four to the right.
 
-00:00:15.762 --> 00:00:17.620
+00:00:15.948 --> 00:00:17.611
 That's four seconds.
 
-00:00:18.070 --> 00:00:19.190
+00:00:18.161 --> 00:00:19.119
 Then the rise.
 
-00:00:19.190 --> 00:00:20.790
-We move down, three.
+00:00:19.119 --> 00:00:22.538
+We move three down, so the rise is negative three.
 
-00:00:20.790 --> 00:00:24.310
-Going down means the rise is negative three.
+00:00:23.088 --> 00:00:28.346
+Slope is rise over run: negative three over four, or negative three-fourths.
 
-00:00:24.760 --> 00:00:26.600
-Slope is rise over run.
+00:00:28.896 --> 00:00:29.829
+That's the rate.
 
-00:00:26.600 --> 00:00:28.600
-Negative three over four.
+00:00:29.829 --> 00:00:34.320
+Every second, the performer gets three-fourths of a meter closer to the mark.
 
-00:00:28.600 --> 00:00:31.000
-That's negative three fourths.
+00:00:34.870 --> 00:00:38.778
+When a line goes up from left to right, the slope is positive.
 
-00:00:31.450 --> 00:00:32.768
-And that's the rate.
+00:00:38.778 --> 00:00:42.749
+That's the pool, where the swimmer moves farther from the wall.
 
-00:00:32.768 --> 00:00:37.050
-Every second, the performer gets three fourths of a meter closer.
+00:00:43.299 --> 00:00:46.128
+When it goes down, the slope is negative.
 
-00:00:37.500 --> 00:00:41.260
-If a line goes up from left to right, the slope is positive.
+00:00:46.128 --> 00:00:48.750
+And when it's flat, the slope is zero.
 
-00:00:41.260 --> 00:00:45.020
-Like the pool, where the swimmer gets farther from the wall.
-
-00:00:45.470 --> 00:00:48.632
-If it goes down, the slope is negative.
-
-00:00:48.632 --> 00:00:51.550
-And if it's flat, the slope is zero.
-
-00:00:52.000 --> 00:00:57.440
+00:00:49.300 --> 00:00:54.279
 So rise over run tells you how fast the y-value changes, and which way it goes.
