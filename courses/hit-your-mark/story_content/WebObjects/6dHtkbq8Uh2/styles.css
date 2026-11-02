@@ -46,3 +46,15 @@ html.hym-intro-on,html.hym-intro-on body{overflow:hidden}.hym-intro-overlay{posi
 .eyebrow{display:none}
 details.more{margin:.3rem 0 .6rem;font-size:.95em}
 details.more>summary{cursor:pointer;color:#17675C;font-weight:600}
+/* results + map 2026-11-02 */
+.results-parts{display:grid;gap:1rem;margin:1rem 0}
+.part-results{background:#fff;border:2px solid #d8d2c4;border-radius:14px;padding:.8rem 1rem}
+.part-results h3{margin:0;font-size:1.2rem}
+.pill-status{font-weight:700;color:#6b6b6b}.pill-status.done{color:#17675C}
+.result-list{list-style:none;margin:.5rem 0 0;padding:0}
+.result-list li{display:grid;grid-template-columns:1fr auto auto;gap:.8rem;align-items:center;padding:.45rem 0;border-top:1px solid #eee}
+.result-list .status{font-size:.92em}.result-list .status.pending{color:#9a6b00}
+.back-results{position:sticky;top:.5rem;z-index:5;margin:.5rem 0 1rem}
+.lesson-map button.done .map-number{background:#17675C;color:#fff}
+.map-here{font-size:.75em;font-weight:700;color:#17675C;margin-left:.4rem}
+.map-parts button[aria-pressed="true"]{color:#172E43!important}
