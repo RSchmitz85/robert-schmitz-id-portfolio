@@ -1,5 +1,5 @@
 // Pure mathematics and evidence functions. No browser, network, or dependencies.
-export const VERSION = 8;
+export const VERSION = 9;
 export const CORE = ['predict','roles','guided','diagnose','cue','independent','transfer'];
 export class InputError extends Error {}
 export function number(raw) {
@@ -97,7 +97,7 @@ export function submit(state,id,response,result,{supported=false}={}) {
   next.records[id]={first:old?.first||clone(attempt),latest:clone(attempt),attempts:(old?.attempts||0)+1,history:[...(old?.history||[]),clone(attempt)]};
   next.updatedAt=attempt.at; return next;
 }
-export const MINI_IDS=['rateMeaning','nextPoint','interceptMeaning','originalCue','transferSegment','horizontalCrossing'];
+export const MINI_IDS=['interceptPlot','slopeFind','rateMeaning','nextPoint','interceptMeaning','originalCue','transferSegment','horizontalCrossing'];
 export function submitMini(state,id,response,result,opts) {
   if(!MINI_IDS.includes(id))throw new InputError('Unknown mini activity.');
   const next=clone(state), shadow=submit({...next,records:next.miniRecords||{}},id,response,result,opts);
@@ -108,6 +108,8 @@ export const checkNextPoint=(choice,sc=SCENARIOS.stage)=>({correct:choice===sc.n
 // atZeroDistance holds the arrival reading: x at y = 0 (stage) or x at y = 12 (pool).
 export function checkInterceptMeaning({atZeroTime,atZeroDistance},sc=SCENARIOS.stage){const parts={atZeroTime:atZeroTime===sc.b+'meters',atZeroDistance:atZeroDistance===sc.arrival+'seconds'};return {...parts,correct:Object.values(parts).every(Boolean)};}
 export const checkOriginalCue=(choice,sc=SCENARIOS.stage)=>({correct:choice===sc.cue.timing,originalArrival:sc.cue.original,cue:sc.cue.goal});
+export function checkInterceptPoint({x,y},b){const onAxis=close(x,0);return {onAxis,correct:onAxis&&close(y,b)};}
+export function checkSlopeValue(v,[x1,y1],[x2,y2]){const m=(y2-y1)/(x2-x1),correct=close(v,m);return {correct,sign:!correct&&close(v,-m),flipped:!correct&&m!==0&&close(v,1/m)};}
 export const checkHorizontalCrossing=choice=>({correct:choice==='never'});
 export function segmentFromPrediction({start,arrival:seconds},sc=SCENARIOS.stage){
   if(!Number.isFinite(start)||!Number.isFinite(seconds)||start<0||seconds<=0)throw new InputError('Use nonnegative starting meters and a positive arrival time to preview your segment.');
