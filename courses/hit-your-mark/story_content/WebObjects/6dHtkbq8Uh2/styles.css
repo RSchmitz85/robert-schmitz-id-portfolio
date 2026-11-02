@@ -42,3 +42,7 @@ html.hym-intro-on,html.hym-intro-on body{overflow:hidden}.hym-intro-overlay{posi
 .sg-result{font-size:1.25rem;padding:.6rem .8rem;border-radius:12px;background:#fff4dc;border:2px solid #E8A33D}
 .step-pills button:disabled{opacity:.45;cursor:not-allowed}
 .frac{text-indent:0}
+/* declutter 2026-11-02 */
+.eyebrow{display:none}
+details.more{margin:.3rem 0 .6rem;font-size:.95em}
+details.more>summary{cursor:pointer;color:#17675C;font-weight:600}
