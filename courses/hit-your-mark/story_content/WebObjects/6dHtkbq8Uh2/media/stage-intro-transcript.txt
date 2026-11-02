@@ -1,14 +1,14 @@
 A steady-paced stage rehearsal
-Duration: 34.800 s
+Duration: 31.8 s
 
 NARRATION (sentence start - end)
-[00:03.2 - 00:05.7] A performer begins six meters from a floor mark.
-[00:06.6 - 00:10.0] During this rehearsal, assume a steady pace until arrival.
-[00:15.0 - 00:17.7] After four seconds, three meters remain.
-[00:18.6 - 00:21.9] Elapsed time increased while distance remaining decreased.
-[00:22.9 - 00:24.6] How long will the full approach take?
-[00:25.4 - 00:27.5] Save a prediction before using the graph.
-[00:28.2 - 00:30.8] You can revise your thinking after the worked example.
+[00:00.2 - 00:02.7] A performer begins six meters from a floor mark.
+[00:03.6 - 00:07.0] During this rehearsal, assume a steady pace until arrival.
+[00:12.0 - 00:14.7] After four seconds, three meters remain.
+[00:15.6 - 00:18.9] Elapsed time increased while distance remaining decreased.
+[00:19.9 - 00:21.6] How long will the full approach take?
+[00:22.4 - 00:24.5] Save a prediction before using the graph.
+[00:25.2 - 00:27.8] You can revise your thinking after the worked example.
 
 ESSENTIAL VISUAL INFORMATION (in order of appearance)
 1. Opening (0 to 3.0 s, no narration): a short illustrative animation, tagged 'Illustrative animation', of a performer in a gold sweater and navy joggers walking across a warmly spotlit wooden rehearsal stage toward a teal tape X on the floor; it cuts away mid-stride, before the mark. No numbers are shown over it. Clean cut to the still illustration of the stage (make-up mirror on the left, costume rack on the right) with the performer at the starting position, tagged 'The start · 0 s'. Title chip: 'Hit Your Mark | A steady-paced stage rehearsal'.
