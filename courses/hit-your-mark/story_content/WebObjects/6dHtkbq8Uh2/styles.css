@@ -69,3 +69,4 @@ details.more>summary{cursor:pointer;color:#17675C;font-weight:600}
 /* lesson map pick-then-go 2026-11-02 */
 .lesson-map button.picked{outline:3px solid #C2540F;outline-offset:2px;background:#fff4dc}
 .map-go-row{margin-top:1rem;justify-content:flex-end;display:flex}
+.map-go-row{justify-content:space-between!important}
