@@ -30,3 +30,4 @@
 
 /* Challenge video is the first thing seen on the opening screen */
 .hook-hero{margin-top:0}.hook-hero .hook-layout{grid-template-columns:minmax(320px,3fr) minmax(220px,2fr)}.hook-hero .hook-layout .video-box video{max-height:none;width:100%}@media(max-width:740px){.hook-hero .hook-layout{grid-template-columns:1fr}}
+.hook-hero .video-box{position:relative}.hym-start{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);font-size:1.35rem;font-weight:800;padding:16px 32px;border-radius:999px;border:3px solid #fff;background:#d9480f;color:#fff;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.35)}.hym-start:hover,.hym-start:focus-visible{background:#b83a0b;outline:3px solid #ffd43b}.hym-start[hidden]{display:none}
