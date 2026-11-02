@@ -1,0 +1,17 @@
+Now, how steep is the line? That's called the slope.
+
+Pick two points on the line. On the stage, let's use zero, six, and four, three.
+
+First, the run. We move to the right, four. That's four seconds.
+
+Then the rise. We move down, three. Going down means the rise is negative three.
+
+Slope is rise over run. Negative three over four. That's negative three fourths.
+
+And that's the rate. Every second, the performer gets three fourths of a meter closer.
+
+If a line goes up from left to right, the slope is positive. Like the pool, where the swimmer gets farther from the wall.
+
+If it goes down, the slope is negative. And if it's flat, the slope is zero.
+
+So rise over run tells you how fast the y-value changes, and which way it goes.

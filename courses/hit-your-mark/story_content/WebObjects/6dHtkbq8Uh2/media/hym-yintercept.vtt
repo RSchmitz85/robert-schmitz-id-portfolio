@@ -1,0 +1,61 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:02.576
+Every line has to start somewhere.
+
+00:00:02.576 --> 00:00:03.920
+Let's find out where.
+
+00:00:04.370 --> 00:00:05.507
+Here's the stage.
+
+00:00:05.507 --> 00:00:08.050
+The performer is heading for the mark.
+
+00:00:08.500 --> 00:00:11.765
+On the graph, x is the time in seconds.
+
+00:00:11.765 --> 00:00:15.700
+And y is how far the performer still has to go.
+
+00:00:16.150 --> 00:00:20.758
+Right when the clock starts, no time has passed yet.
+
+00:00:20.758 --> 00:00:21.910
+So x is zero.
+
+00:00:22.360 --> 00:00:26.200
+And x equals zero puts us right on the y-axis.
+
+00:00:26.650 --> 00:00:29.886
+Now look where the line touches that axis.
+
+00:00:29.886 --> 00:00:30.810
+It's at six.
+
+00:00:31.260 --> 00:00:36.380
+That point, zero, six, is called the y-intercept.
+
+00:00:36.830 --> 00:00:38.449
+It's the starting value.
+
+00:00:38.449 --> 00:00:42.430
+At zero seconds, the performer is six meters from the mark.
+
+00:00:42.880 --> 00:00:45.026
+The pool works the same way.
+
+00:00:45.026 --> 00:00:49.318
+The swimmer glides three meters before the clock starts.
+
+00:00:49.318 --> 00:00:52.000
+So that line starts at zero, three.
+
+00:00:52.450 --> 00:00:53.901
+So here's the trick.
+
+00:00:53.901 --> 00:00:56.949
+Go to x equals zero, and read the y-value.
+
+00:00:56.949 --> 00:00:58.690
+That's your y-intercept.

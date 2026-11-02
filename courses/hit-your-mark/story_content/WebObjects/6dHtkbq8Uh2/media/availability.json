@@ -9,7 +9,9 @@
     "slope-swap",
     "cue-change",
     "positive-slope",
-    "horizontal-line"
+    "horizontal-line",
+    "hym-yintercept",
+    "hym-slope"
   ],
   "captions": [
     "hym-intro",
@@ -20,7 +22,9 @@
     "slope-swap",
     "cue-change",
     "positive-slope",
-    "horizontal-line"
+    "horizontal-line",
+    "hym-yintercept",
+    "hym-slope"
   ],
   "transcripts": [
     "hym-intro",
@@ -31,10 +35,14 @@
     "slope-swap",
     "cue-change",
     "positive-slope",
-    "horizontal-line"
+    "horizontal-line",
+    "hym-yintercept",
+    "hym-slope"
   ],
   "posters": {
     "hym-intro": "assets/hym-intro-poster.webp",
-    "stage-intro": "assets/stage-context.png"
+    "stage-intro": "assets/stage-context.png",
+    "hym-yintercept": "assets/hym-yintercept-poster.webp",
+    "hym-slope": "assets/hym-slope-poster.webp"
   }
 }

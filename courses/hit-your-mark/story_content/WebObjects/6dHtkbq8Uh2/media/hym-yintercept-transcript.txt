@@ -1,0 +1,19 @@
+Every line has to start somewhere. Let's find out where.
+
+Here's the stage. The performer is heading for the mark.
+
+On the graph, x is the time in seconds. And y is how far the performer still has to go.
+
+Right when the clock starts, no time has passed yet. So x is zero.
+
+And x equals zero puts us right on the y-axis.
+
+Now look where the line touches that axis. It's at six.
+
+That point, zero, six, is called the y-intercept.
+
+It's the starting value. At zero seconds, the performer is six meters from the mark.
+
+The pool works the same way. The swimmer glides three meters before the clock starts. So that line starts at zero, three.
+
+So here's the trick. Go to x equals zero, and read the y-value. That's your y-intercept.
