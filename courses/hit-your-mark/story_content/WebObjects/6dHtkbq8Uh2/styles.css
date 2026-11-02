@@ -27,3 +27,6 @@
 .map-parts{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 12px}
 .map-parts button[aria-pressed=true]{background:var(--cream);border-color:var(--orange)}
 @media(max-width:740px){.parts-summary{grid-template-columns:1fr}}
+
+/* Challenge video is the first thing seen on the opening screen */
+.hook-hero{margin-top:0}.hook-hero .hook-layout{grid-template-columns:minmax(320px,3fr) minmax(220px,2fr)}.hook-hero .hook-layout .video-box video{max-height:none;width:100%}@media(max-width:740px){.hook-hero .hook-layout{grid-template-columns:1fr}}
