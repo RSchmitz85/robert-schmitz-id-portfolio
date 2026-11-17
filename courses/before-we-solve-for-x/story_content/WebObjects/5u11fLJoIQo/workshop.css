@@ -13,12 +13,18 @@ p{margin:.55em 0 .85em}
 .hero{grid-template-columns:1fr 1.04fr;align-items:center}
 .case{grid-template-columns:minmax(190px,.7fr) 1.3fr}
 .film video{width:100%;background:#1e3a30;border-radius:13px;display:block;aspect-ratio:16 / 9}
-details{margin-top:.65em;font-size:.88rem}
-summary{cursor:pointer;width:fit-content;font-weight:650}
-button,summary{touch-action:manipulation}
+.film-links{display:grid;gap:6px;margin-top:9px;font-size:.88rem}
+.film-links label{font-weight:700}
+.film-links a,.scene-link{color:var(--green);text-underline-offset:3px;text-decoration:underline}
+.film-links select{width:100%;min-height:42px;border:1px solid var(--line);border-radius:7px;background:#fffdf7;color:var(--ink);font:inherit;padding:5px 8px}
+button{touch-action:manipulation}
 button{font:inherit;font-weight:650;min-height:44px;border:1px solid var(--green);background:var(--green);color:white;padding:8px 16px;border-radius:8px;cursor:pointer}
 button:not(:disabled):hover{filter:brightness(.9)}
 button:disabled{background:#e4e3d8;border-color:#c1c5b8;color:#515950;cursor:default}
+.scene-link{min-height:38px;padding:4px 0;margin:0 0 6px;border:0;background:transparent;text-align:left}
+.transcript{max-width:78ch}
+.transcript h2{font-size:1.25rem;letter-spacing:0;margin-top:1.2em}
+.transcript a{color:var(--green)}
 :focus-visible{outline:3px solid #88501d;outline-offset:3px}
 h2:focus{outline:none}
 .actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:16px}

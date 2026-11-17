@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Before We Solve for X</title>
-<link rel="stylesheet" href="workshop.css">
-<script src="workshop.js" defer></script>
+<link rel="stylesheet" href="workshop.css?v=full-film">
+<script src="workshop.js?v=full-film" defer></script>
 </head>
 <body>
 <header class="masthead">
@@ -16,23 +16,41 @@
   <section class="screen hero" data-name="Overview">
     <div class="hero-copy">
       <h1>Before We<br>Solve for <i>X</i></h1>
-      <p class="intro">Two students solve the same equation. One is confident and makes a fraction error. The other is unsure and gets it right.</p>
-      <p>Read their work, choose what to say next, and plan a follow-up that checks both reasoning and confidence.</p>
-      <div class="actions"><button data-next>Start the workshop</button><span>About 5 min</span></div>
+      <p class="intro">A ladder lesson starts with a skill students need for the next task. Here, understanding the size of a fraction helps students explain a step in an equation.</p>
+      <p>Watch the full classroom film. Then use two students’ confidence ratings and written work to plan what you’d teach and check next.</p>
+      <div class="actions">
+        <button data-next id="start">Start the workshop</button>
+        <button id="return-to-activity" hidden>Return to activity</button>
+        <span>About 12 min with film</span>
+      </div>
     </div>
     <div class="film">
-      <video controls playsinline preload="none" poster="classroom.webp" aria-label="Classroom scenario from Before We Solve for X">
-        <source src="classroom.mp4" type="video/mp4">
-        <track default kind="captions" label="English" srclang="en" src="classroom.vtt">
+      <video controls playsinline preload="none" poster="classroom.webp" aria-label="Before We Solve for X, full classroom film">
+        <source src="classroom-full.mp4" type="video/mp4">
+        <track default kind="captions" label="English" srclang="en" src="classroom-full.vtt">
       </video>
-      <details>
-        <summary>Read the clip transcript</summary>
-        <p>Let’s say I put this on the board. X plus three fourths equals one. Before anybody picks up a pencil, I ask, “How sure are you that you can solve this equation on your own?” One student tells me they’re pretty sure. They subtract three fourths from both sides, but get the fraction part wrong. Another student says they’re barely sure at all and gets one fourth, with work that shows exactly why. If I only look at who got it right, I miss something I could use to help both students.</p>
-      </details>
+      <div class="film-links">
+        <label for="chapter">Film chapters · 4:37</label>
+        <select id="chapter">
+          <option value="">Choose a scene</option>
+          <option value="0" data-scene="ladder">0:00 · Start with a prerequisite</option>
+          <option value="11.68" data-scene="samples">0:12 · Compare the two students</option>
+          <option value="50.72" data-scene="model">0:51 · Model the missing fourth</option>
+          <option value="104.08" data-scene="delay">1:44 · Check what sticks</option>
+          <option value="123.04" data-scene="confidence">2:03 · Rate confidence before solving</option>
+          <option value="142.32" data-scene="format">2:22 · Keep context and format comparable</option>
+          <option value="179.84" data-scene="feedback">3:00 · Give specific feedback</option>
+          <option value="205.92" data-scene="transfer">3:26 · Discuss, then check independently</option>
+          <option value="223.56" data-scene="next">3:44 · Plan the next ladder lesson</option>
+          <option value="236.833" data-scene="credits">3:57 · Film references</option>
+        </select>
+        <a href="transcript.html" target="_blank" rel="noopener">Full film transcript (new tab)</a>
+      </div>
     </div>
   </section>
   <section class="screen" data-name="Student A" hidden>
     <h2 tabindex="-1">Where did the reasoning change?</h2>
+    <button class="scene-link" data-watch="samples">Watch the two student examples</button>
     <div class="case">
       <aside class="paper" aria-label="Sample work from Student A">
         <strong>Student A</strong><p>Confidence before solving <b>4 / 4</b></p>
@@ -52,6 +70,7 @@
   </section>
   <section class="screen" data-name="Number line" hidden>
     <h2 tabindex="-1">Make the missing fourth visible</h2>
+    <button class="scene-link" data-watch="model">Watch the paper-strip model</button>
     <p>Each space is one fourth. Choose the mark that belongs at ¾.</p>
     <div class="number-line" role="group" aria-label="Number line from zero to one in equal fourths">
       <button data-tick="0" aria-label="Zero, left endpoint"><span>0</span></button>
@@ -61,10 +80,23 @@
       <button data-tick="4" aria-label="One, right endpoint"><span>1</span></button>
     </div>
     <div class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+    <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>Check what sticks</button></div>
+  </section>
+  <section class="screen" data-name="Delayed check" hidden>
+    <h2 tabindex="-1">Did the model help learning stick?</h2>
+    <button class="scene-link" data-watch="delay">Watch the delayed-check example</button>
+    <p>Student A says the strip didn’t help. During practice, the student explained the missing fourth. What would you do tomorrow?</p>
+    <div class="choices" role="group" aria-label="Choose a delayed check">
+      <button data-choice="d-opinion">Record that the model failed and move on.</button>
+      <button data-choice="d-fresh" data-best>Give a fresh fraction equation independently and ask the student to explain the missing distance.</button>
+      <button data-choice="d-repeat">Ask the student to copy the same example from the board.</button>
+    </div>
+    <div class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
     <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>Review Student B</button></div>
   </section>
   <section class="screen" data-name="Student B" hidden>
     <h2 tabindex="-1">What success can the student repeat?</h2>
+    <button class="scene-link" data-watch="feedback">Watch the teacher give feedback</button>
     <div class="case">
       <aside class="paper" aria-label="Sample work from Student B">
         <strong>Student B</strong><p>Confidence before solving <b>1 / 4</b></p>
@@ -80,16 +112,43 @@
         <div class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
       </div>
     </div>
-    <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>Plan the follow-up</button></div>
+    <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>Compare the assessment prompts</button></div>
+  </section>
+  <section class="screen" data-name="Comparable checks" hidden>
+    <h2 tabindex="-1">What is the confidence rating about?</h2>
+    <button class="scene-link" data-watch="format">Watch the ribbon and response-format examples</button>
+    <p>Self-efficacy is a learner’s belief that they can do a particular task. A student gives a 2 before solving a written equation. Later, they give a 4 before a multiple-choice ribbon problem with the same quantities.</p>
+    <p>What can you conclude from those ratings?</p>
+    <div class="choices" role="group" aria-label="Interpret the confidence ratings">
+      <button data-choice="e-growth">The student can now solve symbolic equations independently.</button>
+      <button data-choice="e-same">The ratings are directly comparable because the fractions match.</button>
+      <button data-choice="e-context" data-best>The student felt more capable on the second task. Match the context and written format to compare ratings.</button>
+    </div>
+    <div class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+    <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>Plan the independent check</button></div>
   </section>
   <section class="screen" data-name="Follow-up" hidden>
     <h2 tabindex="-1">Check for independent transfer</h2>
-    <p>After practice, give a comparable task. This time use <strong>x + ⅝ = 1</strong>.</p>
+    <button class="scene-link" data-watch="transfer">Watch the partner discussion and follow-up</button>
+    <p>After students explain their strategies to a partner, give each a comparable task. This time use <strong>x + ⅝ = 1</strong>.</p>
     <p>Which plan lets you compare confidence and reasoning across the two attempts?</p>
     <div class="choices" role="group" aria-label="Choose an assessment plan">
       <button data-choice="c-partner">Let partners submit one solution and rate their confidence together.</button>
       <button data-choice="c-before" data-best>Ask for a 1–4 rating first, then collect each student’s written solution and reasoning.</button>
       <button data-choice="c-after">Give a multiple-choice version and ask for confidence after revealing the answer.</button>
+    </div>
+    <div class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+    <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>Compare the results</button></div>
+  </section>
+  <section class="screen" data-name="Before and after" hidden>
+    <h2 tabindex="-1">Use both signals to choose the next lesson</h2>
+    <button class="scene-link" data-watch="next">Watch how the teacher plans the next lesson</button>
+    <p>On the independent check, Student A still rates confidence 4 and writes ½ for <strong>x + ⅝ = 1</strong>. Student B stays at 1 and uses ⅝ + ⅜ = 1 to check the correct answer.</p>
+    <p>Which next move fits the evidence?</p>
+    <div class="choices" role="group" aria-label="Choose what to teach next">
+      <button data-choice="f-confidence">Move Student A on to harder equations and reteach fraction subtraction to Student B.</button>
+      <button data-choice="f-next" data-best>Ask Student A to show the gap in eighths. Name Student B’s successful check and offer another independent attempt.</button>
+      <button data-choice="f-same">Repeat the same lesson with both students because their ratings stayed the same.</button>
     </div>
     <div class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
     <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>See the classroom plan</button></div>
@@ -99,8 +158,9 @@
     <ol class="plan">
       <li><b>Before solving.</b> Ask “How sure are you that you can solve this equation on your own?” Use the same 1–4 scale each time, with 1 meaning “not sure” and 4 meaning “very sure.”</li>
       <li><b>Read the work.</b> Look for the inverse operation, the fraction reasoning, and a check. Compare each one with the student’s prediction.</li>
-      <li><b>Teach the missing step.</b> Have students count equal intervals and explain how the distance from ¾ to 1 represents x.</li>
-      <li><b>Check again.</b> Collect a fresh rating and independent written work on x + ⅝ = 1. Look for ⅜ supported by reasoning. Use both pieces of evidence to decide what to teach next.</li>
+      <li><b>Teach the prerequisite.</b> Fold a strip into four equal spaces. Have students explain how the distance from ¾ to 1 represents x. Name a successful step and let partners explain how they checked it.</li>
+      <li><b>Check again tomorrow.</b> Ask whether the model felt useful. Separately, collect a fresh rating and independent written work on x + ⅝ = 1 in the same symbolic format. Look for ⅜ supported by reasoning.</li>
+      <li><b>Choose what comes next.</b> A higher rating with the same error calls for another probe of fraction meaning. Sound work with a low rating calls for specific feedback and another chance to succeed independently.</li>
     </ol>
     <div class="actions"><button class="secondary" data-back>Back</button><button id="restart">Restart workshop</button></div>
   </section>
