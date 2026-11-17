@@ -1,2 +1,3 @@
 # Preserve the exact bytes of the verified Storyline Web publication.
 /courses/hit-your-mark/** -text
+/courses/before-we-solve-for-x/** -text

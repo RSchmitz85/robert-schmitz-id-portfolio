@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Before We Solve for X</title>
+<link rel="stylesheet" href="workshop.css">
+<script src="workshop.js" defer></script>
+</head>
+<body>
+<header class="masthead">
+  <span>Algebra 1 teacher workshop</span>
+  <span id="progress" aria-label="Module progress">Overview</span>
+</header>
+<main id="workshop">
+  <section class="screen hero" data-name="Overview">
+    <div class="hero-copy">
+      <h1>Before We<br>Solve for <i>X</i></h1>
+      <p class="intro">Two students solve the same equation. One is confident and makes a fraction error. The other is unsure and gets it right.</p>
+      <p>Read their work, choose what to say next, and plan a follow-up that checks both reasoning and confidence.</p>
+      <div class="actions"><button data-next>Start the workshop</button><span>About 5 min</span></div>
+    </div>
+    <div class="film">
+      <video controls playsinline preload="none" poster="classroom.webp" aria-label="Classroom scenario from Before We Solve for X">
+        <source src="classroom.mp4" type="video/mp4">
+        <track default kind="captions" label="English" srclang="en" src="classroom.vtt">
+      </video>
+      <details>
+        <summary>Read the clip transcript</summary>
+        <p>Let’s say I put this on the board. X plus three fourths equals one. Before anybody picks up a pencil, I ask, “How sure are you that you can solve this equation on your own?” One student tells me they’re pretty sure. They subtract three fourths from both sides, but get the fraction part wrong. Another student says they’re barely sure at all and gets one fourth, with work that shows exactly why. If I only look at who got it right, I miss something I could use to help both students.</p>
+      </details>
+    </div>
+  </section>
+  <section class="screen" data-name="Student A" hidden>
+    <h2 tabindex="-1">Where did the reasoning change?</h2>
+    <div class="case">
+      <aside class="paper" aria-label="Sample work from Student A">
+        <strong>Student A</strong><p>Confidence before solving <b>4 / 4</b></p>
+        <div class="work">x + ¾ = 1<br>x = 1 − ¾<br>x = ½</div>
+      </aside>
+      <div>
+        <p>What would you ask this student first?</p>
+        <div class="choices" role="group" aria-label="Choose a response for Student A">
+          <button data-choice="a-reteach">“Which operation should you use to undo addition?”</button>
+          <button data-choice="a-gap" data-best>“Place ¾ on a number line and show the distance to 1.”</button>
+          <button data-choice="a-replace">“Replace ½ with ¼ and move to the next problem.”</button>
+        </div>
+        <div class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+      </div>
+    </div>
+    <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>Open the number line</button></div>
+  </section>
+  <section class="screen" data-name="Number line" hidden>
+    <h2 tabindex="-1">Make the missing fourth visible</h2>
+    <p>Each space is one fourth. Choose the mark that belongs at ¾.</p>
+    <div class="number-line" role="group" aria-label="Number line from zero to one in equal fourths">
+      <button data-tick="0" aria-label="Zero, left endpoint"><span>0</span></button>
+      <button data-tick="1" aria-label="First interior mark"><span>•</span></button>
+      <button data-tick="2" aria-label="Second interior mark"><span>•</span></button>
+      <button data-tick="3" aria-label="Third interior mark"><span>•</span></button>
+      <button data-tick="4" aria-label="One, right endpoint"><span>1</span></button>
+    </div>
+    <div class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+    <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>Review Student B</button></div>
+  </section>
+  <section class="screen" data-name="Student B" hidden>
+    <h2 tabindex="-1">What success can the student repeat?</h2>
+    <div class="case">
+      <aside class="paper" aria-label="Sample work from Student B">
+        <strong>Student B</strong><p>Confidence before solving <b>1 / 4</b></p>
+        <div class="work">x = ⁴⁄₄ − ¾<br>x = ¼<br>¼ + ¾ = 1 ✓</div>
+      </aside>
+      <div>
+        <p>Which response connects feedback to the written work?</p>
+        <div class="choices" role="group" aria-label="Choose a response for Student B">
+          <button data-choice="b-praise">“Great job! You should feel more confident now.”</button>
+          <button data-choice="b-repeat">“Watch me solve this same one again before you try another.”</button>
+          <button data-choice="b-transfer" data-best>“You found the missing fourth and checked by adding back. Try that on a new equation.”</button>
+        </div>
+        <div class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+      </div>
+    </div>
+    <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>Plan the follow-up</button></div>
+  </section>
+  <section class="screen" data-name="Follow-up" hidden>
+    <h2 tabindex="-1">Check for independent transfer</h2>
+    <p>After practice, give a comparable task. This time use <strong>x + ⅝ = 1</strong>.</p>
+    <p>Which plan lets you compare confidence and reasoning across the two attempts?</p>
+    <div class="choices" role="group" aria-label="Choose an assessment plan">
+      <button data-choice="c-partner">Let partners submit one solution and rate their confidence together.</button>
+      <button data-choice="c-before" data-best>Ask for a 1–4 rating first, then collect each student’s written solution and reasoning.</button>
+      <button data-choice="c-after">Give a multiple-choice version and ask for confidence after revealing the answer.</button>
+    </div>
+    <div class="feedback" role="status" aria-live="polite" aria-atomic="true"></div>
+    <div class="actions"><button class="secondary" data-back>Back</button><button data-next disabled>See the classroom plan</button></div>
+  </section>
+  <section class="screen" data-name="Classroom plan" hidden>
+    <h2 tabindex="-1">Take the ladder lesson to class</h2>
+    <ol class="plan">
+      <li><b>Before solving.</b> Ask “How sure are you that you can solve this equation on your own?” Use the same 1–4 scale each time, with 1 meaning “not sure” and 4 meaning “very sure.”</li>
+      <li><b>Read the work.</b> Look for the inverse operation, the fraction reasoning, and a check. Compare each one with the student’s prediction.</li>
+      <li><b>Teach the missing step.</b> Have students count equal intervals and explain how the distance from ¾ to 1 represents x.</li>
+      <li><b>Check again.</b> Collect a fresh rating and independent written work on x + ⅝ = 1. Look for ⅜ supported by reasoning. Use both pieces of evidence to decide what to teach next.</li>
+    </ol>
+    <div class="actions"><button class="secondary" data-back>Back</button><button id="restart">Restart workshop</button></div>
+  </section>
+</main>
+</body>
+</html>
